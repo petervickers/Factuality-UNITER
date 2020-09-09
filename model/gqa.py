@@ -2,7 +2,7 @@
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
 
-Uniter for VQA model
+Uniter for GQA model
 """
 from collections import defaultdict
 
@@ -15,8 +15,8 @@ from .layer import GELU
 from .model import UniterPreTrainedModel, UniterModel
 
 
-class UniterForVisualQuestionAnswering(UniterPreTrainedModel):
-    """ Finetune UNITER for VQA
+class UniterForGeneralQuestionAnswering(UniterPreTrainedModel):
+    """ Finetune UNITER for GQA
     """
     def __init__(self, config, img_dim, num_answer):
         super().__init__(config)
@@ -46,15 +46,8 @@ class UniterForVisualQuestionAnswering(UniterPreTrainedModel):
 
         if compute_loss:
             targets = batch['targets']
-            targets_cpu = targets.cpu()
-            print(targets_cpu.shape)
-            for idx in torch.nonzero(batch['targets']).cpu():
-                print(idx)
-                print(targets_cpu[tuple(idx)])
-            
-            exit()
-            vqa_loss = F.binary_cross_entropy_with_logits(
+            gqa_loss = F.cross_entropy(
                 answer_scores, targets, reduction='none')
-            return vqa_loss
+            return gqa_loss
         else:
             return answer_scores

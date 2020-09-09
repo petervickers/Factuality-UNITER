@@ -49,6 +49,7 @@ class DetectFeatLmdb(object):
     def __init__(self, img_dir, conf_th=0.2, max_bb=100, min_bb=10, num_bb=36,
                  compress=True):
         self.img_dir = img_dir
+
         if conf_th == -1:
             db_name = f'feat_numbb{num_bb}'
             self.name2nbb = defaultdict(lambda: num_bb)

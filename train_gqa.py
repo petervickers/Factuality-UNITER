@@ -22,10 +22,10 @@ from horovod import torch as hvd
 from tqdm import tqdm
 
 from data import (TokenBucketSampler, PrefetchLoader,
-                  TxtTokLmdb, ImageLmdbGroup, ConcatDatasetWithLens,
-                  VqaDataset, VqaEvalDataset,
-                  vqa_collate, vqa_eval_collate)
-from model.vqa import UniterForVisualQuestionAnswering
+                  TxtTokLmdb, DetectFeatLmdb, ConcatDatasetWithLens,
+                  GqaDataset, GqaEvalDataset,
+                  gqa_collate, gqa_eval_collate)
+from model.gqa import UniterForGeneralQuestionAnswering
 from optim import AdamW, get_lr_sched
 
 from utils.logger import LOGGER, TB_LOGGER, RunningMeter, add_log_to_file
@@ -46,7 +46,6 @@ def build_dataloader(dataset, collate_fn, is_train, opts):
                             pin_memory=opts.pin_mem, collate_fn=collate_fn)
     dataloader = PrefetchLoader(dataloader)
     return dataloader
-
 
 def build_optimizer(model, opts):
     """ vqa linear may get larger learning rate """
@@ -103,31 +102,42 @@ def main(opts):
                             opts.gradient_accumulation_steps))
 
     set_random_seed(opts.seed)
+  
+  
+    
+    label2ans = json.load(open(f'{opts.label_to_ans}'))
+    label2ans = {int(label): ans for label, ans in label2ans.items()}    
+    
+    # Add unknown
+    label2ans[len(label2ans)] = 'UNK'
+    ans2label = {ans: label for label, ans in label2ans.items()}
 
-    ans2label = json.load(open(f'{dirname(abspath(__file__))}'
-                               f'/utils/ans2label.json'))
-    label2ans = {label: ans for ans, label in ans2label.items()}
 
     # load DBs and image dirs
-    all_img_dbs = ImageLmdbGroup(opts.conf_th, opts.max_bb, opts.min_bb,
-                                 opts.num_bb, opts.compressed_db)
+    img_path = opts.img_db
+    img_db = DetectFeatLmdb(img_path, opts.conf_th, opts.max_bb, opts.min_bb,
+                            opts.num_bb, opts.compressed_db)
+                                 
+
     # train
     LOGGER.info(f"Loading Train Dataset "
-                f"{opts.train_txt_dbs}, {opts.train_img_dbs}")
-    train_datasets = []
-    for txt_path, img_path in zip(opts.train_txt_dbs, opts.train_img_dbs):
-        img_db = all_img_dbs[img_path]
-        # TODO: fix maxlen
-        txt_db = TxtTokLmdb(txt_path, opts.max_txt_len)
-        train_datasets.append(VqaDataset(len(ans2label), txt_db, img_db))
-    train_dataset = ConcatDatasetWithLens(train_datasets)
-    train_dataloader = build_dataloader(train_dataset, vqa_collate, True, opts)
+                f"{opts.train_txt_db}, {opts.img_db}")
+                
+    train_txt_path = opts.train_txt_db    
+    txt_db = TxtTokLmdb(train_txt_path, opts.max_txt_len)
+    train_dataset = GqaDataset(ans2label, txt_db, img_db)
+    
+    train_dataset.__getitem__(0)
+
+    
+    train_dataset = ConcatDatasetWithLens([train_dataset])
+    train_dataloader = build_dataloader(train_dataset, gqa_collate, True, opts)
+
     # val
-    LOGGER.info(f"Loading Train Dataset {opts.val_txt_db}, {opts.val_img_db}")
-    val_img_db = all_img_dbs[opts.val_img_db]
+    LOGGER.info(f"Loading Train Dataset {opts.val_txt_db}, {opts.img_db}")
     val_txt_db = TxtTokLmdb(opts.val_txt_db, -1)
-    val_dataset = VqaEvalDataset(len(ans2label), val_txt_db, val_img_db)
-    val_dataloader = build_dataloader(val_dataset, vqa_eval_collate,
+    val_dataset = GqaEvalDataset(ans2label, val_txt_db, img_db)
+    val_dataloader = build_dataloader(val_dataset, gqa_eval_collate,
                                       False, opts)
 
     # Prepare model
@@ -136,11 +146,13 @@ def main(opts):
     else:
         checkpoint = {}
 
-    all_dbs = opts.train_txt_dbs + [opts.val_txt_db]
+
+    all_dbs = [opts.train_txt_db, opts.val_txt_db]
+    LOGGER.info(f'Loading metadata from {all_dbs[0]}/meta.json')
     toker = json.load(open(f'{all_dbs[0]}/meta.json'))['bert']
     assert all(toker == json.load(open(f'{db}/meta.json'))['bert']
                for db in all_dbs)
-    model = UniterForVisualQuestionAnswering.from_pretrained(
+    model = UniterForGeneralQuestionAnswering.from_pretrained(
         opts.model_config, checkpoint,
         img_dim=IMG_DIM, num_answer=len(ans2label))
     model.to(device)
@@ -186,7 +198,7 @@ def main(opts):
             n_examples += batch['input_ids'].size(0)
 
             loss = model(batch, compute_loss=True)
-            loss = loss.mean() * batch['targets'].size(1)  # instance-leval bce
+            loss = loss.mean()
             delay_unscale = (step+1) % opts.gradient_accumulation_steps != 0
             with amp.scale_loss(loss, optimizer, delay_unscale=delay_unscale
                                 ) as scaled_loss:
@@ -277,7 +289,7 @@ def validate(model, val_loader, label2ans):
     for i, batch in enumerate(val_loader):
         scores = model(batch, compute_loss=False)
         targets = batch['targets']
-        loss = F.binary_cross_entropy_with_logits(
+        loss = F.cross_entropy(
             scores, targets, reduction='sum')
         val_loss += loss.item()
         tot_score += compute_score_with_logits(scores, targets).sum().item()
@@ -303,10 +315,9 @@ def validate(model, val_loader, label2ans):
 
 
 def compute_score_with_logits(logits, labels):
-    logits = torch.max(logits, 1)[1]  # argmax
-    one_hots = torch.zeros(*labels.size(), device=labels.device)
-    one_hots.scatter_(1, logits.view(-1, 1), 1)
-    scores = (one_hots * labels)
+    preds = torch.max(logits, 1)[1]  # argmax    
+    scores = torch.eq(preds, labels).sum()
+
     return scores
 
 
