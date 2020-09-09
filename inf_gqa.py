@@ -77,7 +77,7 @@ def main(opts):
     eval_dataloader = PrefetchLoader(eval_dataloader)
 
     val_log, results, logits = evaluate(model, eval_dataloader, label2ans,
-                                        opts.save_logits)
+                                        opts.save_logits, opts.topk)
     result_dir = f'{opts.output_dir}/results_test'
     if not exists(result_dir) and rank == 0:
         os.makedirs(result_dir)
@@ -89,7 +89,7 @@ def main(opts):
             all_logits.update(id2logit)
     if hvd.rank() == 0:
         with open(f'{result_dir}/'
-                  f'results_{opts.checkpoint}_all.json', 'w') as f:
+                  f'results_{opts.checkpoint}_top{opts.topk}_all.json', 'w') as f:
             json.dump(all_results, f)
         if opts.save_logits:
             np.savez(f'{result_dir}/logits_{opts.checkpoint}_all.npz',
@@ -97,11 +97,11 @@ def main(opts):
 
 
 @torch.no_grad()
-def evaluate(model, eval_loader, label2ans, save_logits=False):
+def evaluate(model, eval_loader, label2ans, save_logits=False, topk=1):
     LOGGER.info("start running evaluation...")
     model.eval()
     n_ex = 0
-    total_score = 0
+    total_correct = 0
     st = time()
     results = []
     logits = {}
@@ -110,14 +110,12 @@ def evaluate(model, eval_loader, label2ans, save_logits=False):
         qids = batch['qids']
         scores = model(batch, compute_loss=False)
         targets = batch['targets']
-        batch_score = compute_score_with_logits(scores, targets).sum().item()
-        total_score += batch_score
-        pred_answers = [label2ans[i]
-                   for i in scores.max(dim=-1, keepdim=False
-                                       )[1].cpu().tolist()]
-        true_answers = [label2ans[i] for i in targets.cpu().tolist()]
+        topk_correct, pred_answers = compute_score_with_answers(scores, targets, label2ans, topk=topk)
+        total_correct += topk_correct
+        
+        true_answers = [label2ans[i] for i in targets.cpu().tolist()]  
         # display answers
-        print("\n".join("{} {}".format(x, y) for x, y in zip(pred_answers, true_answers) if x != y))
+        print("\n".join("Fail with True: {} Predicted: {}".format(x, (', ').join(y)) for x, y in zip(true_answers, pred_answers) if x not in y))
         for qid, answer in zip(qids, pred_answers):
             results.append({'answer': answer, 'question_id': int(qid)})
         if save_logits:
@@ -130,7 +128,7 @@ def evaluate(model, eval_loader, label2ans, save_logits=False):
             LOGGER.info(f'{n_results}/{len(eval_loader.dataset)} '
                         'answers predicted')
         n_ex += len(qids)
-    total_score /= n_ex
+    total_score = total_correct / n_ex
     print(f'Total score is {"{:.2f}".format(total_score*100)}%')
     n_ex = sum(all_gather_list(n_ex))
     tot_time = time()-st
@@ -142,11 +140,12 @@ def evaluate(model, eval_loader, label2ans, save_logits=False):
 
 
 
-def compute_score_with_logits(logits, labels):
-    preds = torch.max(logits, 1)[1]  # argmax    
-    scores = torch.eq(preds, labels).sum()
-
-    return scores
+def compute_score_with_answers(scores, targets, label2ans, topk=1):
+    topk_labels = torch.topk(scores, k=topk, dim=-1, largest=True, sorted=True)[1].tolist()
+    topk_correct = sum([target in topk for topk, target in zip(topk_labels,
+                                                             targets.cpu().tolist())])
+    topk_preds = [[label2ans[i] for i in topk] for topk in topk_labels] 
+    return topk_correct, topk_preds
 
 
 if __name__ == "__main__":
@@ -173,7 +172,9 @@ if __name__ == "__main__":
 
     parser.add_argument("--save_logits", action='store_true',
                         help="Whether to save logits (for making ensemble)")
-
+                        
+    parser.add_argument('--topk', default=1, type=int,
+                        help="The number of predictions to consider")
     # Prepro parameters
 
     # device parameters
@@ -185,7 +186,6 @@ if __name__ == "__main__":
                         help="number of data workers")
     parser.add_argument('--pin_mem', action='store_true',
                         help="pin memory")
-
     args = parser.parse_args()
 
     main(args)
