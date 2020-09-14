@@ -25,8 +25,9 @@ for SPLIT in 'CLEVR_train_questions' 'CLEVR_val_questions' 'CLEVR_test_questions
         --mount src=$OUT_DIR,dst=/txt_db,type=bind \
         --mount src=$ANN_DIR,dst=/ann,type=bind,readonly \
         -w /src chenrocks/uniter \
-        python prepro_gqa.py --annotation /ann/$SPLIT.json \
-                         --output /txt_db/clevr_${SPLIT}.db
+        python prepro_clevr.py --annotation /ann/$SPLIT.json \
+                         --output /txt_db/clevr_${SPLIT}.db \
+                         --split ${SPLIT}
 done
 
 echo "done"

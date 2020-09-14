@@ -28,28 +28,30 @@ def bert_tokenize(tokenizer, text):
     return ids
 
 
-def process_gqa(jsonl, db, tokenizer, missing=None):
+def process_clevr(jsonl, db, tokenizer, missing=None, split=None):
     id2len = {}
     txt2img = {}  # not sure if useful
     ans2idx = {}
     
     json_loaded = json.load(jsonl)   
-    for idx, data in tqdm(json_loaded.items(), desc='processing GQA'):
+    for data in tqdm(json_loaded['questions'], desc='processing CLEVR'):
         example = data
         
         # make gqa similar to nlvr structure
-        example['identifier'] = example['question_index']
+        example['identifier'] = str(example['question_index'])
         example['sentence'] = example['question']
-        example['target'] = example['answer']
         
-        if example['target'] not in ans2idx:
-            print(f'Adding new answer {example["target"]} at position {len(ans2idx)}')
-            ans2idx[example['target']] = len(ans2idx)
+        if (split != 'test'):
+            example['target'] = example['answer']
+            if example['target'] not in ans2idx:
+                print(f'Adding new answer {example["target"]} at position {len(ans2idx)}')
+                ans2idx[example['target']] = len(ans2idx)
             
         
         id_ = example['identifier']
         img_id = example['image_filename'].split('.')[0]
-        img_fname = (f'clevr_{img_id}.npz')
+        # prepend 'nlvr2_' to work with image extraction pipeline
+        img_fname = (f'nlvr2_{img_id}.npz')
         input_ids = tokenizer(example['sentence'])
         txt2img[id_] = img_fname
         id2len[id_] = len(input_ids)
@@ -90,7 +92,8 @@ def main(opts):
                 missing_imgs = set(json.load(open(opts.missing_imgs)))
             else:
                 missing_imgs = None
-            id2lens, txt2img, idx2ans = process_gqa(ann, db, tokenizer, missing_imgs)
+            split = opts.split.split('_')[1]
+            id2lens, txt2img, idx2ans = process_clevr(ann, db, tokenizer, missing_imgs, split)
             
     with open(f'{opts.output}/id2len.json', 'w') as f:
         json.dump(id2lens, f)
@@ -110,5 +113,7 @@ if __name__ == '__main__':
                         help='output dir of DB')
     parser.add_argument('--toker', default='bert-base-cased',
                         help='which BERT tokenizer to used')
+    parser.add_argument('--split', default='',
+                        help='which split is invoked')
     args = parser.parse_args()
     main(args)
