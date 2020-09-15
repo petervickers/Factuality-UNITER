@@ -15,7 +15,7 @@ if [ ! -d $ANN_DIR ]; then
 fi
 
 COUNTER=1
-for SPLIT in 'KVQA_train_questions' 'KVQA_val_questions' 'KVQA_test_questions'; do
+for SPLIT in 'train_questions' 'val_questions' 'test_questions'; do
 
     echo "preprocessing ${SPLIT} annotations..."
     docker run --ipc=host --rm -it \

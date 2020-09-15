@@ -55,11 +55,14 @@ def main(opts):
     ans2label = {ans: label for label, ans in label2ans.items()}
     print(len(ans2label))    
 
+    idx2type = json.load(open(f'/txt/kvqa_test_questions.db/idx2type.json'))
+
     # load DBs and image dirs
     eval_img_db = DetectFeatLmdb(opts.img_db,
                                  model_opts.conf_th, model_opts.max_bb,
                                  model_opts.min_bb, model_opts.num_bb,
                                  opts.compressed_db)
+    
     eval_txt_db = TxtTokLmdb(opts.txt_db, -1)
     eval_dataset = GqaEvalDataset(ans2label, eval_txt_db, eval_img_db)
 
@@ -86,7 +89,7 @@ def main(opts):
     eval_dataloader = PrefetchLoader(eval_dataloader)
 
     val_log, results, logits = evaluate(model, eval_dataloader, label2ans,
-                                        opts.save_logits, opts.topk)
+                                        idx2type, opts.save_logits, opts.topk)
     result_dir = f'{opts.output_dir}/results_test'
     if not exists(result_dir) and rank == 0:
         os.makedirs(result_dir)
@@ -106,13 +109,15 @@ def main(opts):
 
 
 @torch.no_grad()
-def evaluate(model, eval_loader, label2ans, save_logits=False, topk=1):
+def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1):
     LOGGER.info("start running evaluation...")
     model.eval()
     n_ex = 0
     total_correct = 0
     st = time()
     results = []
+    types_correct = {}
+    types_all = {}
     logits = {}
     
     for i, batch in enumerate(eval_loader):
@@ -121,13 +126,20 @@ def evaluate(model, eval_loader, label2ans, save_logits=False, topk=1):
         targets = batch['targets']
         topk_correct, pred_answers = compute_score_with_answers(scores, targets, label2ans, topk=topk)
         total_correct += topk_correct
+
+        true_answers = [label2ans[i] for i in targets.cpu().tolist()]
         
-        true_answers = [label2ans[i] for i in targets.cpu().tolist()]  
+        for qid, y, y_hat in zip(qids, true_answers, pred_answers):
+            for q_type in idx2type[qid]:
+                types_all[q_type] = types_all.get(q_type, 0) + 1
+                if y in y_hat:
+                    types_correct[q_type] = types_correct.get(q_type, 0) + 1
+        
+
         # display answers
         #print("\n".join("Fail with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x not in y))
         for qid, answer in zip(qids, pred_answers):
             results.append({'answer': answer, 'question_id': int(qid)})
-        print(batch['type'])
         if save_logits:
             scores = scores.cpu()
             for i, qid in enumerate(qids):
@@ -140,6 +152,12 @@ def evaluate(model, eval_loader, label2ans, save_logits=False, topk=1):
         n_ex += len(qids)
     total_score = total_correct / n_ex
     print(f'Total score is {"{:.2f}".format(total_score*100)}%')
+    
+    type_score = {}
+    for q_type in types_all.keys():
+        type_score[q_type] = types_correct.get(q_type, 0)/types_all[q_type]
+    print(type_score)
+
     n_ex = sum(all_gather_list(n_ex))
     tot_time = time()-st
     val_log = {'valid/ex_per_s': n_ex/tot_time}
@@ -197,5 +215,5 @@ if __name__ == "__main__":
     parser.add_argument('--pin_mem', action='store_true',
                         help="pin memory")
     args = parser.parse_args()
-
+    
     main(args)

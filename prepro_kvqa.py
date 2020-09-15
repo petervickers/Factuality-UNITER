@@ -32,6 +32,7 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
     id2len = {}
     txt2img = {}  # not sure if useful
     ans2idx = {}
+    idx2type = {}
         
     json_loaded = json.load(jsonl)   
     total = 0
@@ -74,11 +75,14 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
             example['input_ids'] = input_ids
             example['img_fname'] = img_fname
 
+            idx2type[id_] = example['type']
+            print(idx2type[id_])
             db[id_] = example
+ 
     print(f'For split {split} processed {processed/total*100}%')        
-    idx2ans[len(idx2ans)] = 'UNK'
+    ans2idx['UNK'] = len(ans2idx)
     idx2ans = {k:v for v,k in ans2idx.items()}
-    return id2len, txt2img, idx2ans
+    return id2len, txt2img, idx2ans, idx2type
 
 
 def main(opts):
@@ -109,8 +113,9 @@ def main(opts):
                 missing_imgs = set(json.load(open(opts.missing_imgs)))
             else:
                 missing_imgs = None
-            id2lens, txt2img, idx2ans = process_kvqa(ann, db, tokenizer, \
-                                                     missing_imgs, split=opts.split)
+            id2lens, txt2img, idx2ans, idx2type = process_kvqa(ann, db, tokenizer, \
+                                                               missing_imgs, \
+                                                               split=opts.split)
             
     with open(f'{opts.output}/id2len.json', 'w') as f:
         json.dump(id2lens, f)
@@ -118,6 +123,8 @@ def main(opts):
         json.dump(txt2img, f)
     with open(f'{opts.output}/idx2ans.json', 'w') as f:
         json.dump(idx2ans, f)
+    with open(f'{opts.output}/idx2type.json', 'w') as f:
+        json.dump(idx2type, f)
 
 
 if __name__ == '__main__':
