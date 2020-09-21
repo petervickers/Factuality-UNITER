@@ -1,0 +1,6 @@
+{
+    "branch": "master",
+    "is_dirty": true,
+    "status": "M ../inf_kvqa.py\n M ../prepro_kvqa.py\n?? ../config/train-kvqa-base-1gpu-100k.json\n?? ../storage/",
+    "sha": "e9d2cd064d262272b6b8658e403c637273bce27a"
+}

@@ -33,7 +33,8 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
     txt2img = {}  # not sure if useful
     ans2idx = {}
     idx2type = {}
-        
+    idx2question = {}
+
     json_loaded = json.load(jsonl)   
     total = 0
     processed = 0
@@ -76,13 +77,17 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
             example['img_fname'] = img_fname
 
             idx2type[id_] = example['type']
-            print(idx2type[id_])
+            idx2question[id_] = example['sentence']
+            print(idx2question[id_], idx2type[id_] )
+            if 'Italy' in idx2type[id_]:
+                print(idx2type[id_], 'FAIL')
+                break
             db[id_] = example
  
     print(f'For split {split} processed {processed/total*100}%')        
     ans2idx['UNK'] = len(ans2idx)
     idx2ans = {k:v for v,k in ans2idx.items()}
-    return id2len, txt2img, idx2ans, idx2type
+    return id2len, txt2img, idx2ans, idx2type, idx2question
 
 
 def main(opts):
@@ -113,9 +118,11 @@ def main(opts):
                 missing_imgs = set(json.load(open(opts.missing_imgs)))
             else:
                 missing_imgs = None
-            id2lens, txt2img, idx2ans, idx2type = process_kvqa(ann, db, tokenizer, \
-                                                               missing_imgs, \
-                                                               split=opts.split)
+            id2lens, txt2img, idx2ans, idx2type, idx2question = process_kvqa(ann, \
+                                                                             db, \
+                                                                             tokenizer, \
+                                                                             missing_imgs, \
+                                                                             split=opts.split)
             
     with open(f'{opts.output}/id2len.json', 'w') as f:
         json.dump(id2lens, f)
@@ -125,6 +132,8 @@ def main(opts):
         json.dump(idx2ans, f)
     with open(f'{opts.output}/idx2type.json', 'w') as f:
         json.dump(idx2type, f)
+    with open(f'{opts.output}/idx2question.json', 'w') as f:
+        json.dump(idx2question, f)
 
 
 if __name__ == '__main__':

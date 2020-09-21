@@ -1,0 +1,5 @@
+09/15/2020 21:54:39 - INFO - __main__ -   ***** Running training with 1 GPUs *****
+09/15/2020 21:54:39 - INFO - __main__ -     Num examples = 114685
+09/15/2020 21:54:39 - INFO - __main__ -     Batch size = 5120
+09/15/2020 21:54:39 - INFO - __main__ -     Accumulate steps = 5
+09/15/2020 21:54:39 - INFO - __main__ -     Num steps = 100000

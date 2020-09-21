@@ -137,7 +137,7 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
         
 
         # display answers
-        #print("\n".join("Fail with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x not in y))
+        print("\n".join("Correct with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x in y))
         for qid, answer in zip(qids, pred_answers):
             results.append({'answer': answer, 'question_id': int(qid)})
         if save_logits:
