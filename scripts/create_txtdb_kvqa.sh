@@ -24,7 +24,7 @@ for SPLIT in 'train_questions' 'val_questions' 'test_questions'; do
         --mount src=$FEAT_DIR,dst=/img_feat,type=bind,readonly \
         --mount src=$ANN_DIR,dst=/ann,type=bind,readonly \
         -w /src chenrocks/uniter \
-        python prepro_kvqa.py --annotation_path /ann/ \
+        python prepro_kvqa.py --annotation /ann/dataset.json \
                          --output /txt_db/kvqa_${SPLIT}.db \
                          --split ${COUNTER}
     let "COUNTER++"

@@ -131,13 +131,17 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
         
         for qid, y, y_hat in zip(qids, true_answers, pred_answers):
             for q_type in idx2type[qid]:
+                if q_type == '1-hop' and 'spatial' not in idx2type[qid]:
+                    print(idx2type[qid], y, y_hat)
+                elif q_type == 'Italy':
+                    continue                
                 types_all[q_type] = types_all.get(q_type, 0) + 1
                 if y in y_hat:
                     types_correct[q_type] = types_correct.get(q_type, 0) + 1
         
-
+            
         # display answers
-        print("\n".join("Correct with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x in y))
+        #print("\n".join("Correct with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x in y))
         for qid, answer in zip(qids, pred_answers):
             results.append({'answer': answer, 'question_id': int(qid)})
         if save_logits:
@@ -155,7 +159,7 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
     
     type_score = {}
     for q_type in types_all.keys():
-        type_score[q_type] = types_correct.get(q_type, 0)/types_all[q_type]
+        type_score[q_type] = round(100*types_correct.get(q_type, 0)/types_all[q_type], 1)
     print(type_score)
 
     n_ex = sum(all_gather_list(n_ex))

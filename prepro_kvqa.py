@@ -38,15 +38,16 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
     json_loaded = json.load(jsonl)   
     total = 0
     processed = 0
+    all_qs = set()
     for data_idx, data in tqdm(json_loaded.items(), desc='processing KVQA'):
         img_id = data['imgPath'].split('/')[-1]
         img_fname = (f'nlvr2_{img_id[:-4]}.npz')
         img_path = os.path.join('/img_feat', img_fname)
         if not os.path.isfile(img_path):
-            print(f'Features not generated for {img_path}, skipping...')
+            #print(f'Features not generated for {img_path}, skipping...')
             continue
         if len(data['Type of Question']) != len(data['Questions']):
-            print(f'WARNING: question type labels broken at index {data_idx}')
+            #print(f'WARNING: question type labels broken at index {data_idx}')
             continue
         for q_idx in range(len(data['Questions'])):
             total += 1
@@ -60,6 +61,7 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
         
             example['identifier'] = data_idx+f'_{q_idx}'
             example['sentence'] = data['Questions'][q_idx]
+            all_qs.add(example['sentence'])
             example['target'] = data['Answers'][q_idx]
             example['type'] = data['Type of Question'][q_idx]
             example['Qids'] = data['Qids']
@@ -78,13 +80,11 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, split=1):
 
             idx2type[id_] = example['type']
             idx2question[id_] = example['sentence']
-            print(idx2question[id_], idx2type[id_] )
-            if 'Italy' in idx2type[id_]:
-                print(idx2type[id_], 'FAIL')
-                break
-            db[id_] = example
- 
+            if example is not None:
+                db[id_] = example
+     
     print(f'For split {split} processed {processed/total*100}%')        
+    print(f'Number of questions: {len(all_qs)}, list of all questions:')
     ans2idx['UNK'] = len(ans2idx)
     idx2ans = {k:v for v,k in ans2idx.items()}
     return id2len, txt2img, idx2ans, idx2type, idx2question
@@ -113,7 +113,7 @@ def main(opts):
 
     open_db = curry(open_lmdb, opts.output, readonly=False)
     with open_db() as db:
-        with open(os.path.join(opts.annotation_path, 'dataset.json')) as ann:
+        with open(opts.annotation) as ann:
             if opts.missing_imgs is not None:
                 missing_imgs = set(json.load(open(opts.missing_imgs)))
             else:
@@ -138,8 +138,8 @@ def main(opts):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation_path', required=True,
-                        help='path to annotation JSON')
+    parser.add_argument('--annotation', required=True,
+                        help='annotation JSON')
     parser.add_argument('--missing_imgs',
                         help='some training image features are corrupted')
     parser.add_argument('--output', required=True,
