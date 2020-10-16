@@ -1,0 +1,1 @@
+bash scripts/create_txtdb_kvqa_kb.sh /data/peter/datasets/UNITER-storage/KVQA-KG/txt_db /data/peter/datasets/KVQA/ /data/peter/datasets/UNITER-storage/KVQA/ann/
