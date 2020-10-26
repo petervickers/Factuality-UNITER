@@ -1,0 +1,18 @@
+KVQA
+
+test
+export PATH_TO_STORAGE=/data/peter/datasets/UNITER-storage/KVQA
+source launch_container.sh $PATH_TO_STORAGE/txt_db /data/peter/datasets/UNITER-storage/KVQA/img_db $PATH_TO_STORAGE/finetune $PATH_TO_STORAGE/pretrained
+python inf_kvqa_no_kg.py --txt_db /txt/kvqa_test_questions.db/ --img_db /img/all/ --output_dir /storage/kvqa --checkpoint 6000 --pin_mem --fp16
+
+KVQA-KG
+
+train
+rm -r /data/peter/datasets/UNITER-storage/KVQA-KG/finetune
+horovodrun -np 1 python train_kvqa_kg.py --config config/train-kvqa-kg-base-1gpu.json --output_dir /data/peter/datasets/UNITER-storage/KVQA-KG/finetune/
+source launch_container.sh $PATH_TO_STORAGE/txt_db     /dpeter/datasets/UNITER-storage/KVQA/img_db SAVE_DIR $PATH_TO_STORAGE/pretrained
+
+test
+export PATH_TO_STORAGE=/data/peter/datasets/UNITER-storage/KVQA-KG
+source launch_container.sh $PATH_TO_STORAGE/txt_db /data/peter/datasets/UNITER-storage/KVQA/img_db $PATH_TO_STORAGE/finetune $PATH_TO_STORAGE/pretrained
+python inf_kvqa_kg.py --txt_db /txt/kvqa_test_questions.db/ --img_db /img/all/ --output_dir /storage --checkpoint 6000 --pin_mem --fp16
