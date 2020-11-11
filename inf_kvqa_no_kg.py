@@ -64,7 +64,10 @@ def main(opts):
     
     eval_txt_db = TxtTokLmdb(opts.txt_db, -1)
     eval_dataset = GqaEvalDataset(ans2label, eval_txt_db, eval_img_db)
-
+    #qid, input_ids, img_feat, img_pos_feat, attn_masks, target_torch = eval_dataset.__getitem__(42)
+    #print(input_ids)
+    #exit()
+    
     # Prepare model
     if exists(opts.checkpoint):
         ckpt_file = opts.checkpoint
@@ -130,9 +133,7 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
         
         for qid, y, y_hat in zip(qids, true_answers, pred_answers):
             for q_type in idx2type[qid]:
-                if q_type == '1-hop' and 'spatial' not in idx2type[qid]:
-                    print(idx2type[qid], y, y_hat)
-                elif q_type == 'Italy':
+                if q_type == 'Italy':
                     continue                
                 types_all[q_type] = types_all.get(q_type, 0) + 1
                 if y in y_hat:
@@ -157,7 +158,7 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
     print(f'Total score is {"{:.2f}".format(total_score*100)}%')
     
     type_score = {}
-    for q_type in types_all.keys():
+    for q_type in sorted(types_all.keys()):
         type_score[q_type] = round(100*types_correct.get(q_type, 0)/types_all[q_type], 1)
     print(type_score)
 

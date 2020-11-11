@@ -2,7 +2,7 @@
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
 
-UNITER finetuning for VQA
+UNITER finetuning for KVQA
 """
 import argparse
 import json
@@ -16,6 +16,8 @@ from torch.nn.utils import clip_grad_norm_
 from torch.utils.data import DataLoader
 from torch.optim import Adam, Adamax
 
+import numpy as np
+
 from apex import amp
 from horovod import torch as hvd
 
@@ -23,9 +25,9 @@ from tqdm import tqdm
 
 from data import (TokenBucketSampler, PrefetchLoader,
                   TxtTokLmdb, DetectFeatLmdb, ConcatDatasetWithLens,
-                  GqaDataset, GqaEvalDataset,
-                  gqa_collate, gqa_eval_collate)
-from model.gqa import UniterForGeneralQuestionAnswering
+                  KvqaDataset, KvqaEvalDataset,
+                  kvqa_collate, kvqa_eval_collate)
+from model.kvqa import UniterForKnowledgeQuestionAnswering
 from optim import AdamW, get_lr_sched
 
 from utils.logger import LOGGER, TB_LOGGER, RunningMeter, add_log_to_file
@@ -51,24 +53,40 @@ def build_optimizer(model, opts):
     """ vqa linear may get larger learning rate """
     no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     param_optimizer = [(n, p) for n, p in model.named_parameters()
-                       if 'vqa_output' not in n]
+                       if not any(h in n for h in ["memnet", "vqa_output"])]
     param_top = [(n, p) for n, p in model.named_parameters()
                  if 'vqa_output' in n]
+    param_fast = [(n, p) for n, p in model.named_parameters()
+                 if 'memnet' in n]
     optimizer_grouped_parameters = [
         {'params': [p for n, p in param_top
                     if not any(nd in n for nd in no_decay)],
          'lr': opts.learning_rate,
-         'weight_decay': opts.weight_decay},
+         'weight_decay': opts.weight_decay,
+         'name': 'default_decay'},
         {'params': [p for n, p in param_top
                     if any(nd in n for nd in no_decay)],
          'lr': opts.learning_rate,
-         'weight_decay': 0.0},
+         'weight_decay': 0.0,
+         'name': 'default_no_decay'},
+        {'params': [p for n, p in param_fast 
+                    if not any(nd in n for nd in no_decay)], 
+         'lr': opts.learning_rate * 1,
+         'weight_decay': opts.weight_decay,
+         'name': 'fast_decay'},
+        {'params': [p for n, p in param_fast 
+                    if any(nd in n for nd in no_decay)], 
+         'lr': opts.learning_rate * 1, 
+         'weight_decay': 0.0,
+         'name': 'fast_no_decay'},
         {'params': [p for n, p in param_optimizer
                     if not any(nd in n for nd in no_decay)],
-         'weight_decay': opts.weight_decay},
+         'weight_decay': opts.weight_decay,
+         'name': 'out_decay'},
         {'params': [p for n, p in param_optimizer
                     if any(nd in n for nd in no_decay)],
-         'weight_decay': 0.0}
+         'weight_decay': 0.0,
+         'name': 'out_no_decay'}
     ]
 
     # currently Adam only
@@ -104,11 +122,13 @@ def main(opts):
     set_random_seed(opts.seed)
   
   
+    
     label2ans = json.load(open(f'{opts.label_to_ans}'))
     label2ans = {int(label): ans for label, ans in label2ans.items()}        
     ans2label = {ans: label for label, ans in label2ans.items()}
-        
+    
     assert (len(ans2label) == len(label2ans))
+
 
     # load DBs and image dirs
     img_path = opts.img_db
@@ -122,19 +142,21 @@ def main(opts):
                 
     train_txt_path = opts.train_txt_db    
     txt_db = TxtTokLmdb(train_txt_path, opts.max_txt_len)
-    train_dataset = GqaDataset(ans2label, txt_db, img_db)
+    train_dataset = KvqaDataset(ans2label, txt_db, img_db)
     
     train_dataset.__getitem__(0)
 
     
     train_dataset = ConcatDatasetWithLens([train_dataset])
-    train_dataloader = build_dataloader(train_dataset, gqa_collate, True, opts)
-
+    train_dataloader = build_dataloader(train_dataset, kvqa_collate, True, opts)
+    
+    myit = iter(train_dataloader)
+    
     # val
     LOGGER.info(f"Loading Train Dataset {opts.val_txt_db}, {opts.img_db}")
     val_txt_db = TxtTokLmdb(opts.val_txt_db, -1)
-    val_dataset = GqaEvalDataset(ans2label, val_txt_db, img_db)
-    val_dataloader = build_dataloader(val_dataset, gqa_eval_collate,
+    val_dataset = KvqaEvalDataset(ans2label, val_txt_db, img_db)
+    val_dataloader = build_dataloader(val_dataset, kvqa_eval_collate,
                                       False, opts)
 
     # Prepare model
@@ -149,16 +171,24 @@ def main(opts):
     toker = json.load(open(f'{all_dbs[0]}/meta.json'))['bert']
     assert all(toker == json.load(open(f'{db}/meta.json'))['bert']
                for db in all_dbs)
-    model = UniterForGeneralQuestionAnswering.from_pretrained(
+  
+    model = UniterForKnowledgeQuestionAnswering.from_pretrained(
         opts.model_config, checkpoint,
         img_dim=IMG_DIM, num_answer=len(ans2label))
     model.to(device)
+
     # make sure every process has same model parameters in the beginning
     broadcast_tensors([p.data for p in model.parameters()], 0)
     set_dropout(model, opts.dropout)
+    
 
     # Prepare optimizer
     optimizer = build_optimizer(model, opts)
+    
+
+    for param_group in optimizer.param_groups:
+        print(param_group.keys())
+ 
     model, optimizer = amp.initialize(model, optimizer,
                                       enabled=opts.fp16, opt_level='O2')
     global_step = 0
@@ -190,10 +220,14 @@ def main(opts):
     # quick hack for amp delay_unscale bug
     optimizer.zero_grad()
     optimizer.step()
+    
     while True:
         for step, batch in enumerate(train_dataloader):
+            #print('UNITER Pooler:', model.uniter.pooler.dense.weight.data.cpu().numpy()[0,0])
+            #print('MEMNET NN:', model.memnet.nn.weight.data.cpu().numpy()[0,0])
+            #print('Fusion Pooler:', model.pooler.dense.weight.data.cpu().numpy()[0,0])
             n_examples += batch['input_ids'].size(0)
-
+                         
             loss = model(batch, compute_loss=True)
             loss = loss.mean()
             delay_unscale = (step+1) % opts.gradient_accumulation_steps != 0
@@ -218,7 +252,7 @@ def main(opts):
                 for i, param_group in enumerate(optimizer.param_groups):
                     if i == 0 or i == 1:
                         param_group['lr'] = lr_this_step * opts.lr_mul
-                    elif i == 2 or i == 3:
+                    elif i == 2 or i == 3 or i == 4 or i == 5:
                         param_group['lr'] = lr_this_step
                     else:
                         raise ValueError()
@@ -262,6 +296,7 @@ def main(opts):
                 break
         if global_step >= opts.num_train_steps:
             break
+
         n_epoch += 1
         LOGGER.info(f"finished {n_epoch} epochs")
     if opts.num_train_steps % opts.valid_steps != 0:
@@ -284,11 +319,23 @@ def validate(model, val_loader, label2ans):
     st = time()
     results = {}
     for i, batch in enumerate(val_loader):
-        scores = model(batch, compute_loss=False)        
-        targets = batch['targets']
-        targets_np = targets.cpu().numpy() 
+        scores = model(batch, compute_loss=False)
+        targets = batch['targets'] 
+
+        '''
+        for i in range(scores.size(0)):
+            print(i)
+            
+            print(targets[i])
+            print(label2ans[targets[i].item()])
+            
+            loss = F.cross_entropy(
+                scores[i,:].unsqueeze(0), targets[i].unsqueeze(0), reduction='sum')
+            print(loss)
+        exit()
+        '''
         loss = F.cross_entropy(
-            scores, targets, reduction='sum')     
+            scores, targets, reduction='sum')
         val_loss += loss.item()
         tot_score += compute_score_with_logits(scores, targets).sum().item()
         answers = [label2ans[i]

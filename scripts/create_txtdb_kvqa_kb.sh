@@ -4,6 +4,8 @@
 OUT_DIR=$1
 ANN_DIR=$2
 FEAT_DIR=$3
+MEMNET=$4
+FOLD=$5
 
 set -e
 
@@ -26,7 +28,8 @@ for SPLIT in 'train_questions' 'val_questions' 'test_questions'; do
         -w /src chenrocks/uniter \
         python prepro_kvqa_kb.py --annotation /ann/dataset.json \
                          --output /txt_db/kvqa_${SPLIT}.db \
-                         --split ${COUNTER}
+                         --split ${COUNTER} --use_memnet ${MEMNET} \
+                         --fold ${FOLD}
     let "COUNTER++"
 done
 

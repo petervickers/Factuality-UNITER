@@ -1,7 +1,7 @@
 {
     "train_txt_db": "/txt/kvqa_train_questions.db",
 	"label_to_ans": "/txt/kvqa_train_questions.db/idx2ans.json",
-    "img_db": "/img/all",
+    "img_db": "/img",
     "val_txt_db":   "/txt/kvqa_val_questions.db",
     "test_txt_db": "/txt/kvqa_test_questions.db", 
     "checkpoint": "/pretrain/uniter-base.pt",
