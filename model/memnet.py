@@ -80,6 +80,9 @@ class MemNN(nn.Module):
 
             p = torch.bmm(m, u.unsqueeze(2)).squeeze() # (bs, story_len)
             p = F.softmax(p, -1).unsqueeze(1)          # (bs, 1, story_len)
+            if len(p.shape) == 2:
+                p = torch.unsqueeze(p, -1)
+            #print(f'p {p.shape}, c {c.shape}')
             o = torch.bmm(p, c).squeeze(1)             # use m as c, (bs, embd_size)
             u = o + u # (bs, embd_size)
 

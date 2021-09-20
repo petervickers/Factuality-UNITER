@@ -4,10 +4,12 @@
 OUT_DIR=$1
 ANN_DIR=$2
 FEAT_DIR=$3
-USE_FACTS=$4
-FOLD=$5
 
 set -e
+
+echo $OUT_DIR
+echo $ANN_DIR
+echo $FEAT_DIR
 
 if [ ! -d $OUT_DIR ]; then
     mkdir -p $OUT_DIR
@@ -16,26 +18,18 @@ if [ ! -d $ANN_DIR ]; then
     mkdir -p $ANN_DIR
 fi
 
-
-echo $OUT_DIR
-ls $OUT_DIR
-COUNTER=1
-
-echo "With use facts status ${USE_FACTS}"
-for SPLIT in 'train_questions' 'val_questions' 'test_questions'; do
-
+for SPLIT in 'train' 'val'; do
     echo "preprocessing ${SPLIT} annotations..."
     docker run --ipc=host --rm -it \
         --mount src=$(pwd),dst=/src,type=bind \
         --mount src=$OUT_DIR,dst=/txt_db,type=bind \
-        --mount src=$FEAT_DIR,dst=/img_feat,type=bind,readonly \
         --mount src=$ANN_DIR,dst=/ann,type=bind,readonly \
+        --mount src=$FEAT_DIR,dst=/img_feat,type=bind,readonly \
         -w /src chenrocks/uniter \
-        python prepro_kvqa_kb.py --annotation /ann/dataset.json \
-                         --output /txt_db/kvqa_${SPLIT}.db \
-                         --split ${COUNTER} --use_facts ${USE_FACTS} \
-                         --fold ${FOLD}
-    let "COUNTER++"
+        python prepro_okvqa.py --annotation0 /ann/mscoco_${SPLIT}2014_annotations.json \
+                         --annotation1 /ann/OpenEnded_mscoco_${SPLIT}2014_questions.json \
+                         --output /txt_db/okvqa_${SPLIT}.db \
+                         --split ${SPLIT}
 done
 
 echo "done"

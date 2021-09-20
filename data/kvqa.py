@@ -105,7 +105,10 @@ class KvqaEvalDataset(KvqaDataset):
         # text input
         input_ids = example['input_ids']
         input_ids = self.txt_db.combine_inputs(input_ids)
-
+        
+        
+        facts = example['facts']
+        
         # Handle new targets unseen in trains
         target = self.ans2label.get(example['target'], self.ans2label['UNK'])    
         
@@ -114,11 +117,11 @@ class KvqaEvalDataset(KvqaDataset):
 
         attn_masks = torch.ones(len(input_ids) + num_bb, dtype=torch.long)
 
-        return qid, input_ids, img_feat, img_pos_feat, attn_masks, target_torch
+        return qid, input_ids, facts, img_feat, img_pos_feat, attn_masks, target_torch
 
 
 def kvqa_eval_collate(inputs):
-    (qids, input_ids, img_feats, img_pos_feats, attn_masks, targets
+    (qids, input_ids, facts, img_feats, img_pos_feats, attn_masks, targets
      ) = map(list, unzip(inputs))
 
     txt_lens = [i.size(0) for i in input_ids]
@@ -127,6 +130,15 @@ def kvqa_eval_collate(inputs):
     position_ids = torch.arange(0, input_ids.size(1), dtype=torch.long
                                 ).unsqueeze(0)
     attn_masks = pad_sequence(attn_masks, batch_first=True, padding_value=0)
+    
+    story = facts
+    story_len = min(max_story_len, max([len(s) for s in story]))
+    s_sent_len = max([len(sent) for s in story for sent in s])
+    
+    vec_facts = vectorize(facts, story_len, s_sent_len)
+        
+    vec_facts = torch.LongTensor(vec_facts)
+    
     if targets[0] is None:
         targets = None
     else:
@@ -142,6 +154,7 @@ def kvqa_eval_collate(inputs):
 
     batch = {'qids': qids,
              'input_ids': input_ids,
+             'facts': vec_facts,
              'position_ids': position_ids,
              'img_feat': img_feat,
              'img_pos_feat': img_pos_feat,

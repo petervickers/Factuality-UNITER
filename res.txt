@@ -1,0 +1,18 @@
+@ 6000 iter
+
+
+
+
+1xspeed 1xscale
+51.22%
+{'1-hop': 48.2, 'boolean': 83.3, 'comparison': 82.1, 'Multi-Entity': 69.0, 'Multi-Relation': 53.5, 'subtraction': 3.6, '1-hop subtraction': 28.6, 'multi-hop': 64.9, 'spatial': 6.2, 'intersection': 69.5, 'counting': 75.7, '1-hop counting': 68.8}
+
+50xspeed 1xscale
+51.53%
+{'1-hop': 48.2, 'Multi-Relation': 53.8, 'boolean': 84.1, 'multi-hop': 66.1, 'subtraction': 3.4, 'Multi-Entity': 70.2, '1-hop subtraction': 28.8, 'counting': 77.4, 'comparison': 82.9, 'spatial': 7.4, 'intersection': 70.0, '1-hop counting': 73.4}
+
+1xspeed 0xscale
+51.29%
+{'multi-hop': 65.3, 'Multi-Relation': 53.6, '1-hop': 48.2, 'boolean': 83.4, 'comparison': 82.1, 'Multi-Entity': 69.1, 'counting': 75.8, 'spatial': 6.1, '1-hop subtraction': 28.8, 'subtraction': 3.6, 'intersection': 69.6, '1-hop counting': 68.8}
+
+500xspeed 1xscale

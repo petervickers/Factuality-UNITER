@@ -163,7 +163,11 @@ class UniterPreTrainedModel(nn.Module):
         # Load from a PyTorch state_dict
         old_keys = []
         new_keys = []
+        del_keys = []
         for key in state_dict.keys():
+            print(key)
+            if 'vqa_output' in key:
+                del_keys.append(key)
             new_key = None
             if 'gamma' in key:
                 new_key = key.replace('gamma', 'weight')
@@ -172,9 +176,14 @@ class UniterPreTrainedModel(nn.Module):
             if new_key:
                 old_keys.append(key)
                 new_keys.append(new_key)
+
         for old_key, new_key in zip(old_keys, new_keys):
             state_dict[new_key] = state_dict.pop(old_key)
-
+        # TODO: REMOVE. forces training from scratch
+        #state_dict = {}
+        # TODO remove - hacky way to do transfer learning
+        #for key in del_keys:
+        #    state_dict.pop(key)
         missing_keys = []
         unexpected_keys = []
         error_msgs = []

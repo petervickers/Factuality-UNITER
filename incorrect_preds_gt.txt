@@ -1,0 +1,5665 @@
+19229_0, 2001
+15135_0, 2001
+34261_0, 2001
+25494_0, 2001
+34998_1, 2001
+18671_1, 2001
+18568_2, 2001
+23051_0, 2001
+16587_3, 2001
+18741_2, 2001
+15420_0, 2001
+29325_0,24 years
+28281_0,24 years
+34119_1,24 years
+21994_1,24 years
+18242_3,24 years
+34409_1,24 years
+34398_1,24 years
+14290_0,24 years
+34551_0,24 years
+28673_4,24 years
+33159_0,24 years
+17605_0,24 years
+35115_0,24 years
+28257_0,24 years
+18020_0,Oceania
+43449_5,Oceania
+42902_4,Oceania
+30086_0,Oceania
+42902_3,Oceania
+24826_0,Oceania
+43449_8,Oceania
+25822_0,Oceania
+42997_0,Oceania
+32529_0,Oceania
+29068_0,Oceania
+47167_8,Oceania
+28074_0,Oceania
+21546_1,Oceania
+22028_0,Oceania
+28786_0,Oceania
+17647_0,Oceania
+43449_4,Oceania
+23960_1,Oceania
+45342_0,United States of America
+15111_0,United States of America
+22958_0,United States of America
+28475_0,United States of America
+19380_1,United States of America
+17962_0,United States of America
+35127_0,United States of America
+35557_1,72
+15927_1,72
+35486_3,72
+24380_4,72
+27351_0,72
+23393_0,72
+22779_1,72
+15111_1,72
+34982_0,72
+21693_1,72
+26056_0,72
+23708_1,72
+24380_3,72
+26706_0,72
+25495_1,72
+22610_1,Yes
+46832_1,Yes
+44809_4,Yes
+46125_11,Yes
+25947_0,Yes
+22602_0,Yes
+26728_5,Yes
+43857_12,Yes
+44809_1,Yes
+14717_0,Yes
+39760_5,Yes
+29521_1,Yes
+24781_0,Yes
+44111_0,Yes
+27911_0,Yes
+44238_11,Yes
+42772_5,Yes
+44238_13,Yes
+43352_5,Yes
+43352_3,Yes
+44438_13,Yes
+43352_2,Yes
+43352_12,Yes
+45602_10,Yes
+44512_12,Yes
+44512_14,Yes
+44512_18,Yes
+16810_0,Yes
+45602_13,Yes
+45602_5,Yes
+43227_13,Yes
+43227_12,Yes
+43227_0,Yes
+45423_1,Abdel Hamid al-Sarraj
+39409_0,Abdel Hamid al-Sarraj
+44363_11,Abdel Hamid al-Sarraj
+41539_1,Abdel Hamid al-Sarraj
+45658_8,Abdel Hamid al-Sarraj
+43390_14,Abdel Hamid al-Sarraj
+41228_5,Abdel Hamid al-Sarraj
+45052_9,Abdel Hamid al-Sarraj
+43390_4,Abdel Hamid al-Sarraj
+45331_10,Abdel Hamid al-Sarraj
+41617_5,Abdel Hamid al-Sarraj
+36087_1,Abdel Hamid al-Sarraj
+36355_0,Abdel Hamid al-Sarraj
+41617_4,Abdel Hamid al-Sarraj
+45331_16,Abdel Hamid al-Sarraj
+45633_15,Abdel Hamid al-Sarraj
+45052_2,Abdel Hamid al-Sarraj
+43734_11,Abdel Hamid al-Sarraj
+45704_5,Abdel Hamid al-Sarraj
+45658_5,Abdel Hamid al-Sarraj
+43390_3,Abdel Hamid al-Sarraj
+45704_4,Abdel Hamid al-Sarraj
+43799_0,Abdel Hamid al-Sarraj
+41617_2,Abdel Hamid al-Sarraj
+28500_0,Abdel Hamid al-Sarraj
+43390_2,Abdel Hamid al-Sarraj
+45658_14,Abdel Hamid al-Sarraj
+45052_8,Abdel Hamid al-Sarraj
+32248_0,No
+15134_0,No
+23821_0,No
+33571_3,No
+26749_0,No
+14587_0,No
+18885_0,No
+35318_0,No
+14489_0,No
+30515_0,No
+18974_0,No
+24749_3,No
+19431_0,No
+15949_0,No
+14963_1,No
+15883_0,No
+34234_1,No
+35301_0,No
+42555_1,No
+17395_0,North America
+36254_1,North America
+35142_1,North America
+35820_0,North America
+28556_3,North America
+20358_1,North America
+21324_0,North America
+25544_1,North America
+28753_1,North America
+17188_1,North America
+30092_0,North America
+35155_3,North America
+33792_0,North America
+16272_0,North America
+15556_1,North America
+20376_1,North America
+24754_0,Person in the left
+35155_0,Person in the left
+24474_0,Person in the left
+15312_2,Person in the left
+16188_0,Person in the left
+36188_0,Person in the left
+35626_0,Person in the left
+36268_0,Person in the left
+18484_1,Person in the left
+31823_0,Person in the left
+19804_0,Person in the left
+29789_3,Person in the left
+24729_1,Person in the left
+32720_0,Person in the left
+34861_0,Person in the left
+28766_1,Person in the left
+46351_2,English
+44104_4,English
+43117_5,English
+44081_13,English
+19158_1,English
+40411_5,English
+39993_9,English
+44782_5,English
+44104_2,English
+17311_6,English
+47153_3,English
+46293_0,English
+15087_0,English
+41750_12,English
+20858_5,English
+40411_4,English
+41314_8,Person in the left
+46792_14,Person in the left
+3025_2,Person in the left
+39475_1,Person in the left
+43735_1,Person in the left
+45632_10,Person in the left
+45632_5,Person in the left
+43735_8,Person in the left
+42962_2,Person in the left
+44615_11,Person in the left
+42962_9,Person in the left
+42962_5,Person in the left
+45632_2,Person in the left
+43927_5,Person in the left
+44515_5,Person in the left
+44487_11,Person in the left
+43735_12,Person in the left
+44487_5,Person in the left
+43927_6,Person in the left
+1023_6,Person in the left
+43735_2,Person in the left
+25548_0,Person in the left
+42962_3,Person in the left
+43927_1,Person in the left
+43735_11,Person in the left
+1616_4,Person in the left
+25548_1,Person in the left
+35075_3,No
+27427_4,No
+21626_0,No
+24025_0,No
+22927_0,No
+22530_0,No
+35424_4,No
+17094_1,No
+22187_0,No
+29280_0,No
+20675_0,No
+28826_0,No
+23927_0,No
+43500_3,Person in the right
+43040_3,Person in the right
+21203_0,Person in the right
+40576_0,Person in the right
+28182_6,Person in the right
+43500_6,Person in the right
+14333_1,Person in the right
+15821_0,Person in the right
+43500_2,Person in the right
+40576_1,Person in the right
+44675_3,Person in the right
+43040_5,Person in the right
+28635_1,Person in the right
+43040_8,Person in the right
+43040_14,Person in the right
+46829_12,Person in the right
+21443_0,Person in the right
+43040_10,Person in the right
+28182_0,Person in the right
+14146_4,Person in the right
+45968_13,Person in the right
+43935_0,Person in the right
+27738_1,Person in the right
+44514_5,Person in the right
+39760_0,United Kingdom
+19967_2,United Kingdom
+46077_5,United Kingdom
+21925_3,United Kingdom
+24462_0,United Kingdom
+34298_6,United Kingdom
+29832_0,United Kingdom
+22557_1,United Kingdom
+30617_2,United Kingdom
+22753_4,United Kingdom
+43042_0,United Kingdom
+19815_0,United Kingdom
+15934_1,United Kingdom
+31954_0,United Kingdom
+35767_0,United Kingdom
+35093_1,United Kingdom
+31975_0,United Kingdom
+33137_0,United Kingdom
+31812_2,United Kingdom
+30764_0,United Kingdom
+25186_0,United Kingdom
+22338_0,United Kingdom
+33165_0,United Kingdom
+17676_1,United Kingdom
+28536_0,United Kingdom
+33393_2,United Kingdom
+36006_0,United Kingdom
+33245_2,United Kingdom
+29795_1,United States of America
+15506_0,United States of America
+18076_0,United States of America
+28346_1,United States of America
+27725_4,United States of America
+28229_0,United States of America
+32818_0,United States of America
+33398_2,United States of America
+35676_2,United States of America
+29699_1,United States of America
+34439_0,United States of America
+29344_1,United States of America
+25856_0,United States of America
+27186_0,United States of America
+30840_0,United States of America
+31183_2,United States of America
+43104_0, 1964
+39213_13, 1964
+18805_1, 1964
+42928_2, 1964
+43929_5, 1964
+45201_5, 1964
+43356_15, 1964
+45403_1, 1964
+45403_0, 1964
+43356_14, 1964
+18603_0, 1964
+18406_2, 1964
+43929_3, 1964
+45201_3, 1964
+42928_1, 1964
+43356_2, 1964
+20663_5, 1964
+44514_15,Yes
+44445_0,Yes
+44445_1,Yes
+43935_1,Yes
+44731_0,Yes
+43308_5,Yes
+46857_14,Yes
+45229_11,Yes
+44675_0,Yes
+26050_0,Yes
+34566_0,Yes
+21301_1,Yes
+46857_13,Yes
+30068_1,Yes
+42976_12,Yes
+46038_2,Yes
+46829_3,Yes
+19815_1,No
+42555_2,No
+34845_0,No
+35279_5,No
+18398_0,No
+31764_1,No
+34626_0,No
+18983_0,No
+31358_2,No
+19435_0,No
+13344_0,No
+22338_1,No
+23705_6,No
+33571_4,No
+18426_2,No
+24338_0,No
+18123_0,No
+27538_6,No
+16645_0,No
+24091_4,Yes
+18257_3,Yes
+22021_1,Yes
+31575_0,Yes
+15280_0,Yes
+15611_0,Yes
+20779_0,Yes
+30733_0,Yes
+30875_2,Yes
+17730_1,Yes
+17272_0,Yes
+16536_0,Yes
+26252_0,Yes
+18228_1,Yes
+15926_0,Yes
+16587_2,Yes
+29616_0,Yes
+27842_0,Yes
+40762_5,7 years
+41205_0,7 years
+43882_0,7 years
+43858_8,7 years
+46860_1,7 years
+44932_5,7 years
+43858_5,7 years
+43858_4,7 years
+45423_16,7 years
+39409_12,7 years
+43039_1,7 years
+42622_5,7 years
+46979_1,7 years
+41617_12,7 years
+43858_0,7 years
+39409_2,7 years
+41539_0,7 years
+41617_11,7 years
+32768_0,7 years
+38508_8,7 years
+45052_5,7 years
+45633_5,7 years
+43541_5,7 years
+38508_3,7 years
+43390_1,7 years
+43020_6,7 years
+43020_2,7 years
+45331_0,7 years
+18689_1,Shakira
+46747_3,Shakira
+20314_3,Shakira
+33575_3,Shakira
+26969_1,Shakira
+15296_0,Shakira
+22557_0,Shakira
+13713_0,Shakira
+32204_1,Shakira
+34298_1,Shakira
+32204_4,Shakira
+22753_0,Shakira
+46077_0,Shakira
+27874_1,Shakira
+16496_0,Shakira
+20314_1,Shakira
+20639_0,Both
+31840_5,Both
+43857_3,Both
+22270_7,Both
+26967_0,Both
+43240_9,Both
+40273_1,Both
+21658_0,Both
+31840_0,Both
+28266_0,Both
+13615_0,Both
+39760_3,Both
+24280_0,Both
+39760_9,Both
+27800_1,Both
+44111_1,Both
+36274_0,Both
+22107_0,Both
+47832_10,Both
+33393_0,11 years
+15970_0,11 years
+35636_2,11 years
+32114_0,11 years
+30633_2,11 years
+23014_2,11 years
+17624_0,11 years
+33142_0,11 years
+35279_0,11 years
+30725_0,11 years
+33130_0,11 years
+13672_1,11 years
+34600_3,11 years
+26385_3,11 years
+14261_1,11 years
+33020_0,11 years
+31805_0,11 years
+35613_0,11 years
+16620_0,11 years
+20437_0,11 years
+24279_6,Europe
+29140_1,Europe
+23779_0,Europe
+22684_0,Europe
+25794_0,Europe
+26903_0,Europe
+30505_1,Europe
+19515_0,Europe
+19118_1,Europe
+23853_0,Europe
+21548_1,Europe
+25152_0,Europe
+35816_0,Abraham Lincoln
+15110_0,Abraham Lincoln
+17160_0,Abraham Lincoln
+24180_0,Abraham Lincoln
+25576_0,Abraham Lincoln
+35877_1,Abraham Lincoln
+20659_0,Abraham Lincoln
+21892_1,Abraham Lincoln
+42902_1,Abraham Lincoln
+22478_0,Abraham Lincoln
+27414_0,Abraham Lincoln
+26799_0,Abraham Lincoln
+45994_5,Abraham Lincoln
+19872_6,Abraham Lincoln
+34615_0,Europe
+20750_3,Europe
+14261_0,Europe
+16774_1,Europe
+31174_0,Europe
+13943_0,Europe
+32048_0,Europe
+35751_0,Europe
+20253_0,Europe
+34391_0,Europe
+13970_0,Europe
+35395_0,Europe
+23533_0,Europe
+30781_0,Europe
+32181_0,Europe
+31547_0,Europe
+22689_3,Europe
+17759_0,Europe
+33291_2,Europe
+20105_1,United States of America
+20267_1,United States of America
+46077_4,United States of America
+15296_1,United States of America
+19248_0,United States of America
+46987_0,United States of America
+46987_1,United States of America
+22577_3,United States of America
+43875_4,United States of America
+24798_1,United States of America
+13713_1,United States of America
+27874_6,United States of America
+18157_0,United States of America
+19967_6,United States of America
+22270_0,United States of America
+35005_0,United States of America
+20364_0,United States of America
+43042_1,United States of America
+14484_1,United States of America
+45052_4,1
+45633_6,1
+44363_4,1
+38647_5,1
+43020_12,1
+43734_13,1
+45658_3,1
+43734_3,1
+18708_1,1
+44363_2,1
+43020_4,1
+36087_0,1
+43020_10,1
+41617_0,1
+43757_10,1
+23172_1,1
+45052_1,1
+45633_1,1
+45633_0,1
+45658_1,1
+40275_5,1
+44808_13,1
+44363_1,1
+40275_4,1
+43541_0,1
+43636_10,1
+41944_4,1
+43757_4,1
+41944_3,1
+23173_3,1
+34243_5,Yes
+29208_0,Yes
+42902_9,Yes
+22013_0,Yes
+42902_13,Yes
+23777_1,Yes
+29365_1,Yes
+29461_1,Yes
+44566_3,Yes
+27490_0,Yes
+25899_0,Yes
+34399_1,Yes
+22644_0,Yes
+42997_1,Yes
+30303_0,Yes
+41733_3,Both
+41733_12,Both
+43489_15,Both
+43489_4,Both
+43489_1,Both
+39860_0,Both
+39860_14,Both
+39860_6,Both
+39860_5,Both
+39860_8,Both
+39860_10,Both
+43400_8,Both
+3114_1,Both
+43400_14,Both
+3114_13,Both
+37140_14,Both
+3114_11,Both
+43400_1,Both
+44458_2,Both
+43400_5,Both
+43400_3,Both
+3114_0,Both
+1023_9,Both
+3007_6,Both
+39429_3,Both
+40745_5,Both
+3007_3,Both
+39429_5,Both
+30764_4,North America
+23672_2,North America
+27552_0,North America
+23386_0,North America
+18425_2,North America
+29670_1,North America
+31403_2,North America
+15027_4,North America
+15811_1,North America
+32334_2,North America
+22402_0,North America
+18854_0,North America
+31740_1,North America
+36161_0,North America
+29496_1,No
+33969_1,No
+20520_0,No
+23467_1,No
+31821_0,No
+24091_3,No
+26515_3,No
+34084_1,No
+26591_3,No
+25845_1,No
+18398_1,No
+27800_3,Armenia
+46987_9,Armenia
+39760_7,Armenia
+43068_0,Armenia
+21113_1,Armenia
+16247_0,Armenia
+43042_5,Armenia
+26106_0,Armenia
+43240_2,Armenia
+43042_3,Armenia
+27800_0,Armenia
+47832_2,Armenia
+23083_1,Armenia
+29058_1,No
+28882_0,No
+17371_1,No
+29208_1,No
+23148_0,No
+42997_13,No
+23477_0,No
+28558_1,No
+32584_1,No
+27881_0,No
+24181_0,No
+25421_0,No
+21137_1,No
+25529_1,No
+26431_0,No
+42997_4,No
+25899_1,No
+23706_1,No
+27148_1,No
+30132_1,North America
+46155_3,North America
+33542_1,North America
+22490_1,North America
+29938_0,North America
+27351_1,North America
+23393_1,North America
+19238_0,North America
+20144_0,North America
+25537_1,North America
+27640_4,North America
+28455_5,North America
+24531_0,North America
+41282_2,4 years
+21203_5,4 years
+19494_1,4 years
+21203_3,4 years
+44445_5,4 years
+44731_8,4 years
+43935_7,4 years
+30007_1,4 years
+44445_15,4 years
+43040_7,4 years
+19494_4,4 years
+44731_13,4 years
+44731_5,4 years
+43935_13,4 years
+43935_2,4 years
+44675_14,4 years
+46518_0,4 years
+40720_0,4 years
+43500_5,4 years
+25110_1,Yes
+23159_3,Yes
+23431_0,Yes
+14195_0,Yes
+24713_0,Yes
+42902_0,Yes
+21365_0,Yes
+15381_0,Yes
+27732_0,Yes
+21851_0,Yes
+23960_0,Yes
+23710_5,Yes
+32648_1,Yes
+28740_0,Yes
+16863_0,No
+18722_2,No
+19682_0,No
+28780_4,No
+15258_0,No
+22702_0,No
+29789_0,No
+25143_0,No
+27108_0,No
+23520_0,No
+18672_0,No
+19120_1,No
+33274_0,No
+21087_1,No
+13878_0,No
+27427_1,No
+29215_0,No
+15048_3,No
+28049_0,No
+29169_1,No
+23529_1,No
+39213_1,Person in the left
+45201_0,Person in the left
+45201_1,Person in the left
+46544_5,Person in the left
+45572_3,Person in the left
+44197_2,Person in the left
+46544_12,Person in the left
+20663_0,Person in the left
+24913_1,Person in the left
+18406_0,Person in the left
+45862_5,Person in the left
+43242_5,Person in the left
+45862_13,Person in the left
+43242_14,Person in the left
+45862_4,Person in the left
+45862_12,Person in the left
+45572_4,Person in the left
+25068_0,Person in the left
+39253_4,Person in the left
+44197_1,Person in the left
+45862_3,Person in the left
+40232_11,Person in the left
+44197_0,Person in the left
+13661_1,Europe
+30722_1,Europe
+15220_0,Europe
+17997_0,Europe
+22352_0,Europe
+32255_0,Europe
+22355_0,Europe
+36188_1,Europe
+32720_1,Europe
+21397_0,Europe
+15743_0,Europe
+31985_0,Europe
+22705_0,73
+14562_0,73
+29129_1,73
+46155_11,73
+25160_1,73
+24327_1,73
+28985_0,73
+27569_1,73
+28559_1,73
+19322_1,73
+17003_0,73
+28983_0,73
+14608_0,73
+28153_0,73
+13297_0,73
+19863_0,No
+26479_0,No
+24754_1,No
+33326_1,No
+18226_1,No
+32794_0,No
+25392_0,No
+27787_0,No
+34389_0,No
+36189_0,No
+25066_1,No
+21098_1,No
+33990_0,No
+16079_0,No
+28556_4,No
+16819_0,No
+15221_0,1
+46722_1,1
+45931_1,1
+15952_0,1
+28475_1,1
+24316_0,1
+31355_0,1
+32526_1,1
+27230_0,1
+24146_1,1
+25537_0,1
+24015_0,1
+45342_2,1
+24714_1,1
+21472_1,1
+43071_3,United States of America
+23329_0,United States of America
+21408_0,United States of America
+36272_3,United States of America
+17321_5,United States of America
+21168_1,United States of America
+24035_3,United States of America
+47167_0,United States of America
+19650_1,United States of America
+23258_5,United States of America
+21201_1,United States of America
+21545_1,United States of America
+23323_0,United States of America
+19786_1,United States of America
+28321_0,United States of America
+24647_1,United States of America
+20506_1,United States of America
+14919_0,1
+24028_0,1
+33858_2,1
+18368_0,1
+28806_0,1
+32524_0,1
+23435_0,1
+20530_1,1
+19082_0,1
+16168_0,1
+26096_2,1
+14911_0,1
+18613_2,1
+19243_0,1
+26080_0,1
+28370_0,1
+26252_1,1
+34796_0,1
+14037_4,1
+20040_1,Europe
+22518_1,Europe
+19351_0,Europe
+29472_0,Europe
+28780_1,Europe
+20655_0,Europe
+17212_0,Europe
+21647_0,Europe
+21548_0,Europe
+29428_0,Europe
+22140_0,Europe
+20218_0,Europe
+21540_1,Europe
+36126_0,Europe
+32889_1,Europe
+19704_0,Europe
+31576_0,Europe
+28301_4,Europe
+21423_0,Europe
+46099_2,Denmark
+43449_0,Denmark
+18537_0,Denmark
+32320_0,Denmark
+34336_1,Denmark
+29486_0,Denmark
+24470_0,Denmark
+21608_1,Denmark
+35335_1,Denmark
+45994_3,Denmark
+15893_0,Denmark
+23962_1,Denmark
+46099_3,Denmark
+34038_1,Denmark
+22343_0,No
+26639_0,No
+45931_4,No
+42448_0,No
+18109_1,No
+29542_0,No
+35464_0,No
+19872_0,No
+16638_4,No
+27334_0,No
+19649_0,No
+34738_3,No
+16638_3,No
+14701_0,No
+14349_0,No
+17225_3,No
+23257_0,No
+15003_1,No
+23276_0,No
+22390_2,No
+19379_1,No
+23347_6,No
+26340_2,No
+19623_1,No
+23932_3,No
+30487_0,No
+13296_0,No
+16839_0,No
+22865_3,No
+26590_0,No
+34883_0,No
+26340_3,No
+29701_0,No
+21410_0,No
+30494_0,No
+22849_0,No
+32795_0,No
+16019_0,No
+29677_0,No
+14251_0,No
+16193_0,Asia
+29101_1,Asia
+16317_1,Asia
+13955_1,Asia
+20158_0,Asia
+29701_1,Asia
+31941_0,Asia
+17094_0,Asia
+29224_0,Asia
+27945_0,Asia
+23136_0,Asia
+24333_0,Asia
+29008_1,Asia
+20181_0,Asia
+20436_2,Asia
+21410_1,Asia
+21291_1,Yes
+21559_0,Yes
+35465_1,Yes
+31673_0,Yes
+27765_1,Yes
+23012_1,Yes
+23012_3,Yes
+34800_0,Yes
+36268_1,Yes
+27098_0,Yes
+14702_0,Yes
+33520_0,Yes
+13292_3,Yes
+32598_0,Yes
+14353_0,Yes
+34962_0,Yes
+45785_3,83
+45597_5,83
+46917_6,83
+44221_2,83
+41577_14,83
+45807_11,83
+45785_5,83
+29583_1,83
+44808_1,83
+44808_0,83
+43252_0,83
+47002_0,83
+39916_1,83
+46917_1,83
+44996_5,83
+29821_1,83
+43226_0,83
+44996_3,83
+43018_3,83
+44996_4,83
+15087_7,83
+45807_1,83
+45807_0,83
+41577_4,83
+14562_3,Yes
+20580_1,Yes
+45931_3,Yes
+34433_0,Yes
+35464_4,Yes
+36122_1,Yes
+27469_0,Yes
+32203_0,Yes
+20580_3,Yes
+21057_1,Yes
+14608_2,Yes
+19143_1,Yes
+27144_0,Yes
+32987_0,Yes
+14608_3,Yes
+26506_5,Yes
+31034_1,59
+33142_2,59
+34234_0,59
+29369_0,59
+20309_0,59
+30523_3,59
+32334_0,59
+28450_0,59
+13371_0,59
+27676_0,59
+14656_0,59
+20869_0,59
+24749_0,59
+31805_1,59
+18425_0,59
+33642_0,59
+16543_0,59
+28395_0,59
+31598_0,59
+22439_1,39
+43895_13,39
+44351_0,39
+44351_1,39
+24055_0,39
+45371_2,39
+19409_4,39
+43895_5,39
+27953_0,39
+28990_3,39
+22439_0,39
+45682_2,Hillary Clinton
+43311_2,Hillary Clinton
+43311_1,Hillary Clinton
+1028_10,Hillary Clinton
+45173_5,Hillary Clinton
+1028_11,Hillary Clinton
+1028_12,Hillary Clinton
+1023_2,Hillary Clinton
+44594_12,Hillary Clinton
+45086_12,Hillary Clinton
+1028_8,Hillary Clinton
+45626_2,Hillary Clinton
+45626_9,Hillary Clinton
+45626_14,Hillary Clinton
+45626_8,Hillary Clinton
+45626_13,Hillary Clinton
+45626_7,Hillary Clinton
+32327_1,Hillary Clinton
+45626_0,Hillary Clinton
+1616_2,Hillary Clinton
+41597_5,Hillary Clinton
+39378_6,Hillary Clinton
+44515_1,Hillary Clinton
+45653_11,Hillary Clinton
+45653_5,Hillary Clinton
+39378_13,Hillary Clinton
+21624_4,Yes
+20436_0,Yes
+35015_0,Yes
+18212_1,Yes
+22440_0,Yes
+16276_0,Yes
+19582_1,Yes
+22865_4,Yes
+29481_0,Yes
+24493_0,Yes
+19554_0,Yes
+25277_0,Yes
+21426_0,Yes
+31099_0,Yes
+31593_0,Yes
+31812_0,Yes
+35093_0,Yes
+15934_0,Yes
+14426_0,Yes
+17405_0,Yes
+16462_2,Yes
+16537_2,Yes
+13431_0,Yes
+15053_3,Yes
+32489_3,Yes
+15053_2,Yes
+31962_0,Yes
+15783_0,Yes
+23014_3,Yes
+30523_0,Yes
+36208_0,Yes
+17676_0,Yes
+33318_2,Yes
+32958_0,Yes
+23420_1,Yes
+18753_3,Yes
+26385_1,Yes
+33207_0,Yes
+31286_0,Yes
+31346_0,Yes
+18288_0,Yes
+31034_0,Yes
+15789_2,Yes
+18297_0,Yes
+32148_0,Yes
+34600_2,Yes
+16739_2,Yes
+15750_0,Yes
+15662_0,Yes
+16281_0,Yes
+16513_0,Yes
+15131_1,Yes
+20253_1,Yes
+13970_1,Yes
+17810_0,Yes
+24473_1,72
+26969_0,72
+23477_1,72
+26857_0,72
+22528_0,72
+18070_0,72
+23148_1,72
+24335_0,72
+15818_0,72
+32936_0,72
+32204_0,72
+23043_1,72
+25421_3,72
+25888_1,72
+46747_0,72
+16987_0,72
+34099_0,72
+43888_3,72
+34298_0,72
+28232_1,72
+21563_0,Greece
+24453_1,Greece
+43047_0,Greece
+21777_0,Greece
+16680_0,Greece
+44566_14,Greece
+28074_1,Greece
+42902_8,Greece
+15308_0,Greece
+29068_3,Greece
+34243_1,Greece
+42902_11,Greece
+29017_0,Greece
+20258_0,Greece
+14501_5,Greece
+27310_0,Greece
+27135_0,Greece
+41948_2,85
+37400_6,85
+41948_11,85
+43521_6,85
+45684_15,85
+43083_3,85
+45684_11,85
+44389_2,85
+44389_1,85
+43083_15,85
+43153_13,85
+43083_8,85
+43083_1,85
+45684_2,85
+43083_0,85
+44389_5,85
+38149_5,85
+38072_10,85
+38072_8,85
+38149_2,85
+38149_15,85
+41229_14,85
+38072_4,85
+41229_8,85
+45255_17,85
+38149_11,85
+15381_2, 1984
+27482_0, 1984
+18013_0, 1984
+24022_0, 1984
+16796_0, 1984
+35423_0, 1984
+20281_0, 1984
+24453_0, 1984
+22686_0, 1984
+27732_1, 1984
+43449_2, 1984
+28740_1, 1984
+15643_0, 1984
+23431_1, 1984
+43449_3, 1984
+27775_0, 1984
+46293_11,Person in the left
+43018_2,Person in the left
+45785_0,Person in the left
+29821_0,Person in the left
+41577_3,Person in the left
+44104_8,Person in the left
+46293_5,Person in the left
+23178_0,Person in the left
+47153_6,Person in the left
+47207_0,Person in the left
+46351_12,Person in the left
+47153_10,Person in the left
+44996_0,Person in the left
+46351_5,Person in the left
+47153_7,Person in the left
+46351_4,Person in the left
+41577_0,Person in the left
+44104_5,Person in the left
+47153_12,Person in the left
+44782_12,Person in the left
+46351_3,Person in the left
+47153_2,Person in the left
+31708_0,Europe
+36148_0,Europe
+33517_0,Europe
+17260_0,Europe
+30908_0,Europe
+17909_2,Europe
+14654_0,Europe
+31146_0,Europe
+31957_0,Europe
+31742_4,Europe
+26386_1,Europe
+31087_0,Europe
+26386_3,Europe
+30467_0,Europe
+20413_1,Europe
+13478_0,Europe
+13263_1,Europe
+33924_0,Europe
+23064_0,Yes
+19804_1,Yes
+18503_1,Yes
+21115_1,Yes
+23045_1,Yes
+26604_0,Yes
+22105_0,Yes
+18503_3,Yes
+30167_1,Yes
+18187_1,Yes
+31576_2,Yes
+29472_1,Yes
+13292_0,Yes
+19317_0,Yes
+16184_0,Yes
+30332_0,Yes
+45653_12,Barack Obama
+44231_10,Barack Obama
+45653_15,Barack Obama
+45653_3,Barack Obama
+1616_1,Barack Obama
+39378_2,Barack Obama
+1616_0,Barack Obama
+43352_4,Barack Obama
+44238_5,Barack Obama
+45602_11,Barack Obama
+43352_10,Barack Obama
+43352_1,Barack Obama
+43352_0,Barack Obama
+43352_9,Barack Obama
+14534_0,Barack Obama
+43352_11,Barack Obama
+44512_4,Barack Obama
+16810_1,Barack Obama
+44512_1,Barack Obama
+44512_5,Barack Obama
+44438_5,Barack Obama
+43449_6,1
+42902_2,1
+47064_1,1
+26799_1,1
+44566_0,1
+44566_1,1
+34243_0,1
+18537_1,1
+32320_1,1
+21365_2,1
+23139_7,1
+29461_0,1
+29365_0,1
+24470_1,1
+43071_11,1
+26799_3,1
+47167_2,1
+3103_2,Yes
+40999_4,Yes
+1223_1,Yes
+1223_10,Yes
+1223_4,Yes
+39109_1,Yes
+42848_2,Yes
+3103_0,Yes
+42848_1,Yes
+1223_6,Yes
+1223_3,Yes
+3103_4,Yes
+1223_14,Yes
+3103_6,Yes
+1223_7,Yes
+1223_2,Yes
+38632_1,Yes
+1941_5,Yes
+38632_19,Yes
+42191_2,Yes
+1941_13,Yes
+42191_1,Yes
+40679_2,Yes
+41948_15,Yes
+41948_5,Yes
+1941_0,Yes
+37400_10,Yes
+38632_2,Yes
+1941_7,Yes
+38350_3,Person in the right
+42117_16,Person in the right
+41056_3,Person in the right
+19277_0,Person in the right
+39993_2,Person in the right
+17416_4,Person in the right
+39993_0,Person in the right
+39993_1,Person in the right
+42117_4,Person in the right
+14790_0,Person in the right
+23571_0,Person in the right
+26425_0,Person in the right
+45403_9,Person in the right
+45403_11,Person in the right
+45131_15,Person in the right
+45131_14,Person in the right
+42900_3,Person in the right
+42900_12,Person in the right
+45131_3,Person in the right
+17416_0,Person in the right
+42900_4,Person in the right
+43929_12,Person in the right
+43981_0,Person in the right
+45403_2,Person in the right
+45403_13,Person in the right
+45403_10,Person in the right
+29145_1,Person in the right
+42117_0,Person in the right
+25607_1,Person in the right
+28002_0,Europe
+23868_1,Europe
+35816_1,Europe
+20833_0,Europe
+22118_0,Europe
+21570_0,Europe
+35050_0,Europe
+29068_1,Europe
+18003_2,Europe
+42997_3,Europe
+29355_0,Europe
+16064_0,Europe
+35423_1,Europe
+32810_0,Europe
+43888_0,Europe
+32825_0,1
+46155_5,1
+25202_0,1
+24252_4,1
+19322_3,1
+27640_1,1
+24252_3,1
+30151_2,1
+24954_0,1
+21502_0,1
+33814_0,1
+31355_1,1
+20772_0,1
+46722_3,1
+15952_1,1
+35897_0,1
+15819_0,1
+19143_0,1
+25663_0,1
+46722_2,1
+16153_0,Yes
+19379_0,Yes
+31426_0,Yes
+17634_0,Yes
+23932_0,Yes
+35095_0,Yes
+32771_0,Yes
+30520_0,Yes
+22778_0,Yes
+22345_0,Yes
+16740_0,Yes
+28651_3,Yes
+19769_0,Yes
+18349_0,Yes
+14911_1,Yes
+32161_1,Yes
+14860_0,Yes
+22123_0,Yes
+21965_0,Yes
+16079_2,English
+34389_1,English
+33520_3,English
+23064_3,English
+17965_1,English
+29789_5,English
+16050_1,English
+35481_1,English
+1023_16,Yes
+45760_0,Yes
+45632_12,Yes
+41405_12,Yes
+44615_3,Yes
+44515_2,Yes
+45781_5,Yes
+1023_5,Yes
+43958_2,Yes
+44515_4,Yes
+38381_17,Yes
+46792_0,Yes
+38381_4,Yes
+38381_13,Yes
+42194_4,Yes
+45781_4,Yes
+43958_1,Yes
+38381_5,Yes
+38381_0,Yes
+44515_7,Yes
+16267_0,1
+25751_3,1
+21305_0,1
+21574_1,1
+45303_0,1
+19409_1,1
+34105_1,1
+19409_3,1
+22602_1,1
+44809_5,1
+24624_0,1
+18060_1,1
+18879_4,1
+25751_0,1
+30089_0,1
+44809_3,1
+43242_10,1
+27124_0,1
+43817_12,1
+16382_0,1
+39253_3,1
+43242_4,1
+45572_2,1
+45348_12,1
+43817_3,1
+40232_3,1
+43817_2,1
+23454_3,1
+40360_9,1
+43242_2,1
+46544_1,1
+40360_12,1
+40360_5,1
+43610_7,1
+39253_1,1
+40232_2,1
+26392_1,1
+34000_1,1
+41641_2,1
+45862_0,1
+45572_1,1
+41641_4,1
+43817_1,1
+31492_0,Europe
+13676_0,Europe
+29759_0,Europe
+31177_0,Europe
+34293_0,Europe
+30646_3,Europe
+35774_0,Europe
+31742_0,Europe
+34696_2,Europe
+19102_0,Europe
+35941_0,Europe
+15525_0,Europe
+33782_1,Europe
+30646_0,Europe
+26387_3,Europe
+34696_0,Europe
+13336_0,Europe
+16362_0,Europe
+27413_0,Europe
+26344_0,Europe
+15437_0,Europe
+30727_0,Europe
+13263_0,Europe
+34061_1,Europe
+16712_0,Europe
+33161_0,Europe
+14704_0,Europe
+15374_0,Europe
+15382_0,Europe
+38072_1,1
+38149_16,1
+41942_2,1
+38149_8,1
+44846_2,1
+45255_1,1
+38149_13,1
+38149_9,1
+38072_2,1
+41942_4,1
+45255_11,1
+1023_13,1
+46792_3,1
+39475_20,1
+41614_1,1
+41314_4,1
+3025_0,1
+39475_13,1
+46792_6,1
+41182_11,1
+3025_9,1
+39931_2,Joan Crawford
+43480_0,Joan Crawford
+45256_5,Joan Crawford
+43480_1,Joan Crawford
+39367_2,Joan Crawford
+37351_8,Joan Crawford
+39367_1,Joan Crawford
+45285_11,Joan Crawford
+44553_5,Joan Crawford
+44553_16,Joan Crawford
+2952_13,Joan Crawford
+41736_5,Joan Crawford
+45285_16,Joan Crawford
+37351_3,Joan Crawford
+2952_1,Joan Crawford
+39316_8,Joan Crawford
+41736_3,Joan Crawford
+44553_0,Joan Crawford
+44535_4,Joan Crawford
+37351_0,Joan Crawford
+37351_1,Joan Crawford
+37351_2,Joan Crawford
+39316_6,Joan Crawford
+27673_0,80
+23449_1,80
+33190_0,80
+20256_0,80
+28776_1,80
+35109_0,80
+18663_0,80
+19870_0,80
+25834_0,80
+17923_0,80
+28673_3,80
+21947_0,80
+31746_0,80
+13955_0,80
+17967_0,80
+46257_10,Both
+27110_0,Both
+20227_0,Both
+38188_2,Both
+46518_5,Both
+44445_11,Both
+42756_3,Both
+43515_1,Both
+44274_0,Both
+43500_9,Both
+46518_1,Both
+43500_8,Both
+25612_0,Both
+14333_3,Both
+44445_3,Both
+19494_0,Both
+29946_0,Both
+42756_0,Both
+27847_0,Both
+30007_0,Both
+45968_3,Both
+44731_1,Both
+43500_0,Both
+17938_1,Both
+46829_14,Both
+46857_6,Both
+46038_11,Both
+45238_9,Both
+17479_1,Yes
+30855_0,Yes
+17458_0,Yes
+18523_0,Yes
+17909_3,Yes
+15806_0,Yes
+35787_0,Yes
+19098_0,Yes
+34730_2,Yes
+26707_1,Yes
+15897_0,Yes
+31715_0,Yes
+34752_0,Yes
+33917_1,Yes
+33214_0,Yes
+17479_0,Yes
+33405_0,Yes
+34021_0,Yes
+35774_1,Yes
+34730_0,Yes
+13990_0,Yes
+35774_2,Yes
+42900_8,John Maynard Keynes
+45131_9,John Maynard Keynes
+42900_10,John Maynard Keynes
+42928_7,John Maynard Keynes
+45131_5,John Maynard Keynes
+42900_5,John Maynard Keynes
+38350_1,John Maynard Keynes
+42900_13,John Maynard Keynes
+38350_0,John Maynard Keynes
+46674_6,John Maynard Keynes
+38350_2,John Maynard Keynes
+45131_8,John Maynard Keynes
+42900_9,John Maynard Keynes
+42900_7,John Maynard Keynes
+45131_4,John Maynard Keynes
+41750_0,John Maynard Keynes
+42900_2,John Maynard Keynes
+45403_8,John Maynard Keynes
+41056_0,John Maynard Keynes
+41056_1,John Maynard Keynes
+45403_6,John Maynard Keynes
+42928_5,John Maynard Keynes
+45201_12,John Maynard Keynes
+39213_6,John Maynard Keynes
+17450_0,John Maynard Keynes
+19168_4,John Maynard Keynes
+46674_1,John Maynard Keynes
+46674_0,John Maynard Keynes
+42928_3,John Maynard Keynes
+47064_3,Garegin Nzhdeh
+17371_0,Garegin Nzhdeh
+16932_0,Garegin Nzhdeh
+16140_3,Garegin Nzhdeh
+14501_0,Garegin Nzhdeh
+27528_0,Garegin Nzhdeh
+28237_1,Garegin Nzhdeh
+27148_0,Garegin Nzhdeh
+23372_0,Garegin Nzhdeh
+35816_3,Garegin Nzhdeh
+25529_0,Garegin Nzhdeh
+21137_0,Garegin Nzhdeh
+28408_0,Garegin Nzhdeh
+26963_0,Garegin Nzhdeh
+42902_10,Garegin Nzhdeh
+28838_0,Garegin Nzhdeh
+23706_0,Garegin Nzhdeh
+23868_0,Garegin Nzhdeh
+42902_5,Garegin Nzhdeh
+35247_0,Garegin Nzhdeh
+25111_0,Garegin Nzhdeh
+27427_3,No
+21595_0,No
+24333_1,No
+33190_2,No
+16327_0,No
+36330_1,No
+17923_2,No
+36105_0,No
+29325_3,No
+34551_1,No
+32791_0,No
+24742_0,No
+19120_0,No
+27828_0,No
+35424_0,No
+27327_0,No
+24028_1,No
+18255_0,No
+31528_0,No
+16870_0,No
+18505_0,No
+13782_1,No
+26340_0,No
+27725_1,No
+15003_0,No
+27105_1,No
+23435_2,No
+34154_0,No
+27768_1,No
+18424_0,No
+17734_0,No
+24117_1,No
+23257_1,No
+18451_0,No
+18722_0,No
+15945_0,No
+15295_0,No
+26181_1,No
+29169_0,No
+29222_1,No
+14650_0,No
+18088_1,No
+18783_0,No
+23276_1,No
+20828_1,No
+27427_0,No
+21087_0,No
+15770_0,Norway
+35127_1,Norway
+22396_1,Norway
+20798_0,Norway
+21758_0,Norway
+15595_1,Norway
+45931_0,Norway
+17572_2,Norway
+15631_0,Norway
+46155_0,Norway
+26592_1,Norway
+22580_0,Norway
+17489_0,Norway
+31860_2,United States of America
+31878_0,United States of America
+18530_0,United States of America
+15708_0,United States of America
+32134_4,United States of America
+31571_1,United States of America
+28080_0,United States of America
+30554_0,United States of America
+13727_0,United States of America
+32419_0,United States of America
+18523_3,United States of America
+26958_0,United States of America
+24104_0,United States of America
+18181_0,United States of America
+18523_4,United States of America
+26270_1,United States of America
+35780_0,United States of America
+31860_0,United States of America
+30675_0,United States of America
+15275_0,United States of America
+16523_0,United States of America
+33756_0,United States of America
+25873_0,United States of America
+22741_0,United States of America
+33569_0,United States of America
+17460_0,Yes
+30653_0,Yes
+32100_2,Yes
+22689_4,Yes
+24189_0,Yes
+24889_0,Yes
+24310_0,Yes
+15828_0,Yes
+32162_0,Yes
+16688_0,Yes
+20225_0,Yes
+13562_0,Yes
+20750_0,Yes
+35780_2,Yes
+16761_3,Yes
+22741_1,Yes
+31875_0,Yes
+16073_0,Yes
+16761_2,Yes
+16379_1,Yes
+32100_0,Yes
+30740_0,Yes
+22689_0,Yes
+31860_3,Yes
+45602_9,John F. Kennedy
+43227_1,John F. Kennedy
+43227_2,John F. Kennedy
+43227_6,John F. Kennedy
+45173_0,John F. Kennedy
+45602_7,John F. Kennedy
+44438_4,John F. Kennedy
+43227_9,John F. Kennedy
+45602_4,John F. Kennedy
+40685_5,John F. Kennedy
+40685_18,John F. Kennedy
+41165_8,John F. Kennedy
+39619_0,John F. Kennedy
+41270_5,John F. Kennedy
+41078_5,John F. Kennedy
+39619_16,John F. Kennedy
+39619_4,John F. Kennedy
+39619_3,John F. Kennedy
+41270_10,John F. Kennedy
+22610_0,Shigeru Yoshida
+18259_0,Shigeru Yoshida
+30654_0,Shigeru Yoshida
+28973_1,Shigeru Yoshida
+46125_12,Shigeru Yoshida
+28266_1,Shigeru Yoshida
+18060_0,Shigeru Yoshida
+21486_0,Shigeru Yoshida
+39760_6,Shigeru Yoshida
+36274_1,Shigeru Yoshida
+43068_6,Shigeru Yoshida
+46125_13,Shigeru Yoshida
+31840_4,Shigeru Yoshida
+21658_3,Shigeru Yoshida
+24459_1,Shigeru Yoshida
+43895_1,Shigeru Yoshida
+26904_0,Shigeru Yoshida
+26728_0,Shigeru Yoshida
+44809_0,Shigeru Yoshida
+19281_0,Shigeru Yoshida
+19173_3,Shigeru Yoshida
+46125_3,Shigeru Yoshida
+43042_11,Shigeru Yoshida
+41175_4,2
+41175_3,2
+46968_2,2
+43539_11,2
+43539_5,2
+43539_17,2
+39725_1,2
+43539_16,2
+39425_4,2
+43539_3,2
+41175_0,2
+39922_6,2
+46968_1,2
+46968_0,2
+44920_11,2
+39922_10,2
+39425_2,2
+41208_3,2
+20936_1,2
+44920_5,2
+3480_7,2
+39922_5,2
+43539_1,2
+44920_13,2
+44920_9,2
+39922_3,2
+46672_4,United Kingdom
+43039_5,United Kingdom
+40762_3,United Kingdom
+15954_0,United Kingdom
+41287_0,United Kingdom
+43039_3,United Kingdom
+43039_4,United Kingdom
+39409_11,United Kingdom
+43039_7,United Kingdom
+43039_12,United Kingdom
+46979_5,United Kingdom
+47043_6,United Kingdom
+45423_5,United Kingdom
+39409_13,United Kingdom
+46634_1,United Kingdom
+43858_12,United Kingdom
+46979_6,United Kingdom
+41539_3,United Kingdom
+41539_16,United Kingdom
+41636_0,United Kingdom
+41636_1,United Kingdom
+45331_11,United Kingdom
+43799_12,United Kingdom
+46979_3,United Kingdom
+41539_4,United Kingdom
+43582_1,United Kingdom
+44660_18,United Kingdom
+47043_1,United Kingdom
+39931_8,No
+41165_4,No
+41165_14,No
+41165_9,No
+39926_5,No
+41078_1,No
+40359_11,No
+39926_14,No
+40359_9,No
+41270_0,No
+43480_8,No
+44287_5,No
+39931_12,No
+44787_5,No
+44287_2,No
+44287_14,No
+43415_1,No
+44287_6,No
+39367_10,No
+39926_2,No
+39926_1,No
+39634_0,No
+39931_13,No
+43480_5,No
+39931_4,No
+44787_3,No
+40359_1,No
+39367_9,No
+39367_3,No
+41880_3,Yes
+18078_0,Yes
+28181_0,Yes
+20364_3,Yes
+35828_1,Yes
+46077_3,Yes
+47832_3,Yes
+14372_3,Yes
+21113_0,Yes
+18157_3,Yes
+21449_1,Yes
+22270_4,Yes
+23083_3,Yes
+29254_1,Yes
+43875_3,Yes
+22511_1,Yes
+39760_2,Yes
+14372_1,Yes
+33508_1,Yes
+16964_1,Yes
+19967_3,Yes
+43240_1,Yes
+30174_0,Netherlands
+21287_0,Netherlands
+14640_0,Netherlands
+16955_0,Netherlands
+17262_0,Netherlands
+14462_0,Netherlands
+14935_1,Netherlands
+16869_0,Netherlands
+14997_0,Netherlands
+18983_1,Netherlands
+17588_0,Netherlands
+14159_0,Netherlands
+25394_0,Netherlands
+31787_2,Netherlands
+20073_0,Netherlands
+28708_0,Netherlands
+17736_1,Netherlands
+17299_0,Netherlands
+29496_0,Netherlands
+22331_1,Netherlands
+19273_1,Yes
+34528_1,Yes
+40273_0,Yes
+43857_2,Yes
+43857_6,Yes
+19173_1,Yes
+24194_0,Yes
+28973_0,Yes
+22742_0,Yes
+29066_5,Yes
+43240_11,Yes
+21925_7,Yes
+24459_5,Yes
+43240_13,Yes
+18078_1,Yes
+39760_4,Yes
+43042_2,Yes
+20305_1,Yes
+26592_0,No
+22554_0,No
+30689_0,No
+29041_0,No
+17572_0,No
+16313_0,No
+25794_1,No
+28466_0,No
+15827_0,No
+19406_1,No
+36271_1,No
+13364_0,No
+16463_3,No
+24837_0,No
+27177_0,No
+34997_0,No
+17437_0,No
+19207_0,No
+22904_0,No
+20520_1,No
+28651_0,No
+33299_2,No
+29271_4,No
+29519_0,No
+29271_3,No
+34909_0,No
+31575_2,No
+32103_0,No
+33066_0,No
+27601_0,No
+18399_0,No
+17762_0,No
+23396_0,No
+27130_0,No
+14586_4,No
+30977_0,No
+30875_0,No
+23705_1,No
+18741_4,No
+33969_0,No
+24253_2,No
+18257_0,No
+23467_0,No
+25165_0,No
+16274_0,No
+16587_0,No
+16680_1,73
+28190_0,73
+42997_12,73
+26077_4,73
+24473_0,73
+20258_1,73
+29208_3,73
+24223_0,73
+29208_4,73
+32529_1,73
+19779_0,73
+24826_1,73
+22013_5,73
+29058_0,73
+30086_5,73
+39922_8,2
+39425_0,2
+39425_1,2
+43539_0,2
+3480_6,2
+44920_3,2
+43410_8,2
+45408_11,2
+39922_4,2
+43410_13,2
+45408_5,2
+45408_14,2
+43410_5,2
+39922_0,2
+43410_4,2
+40917_12,2
+41208_12,2
+39922_2,2
+44920_0,2
+41208_2,2
+24177_4,2
+44383_14,2
+40917_5,2
+28673_0,74
+18760_0,74
+33058_0,74
+23749_0,74
+36138_2,74
+21624_0,74
+27168_3,74
+34400_0,74
+30200_0,74
+35638_0,74
+34409_0,74
+34119_0,74
+33954_0,74
+35073_0,74
+16153_5,74
+31108_0,74
+26043_0,74
+28651_1,74
+41641_8,United States of America
+42922_9,United States of America
+42922_12,United States of America
+44783_5,United States of America
+42922_4,United States of America
+43610_5,United States of America
+44783_2,United States of America
+22606_3,United States of America
+20415_5,United States of America
+44783_15,United States of America
+40232_0,United States of America
+45614_2,United States of America
+45666_9,United States of America
+44783_4,United States of America
+42922_2,United States of America
+45666_3,United States of America
+42922_5,United States of America
+45666_2,United States of America
+45614_11,United States of America
+41641_0,United States of America
+42080_3,United States of America
+45666_13,United States of America
+22606_0,United States of America
+27614_0,76
+42963_6,76
+36347_0,76
+45666_0,76
+43058_1,76
+30209_0,76
+42080_1,76
+45847_3,76
+45847_16,76
+42202_0,76
+38188_7,76
+43515_11,76
+46080_5,76
+36121_1,76
+44274_2,76
+45847_2,76
+42963_1,76
+46080_2,76
+44274_4,76
+43515_10,76
+40720_9,76
+23159_1,72
+19577_3,72
+25393_1,72
+26534_1,72
+16173_3,72
+46099_8,72
+33613_1,72
+26198_0,72
+26423_0,72
+29309_0,72
+30284_1,72
+13672_0,72
+15789_0,72
+26388_1,72
+34600_0,72
+20750_1,72
+26385_0,72
+32901_0,72
+34083_1,72
+18490_0,72
+27914_0,72
+32775_1,72
+16393_0,72
+31919_0,72
+16295_0,72
+31778_0,72
+22689_1,72
+31533_0,72
+32149_0,72
+19178_0,72
+33517_1,72
+41641_12,No
+45862_2,No
+40232_10,No
+24913_0,No
+40232_5,No
+40232_13,No
+41641_9,No
+42922_7,No
+39253_2,No
+40360_15,No
+39253_0,No
+41641_14,No
+45862_1,No
+40360_2,No
+23454_0,No
+43242_1,No
+18407_2,No
+42080_13,No
+43817_0,No
+18637_0,No
+22606_1,No
+22975_1,No
+42080_12,No
+43308_0,United Kingdom
+19223_1,United Kingdom
+27002_1,United Kingdom
+46038_0,United Kingdom
+33922_0,United Kingdom
+42976_0,United Kingdom
+27002_3,United Kingdom
+46829_1,United Kingdom
+34833_0,United Kingdom
+25633_0,United Kingdom
+44193_13,United Kingdom
+25125_0,United Kingdom
+43129_2,United Kingdom
+18141_0,United Kingdom
+23181_0,United Kingdom
+45238_0,United Kingdom
+15313_0,United Kingdom
+46410_1,United Kingdom
+43402_2,United Kingdom
+46410_0,United Kingdom
+46792_9,Andrew Jackson
+42962_13,Andrew Jackson
+45760_4,Andrew Jackson
+44487_4,Andrew Jackson
+43927_0,Andrew Jackson
+45760_11,Andrew Jackson
+45632_14,Andrew Jackson
+1616_5,Andrew Jackson
+45781_0,Andrew Jackson
+45560_13,Andrew Jackson
+44885_5,Andrew Jackson
+44885_2,Andrew Jackson
+1028_6,Andrew Jackson
+43311_10,Andrew Jackson
+43311_13,Andrew Jackson
+45086_5,Andrew Jackson
+1023_1,Andrew Jackson
+45086_3,Andrew Jackson
+45682_5,Andrew Jackson
+45653_0,Andrew Jackson
+39916_8,2
+29583_6,2
+43252_11,2
+23173_0,2
+38647_1,2
+43636_11,2
+46917_14,2
+44221_9,2
+43757_0,2
+43226_5,2
+44221_11,2
+46917_5,2
+43226_14,2
+45807_3,2
+43252_3,2
+47002_13,2
+41944_0,2
+43252_14,2
+39916_4,2
+43167_0,2
+43226_10,2
+34955_5,2
+43252_4,2
+43636_3,2
+44221_15,2
+45807_4,2
+45807_12,2
+43226_2,2
+44170_2,Person in the left
+19996_0,Person in the left
+44193_0,Person in the left
+44351_3,Person in the left
+29199_0,Person in the left
+35456_0,Person in the left
+29401_7,Person in the left
+24679_7,Person in the left
+24624_1,Person in the left
+24155_0,Person in the left
+45995_5,Person in the left
+29401_0,Person in the left
+46832_2,Person in the left
+44170_0,Person in the left
+45371_14,Person in the left
+45995_2,Person in the left
+25751_1,Person in the left
+24679_0,Person in the left
+16437_1,Person in the left
+39475_15,2
+41314_14,2
+39475_0,2
+41614_2,2
+41314_13,2
+45760_3,2
+41405_5,2
+45632_0,2
+43735_9,2
+45632_1,2
+42962_12,2
+45632_6,2
+43927_10,2
+43927_9,2
+43735_15,2
+45632_3,2
+43735_0,2
+41405_4,2
+43927_3,2
+43735_5,2
+45632_4,2
+42962_1,2
+44615_5,2
+45760_5,2
+45632_8,2
+25110_0,1
+35497_0,1
+29924_1,1
+29147_1,1
+42448_3,1
+28263_0,1
+13358_0,1
+23710_0,1
+45994_2,1
+13785_0,1
+29346_1,1
+42448_5,1
+17321_0,1
+34009_0,1
+18207_0,1
+16173_0,1
+32648_0,1
+29448_0,1
+27144_1,1
+26784_0,Yes
+24619_0,Yes
+24223_1,Yes
+43888_5,Yes
+43888_11,Yes
+33618_2,Yes
+20314_0,Yes
+33618_3,Yes
+26375_0,Yes
+27874_0,Yes
+43047_5,Yes
+19543_1,Yes
+24369_0,Yes
+25481_0,Yes
+19554_3,Europe
+29701_3,Europe
+36294_1,Europe
+19554_2,Europe
+33058_1,Europe
+36330_0,Europe
+14314_1,Europe
+46233_2,Europe
+29701_4,Europe
+21792_0,Europe
+21624_1,Europe
+23435_5,Europe
+28022_0,Europe
+30509_1,Europe
+27768_0,Europe
+24335_1,North America
+22528_1,North America
+33577_0,North America
+46747_2,North America
+42211_8,North America
+22528_3,North America
+29137_0,North America
+27504_0,North America
+17121_4,North America
+33951_0,North America
+24300_1,North America
+24369_1,North America
+38188_0,77
+23733_1,77
+36121_0,77
+28629_0,77
+46257_4,77
+46518_3,77
+40576_9,77
+23733_3,77
+40576_5,77
+40576_8,77
+44445_9,77
+13618_0,77
+21203_1,77
+46080_0,77
+44731_12,77
+44445_2,77
+42756_13,77
+29385_0,No
+14784_0,No
+17932_0,No
+31746_1,No
+16551_2,No
+18663_3,No
+32273_0,No
+24041_0,No
+46233_8,No
+27858_0,No
+15048_0,No
+34117_0,1
+22122_1,1
+13316_0,1
+23962_0,1
+23856_0,1
+43071_1,1
+27664_0,1
+22985_1,1
+24939_0,1
+46099_1,1
+23139_0,1
+21608_0,1
+20246_0,1
+28161_0,1
+36086_2,1
+45994_0,1
+21168_0,1
+31364_3,1
+21201_0,1
+36086_4,1
+15847_0,No
+27002_0,No
+45229_0,No
+44193_6,No
+26495_0,No
+44193_3,No
+27024_1,No
+24069_0,No
+45995_6,No
+44170_6,No
+46832_9,No
+43402_0,No
+39128_6,No
+43129_0,No
+43402_1,No
+45303_2,No
+44351_7,No
+27533_0,No
+30858_0,No
+21305_1,No
+27538_0,4 years
+33348_2,4 years
+42555_0,4 years
+33348_3,4 years
+21426_1,4 years
+28395_1,4 years
+26390_0,4 years
+25604_0,4 years
+31764_0,4 years
+17422_0,4 years
+33247_0,4 years
+14426_1,4 years
+23792_0,4 years
+34651_0,4 years
+31740_3,4 years
+17781_1,4 years
+31099_2,4 years
+13342_0,4 years
+31740_4,4 years
+22598_1,4 years
+32686_0,4 years
+16574_0,4 years
+34667_0,4 years
+29039_0,Europe
+33488_1,Europe
+18865_0,Europe
+27168_0,Europe
+18699_0,Europe
+13782_0,Europe
+34261_1,Europe
+21295_0,Europe
+30733_3,Europe
+22211_0,Europe
+28295_0,Europe
+16811_0,Europe
+30496_0,Europe
+23172_4,Asia
+40275_3,Asia
+38647_4,Asia
+40275_9,Asia
+38647_3,Asia
+45658_0,Asia
+41944_5,Asia
+45331_1,Asia
+38508_2,Asia
+40275_2,Asia
+43541_1,Asia
+43167_16,Asia
+38508_1,Asia
+43167_5,Asia
+40275_13,Asia
+43252_12,Asia
+43167_17,Asia
+43757_9,Asia
+23173_4,Asia
+18708_0,Asia
+45807_2,Asia
+43734_1,Asia
+34955_2,Asia
+46917_2,Asia
+46917_8,Asia
+23173_1,2
+47002_3,2
+23172_0,2
+43734_0,2
+47002_5,2
+41944_1,2
+43252_13,2
+43226_6,2
+45785_2,2
+43018_11,2
+41577_11,2
+47207_3,2
+44996_11,2
+44996_10,2
+47207_5,2
+41577_5,2
+43018_5,2
+21387_0,2
+46293_13,2
+46351_8,2
+43018_1,2
+44081_2,2
+15556_0,72
+27954_1,72
+20376_0,72
+28826_1,72
+30167_0,72
+32153_0,72
+17063_0,72
+32722_0,72
+26576_0,72
+28792_0,72
+14615_0,72
+22187_3,72
+28537_1,72
+33495_0,72
+18424_2,72
+21954_0,72
+15312_0,72
+14564_0,72
+30046_1,72
+13605_0,72
+33945_0,72
+17754_0,72
+27858_1,72
+34038_0,4 years
+26291_0,4 years
+36272_0,4 years
+32987_2,4 years
+28265_0,4 years
+13889_0,4 years
+32987_1,4 years
+21503_0,4 years
+19650_0,4 years
+20497_0,4 years
+19649_1,4 years
+26506_2,4 years
+31364_2,4 years
+20832_0,4 years
+29542_3,4 years
+26506_3,4 years
+1223_12,Person in the right
+40999_2,Person in the right
+1941_4,Person in the right
+43521_2,Person in the right
+1941_2,Person in the right
+38632_5,Person in the right
+15860_1,Person in the right
+37400_1,Person in the right
+43521_5,Person in the right
+1941_1,Person in the right
+15860_0,Person in the right
+1941_3,Person in the right
+43083_7,Person in the right
+44389_11,Person in the right
+41948_1,Person in the right
+43083_4,Person in the right
+38072_0,Person in the right
+38149_4,Person in the right
+38149_6,Person in the right
+38072_5,Person in the right
+41229_2,Person in the right
+39475_8,Person in the right
+46792_5,Person in the right
+41614_5,Person in the right
+39475_14,Person in the right
+41314_2,Person in the right
+39475_2,Person in the right
+21106_0,Africa
+26959_0,Africa
+29454_0,Africa
+17575_0,Africa
+20040_0,Africa
+22518_0,Africa
+46233_7,Africa
+28301_0,Africa
+19472_0,Africa
+22773_0,Africa
+19870_1,Africa
+22874_1,Africa
+26643_0,Africa
+20256_1,Africa
+34418_0,Africa
+28780_0,Africa
+25834_1,Africa
+45097_5,Yes
+19720_1,Yes
+1553_5,Yes
+42735_13,Yes
+41821_1,Yes
+45097_4,Yes
+47077_12,Yes
+1553_1,Yes
+45834_8,Yes
+45834_5,Yes
+1553_3,Yes
+45096_0,Yes
+1553_0,Yes
+45834_4,Yes
+19720_0,Yes
+47077_5,Yes
+45834_6,Yes
+41175_11,Yes
+39725_6,Yes
+47077_4,Yes
+45097_1,Yes
+43101_14,Yes
+43101_5,Yes
+43101_2,Yes
+39725_8,Yes
+14545_0,Yes
+41175_5,Yes
+39425_5,Yes
+39725_4,Yes
+43047_9,Andrew Jackson
+28002_1,Andrew Jackson
+26431_1,Andrew Jackson
+43047_11,Andrew Jackson
+17121_0,Andrew Jackson
+34821_0,Andrew Jackson
+21766_0,Andrew Jackson
+27116_1,Andrew Jackson
+43047_4,Andrew Jackson
+21450_0,Andrew Jackson
+25038_1,Andrew Jackson
+19496_0,Andrew Jackson
+43047_2,Andrew Jackson
+32864_1,Andrew Jackson
+21670_1,Andrew Jackson
+17064_0,Andrew Jackson
+28556_0,62
+15587_0,62
+24105_1,62
+22187_1,62
+34798_0,62
+22927_1,62
+25066_0,62
+30505_0,62
+29454_4,62
+22314_0,62
+19472_1,62
+19931_1,62
+25128_0,62
+28861_2,62
+33866_0,62
+14940_0,62
+35424_1,62
+16463_0,United States of America
+13605_3,United States of America
+22740_0,United States of America
+26804_0,United States of America
+24480_0,United States of America
+35447_0,United States of America
+29117_3,United States of America
+21647_1,United States of America
+22036_0,United States of America
+27765_0,United States of America
+34861_4,United States of America
+21291_0,United States of America
+29261_1,United States of America
+26563_0,United States of America
+36271_0,United States of America
+35465_0,United States of America
+13605_1,United States of America
+19273_0,Yes
+47832_4,Yes
+24610_1,Yes
+46987_2,Yes
+25513_0,Yes
+48007_3,Yes
+20305_0,Yes
+46077_9,Yes
+23083_0,Yes
+24610_0,Yes
+48007_0,Yes
+20267_0,Yes
+26077_3,1
+42997_9,1
+28372_0,1
+17371_3,1
+43047_3,1
+23063_0,1
+42997_5,1
+42211_1,1
+47064_4,1
+28552_1,1
+42211_0,1
+33618_0,1
+32280_0,1
+42997_10,1
+18013_2,1
+42997_8,1
+22013_1,1
+21928_0,1
+16156_0,United States of America
+20103_2,United States of America
+33520_4,United States of America
+35820_1,United States of America
+29523_0,United States of America
+25099_0,United States of America
+29861_0,United States of America
+20350_0,United States of America
+35443_0,United States of America
+22489_0,United States of America
+21324_1,United States of America
+22684_1,United States of America
+19576_0,United States of America
+25539_0,United States of America
+27146_1,United States of America
+40576_7,1
+43479_9,1
+45614_0,1
+44274_3,1
+43479_11,1
+43479_3,1
+43479_14,1
+27110_3,1
+38188_3,1
+43515_9,1
+43479_4,1
+45614_1,1
+25817_1,1
+44274_5,1
+43024_0,1
+43515_2,1
+43515_5,1
+45514_5,1
+43479_2,1
+25817_3,1
+46080_3,1
+46257_3,1
+21616_1,1
+44274_9,1
+38188_1,1
+23674_0,Asia
+27108_1,Asia
+29428_1,Asia
+20218_1,Asia
+19406_0,Asia
+23012_0,Asia
+33689_0,Asia
+24560_0,Asia
+13661_0,Asia
+15779_0,Asia
+21901_0,Asia
+13718_0,Asia
+43351_11,Person in the left
+37140_5,Person in the left
+41733_0,Person in the left
+43489_9,Person in the left
+43489_2,Person in the left
+41733_16,Person in the left
+43489_5,Person in the left
+39860_9,Person in the left
+39860_12,Person in the left
+39860_16,Person in the left
+39860_4,Person in the left
+39860_2,Person in the left
+39860_11,Person in the left
+39860_3,Person in the left
+43400_17,Person in the left
+3114_9,Person in the left
+44458_11,Person in the left
+43400_16,Person in the left
+43400_13,Person in the left
+44458_1,Person in the left
+3114_14,Person in the left
+3114_12,Person in the left
+3007_14,Person in the left
+39109_16,Person in the left
+42195_6,Person in the left
+46986_1,Person in the left
+39109_7,Person in the left
+1023_8,Person in the left
+46986_0,Person in the left
+3100_13,Both
+42076_11,Both
+44509_5,Both
+44509_16,Both
+44535_2,Both
+45110_2,Both
+44509_2,Both
+45032_17,Both
+45032_12,Both
+43678_10,Both
+39855_12,Both
+43678_8,Both
+43678_2,Both
+39617_6,Both
+45032_7,Both
+45032_11,Both
+44483_5,Both
+3100_9,Both
+44483_13,Both
+41201_5,Both
+45032_5,Both
+41201_17,Both
+39316_2,Both
+39316_0,Both
+38532_6,Both
+39855_6,Both
+44483_6,Both
+39855_3,Both
+30125_0,1
+43449_1,1
+23671_0,1
+21665_1,1
+28161_1,1
+20924_1,1
+26588_0,1
+20905_0,1
+35877_0,1
+13889_1,1
+43071_2,1
+30155_0,1
+20246_1,1
+15386_0,1
+34117_1,1
+33613_0,1
+33135_0,No
+28926_0,No
+33917_0,No
+18310_0,No
+30646_2,No
+36133_0,No
+13459_0,No
+19102_3,No
+33880_0,No
+26387_1,No
+13728_1,No
+15115_0,No
+26386_0,No
+26387_0,No
+13478_2,No
+13728_0,No
+33782_0,No
+15451_0,No
+31021_0,No
+20413_0,No
+17206_0,No
+36134_0,No
+33659_0,No
+24931_0,No
+34061_0,No
+18263_0,No
+14077_0,No
+31720_0,No
+41636_19,3
+29948_0,3
+46979_13,3
+43582_15,3
+43882_2,3
+43582_5,3
+43039_8,3
+47043_15,3
+47043_5,3
+43582_4,3
+41636_4,3
+41636_3,3
+39409_6,3
+41287_1,3
+43582_3,3
+43582_2,3
+45423_11,3
+41539_7,3
+43039_2,3
+43882_1,3
+44932_3,3
+42622_2,3
+43858_3,3
+46634_0,3
+46860_0,3
+43858_7,3
+39409_10,3
+41539_17,3
+43858_2,3
+39409_5,3
+45572_5,25 years
+43242_15,25 years
+39253_12,25 years
+23454_1,25 years
+46544_0,25 years
+27057_0,25 years
+40360_10,25 years
+41641_5,25 years
+45572_0,25 years
+41641_3,25 years
+43610_2,25 years
+41641_6,25 years
+40232_1,25 years
+26392_0,25 years
+43058_5,25 years
+38188_6,25 years
+17108_0,25 years
+44783_3,25 years
+45614_3,25 years
+45614_5,25 years
+42202_2,25 years
+42963_2,25 years
+43610_1,25 years
+38188_5,25 years
+46518_12,25 years
+42080_0,25 years
+38188_4,25 years
+23962_5,French
+25793_1,French
+34336_0,French
+28230_0,French
+28107_1,French
+35335_0,French
+21392_0,French
+32808_0,French
+26739_1,French
+27144_3,French
+22343_1,French
+29117_2,Yes
+29140_3,Yes
+21475_0,Yes
+21817_0,Yes
+33326_5,Yes
+18421_0,Yes
+24279_0,Yes
+18503_4,Yes
+35481_0,Yes
+22314_1,Yes
+19253_1,Yes
+28792_1,Yes
+22399_0,Yes
+13464_1,Yes
+21955_0,Yes
+44594_13,Hillary Clinton
+41270_3,Hillary Clinton
+41165_2,Hillary Clinton
+39634_15,Hillary Clinton
+40359_7,Hillary Clinton
+40685_0,Hillary Clinton
+44594_9,Hillary Clinton
+14197_1,Hillary Clinton
+44594_5,Hillary Clinton
+39634_4,Hillary Clinton
+39634_5,Hillary Clinton
+41078_0,Hillary Clinton
+39634_3,Hillary Clinton
+40359_5,Hillary Clinton
+39926_3,Hillary Clinton
+39926_4,Hillary Clinton
+44287_15,Hillary Clinton
+39634_14,Hillary Clinton
+40359_2,Hillary Clinton
+39931_9,Hillary Clinton
+39367_13,Hillary Clinton
+39931_14,Hillary Clinton
+41165_0,Hillary Clinton
+43480_13,Hillary Clinton
+39367_6,Hillary Clinton
+41165_1,Hillary Clinton
+39931_11,Hillary Clinton
+39634_1,Hillary Clinton
+39634_2,Hillary Clinton
+39926_0,Hillary Clinton
+27154_0,North America
+21346_0,North America
+25570_0,North America
+32558_2,North America
+34489_1,North America
+19859_6,North America
+28673_1,North America
+22874_0,North America
+15269_0,North America
+23206_0,North America
+26072_0,North America
+15830_1,North America
+3007_8,2
+39429_7,2
+39429_11,2
+39429_6,2
+39109_12,2
+39109_8,2
+40745_0,2
+39109_5,2
+3007_2,2
+46986_15,2
+3007_4,2
+3007_9,2
+3007_5,2
+3207_6,2
+3103_5,2
+39109_0,2
+3207_11,2
+3207_16,2
+3207_7,2
+1158_4,2
+40999_5,2
+1223_8,2
+39109_2,2
+3103_13,2
+1158_3,2
+3207_5,2
+1158_5,2
+1223_5,2
+40999_1,2
+1158_0,2
+40999_13,2
+40999_6,2
+45560_4,Person in the center
+42176_12,Person in the center
+45560_5,Person in the center
+42176_9,Person in the center
+1616_7,Person in the center
+44640_5,Person in the center
+47004_5,Person in the center
+1023_3,Person in the center
+43311_5,Person in the center
+45173_18,Person in the center
+1028_3,Person in the center
+1028_1,Person in the center
+1028_2,Person in the center
+1028_0,Person in the center
+1023_4,Person in the center
+45086_0,Person in the center
+15264_0,Poland
+17218_3,Poland
+32918_3,Poland
+34664_2,Poland
+34948_0,Poland
+23386_1,Poland
+23411_0,Poland
+26008_0,Poland
+34694_0,Poland
+18861_0,Poland
+15134_1,Poland
+26148_0,Poland
+29671_1,Poland
+15949_1,Poland
+33227_0,Poland
+18373_0,FranÃ§ois Mitterrand
+46860_7,FranÃ§ois Mitterrand
+17622_2,FranÃ§ois Mitterrand
+29948_1,FranÃ§ois Mitterrand
+41636_13,FranÃ§ois Mitterrand
+47043_12,FranÃ§ois Mitterrand
+46860_10,FranÃ§ois Mitterrand
+43882_5,FranÃ§ois Mitterrand
+41636_12,FranÃ§ois Mitterrand
+46860_3,FranÃ§ois Mitterrand
+41287_10,FranÃ§ois Mitterrand
+43882_3,FranÃ§ois Mitterrand
+46634_5,FranÃ§ois Mitterrand
+41287_4,FranÃ§ois Mitterrand
+13447_0,FranÃ§ois Mitterrand
+41287_6,FranÃ§ois Mitterrand
+41636_2,FranÃ§ois Mitterrand
+47043_2,FranÃ§ois Mitterrand
+46860_2,FranÃ§ois Mitterrand
+46860_4,FranÃ§ois Mitterrand
+35229_5,Yes
+15167_0,Yes
+16955_1,Yes
+29933_0,Yes
+33653_0,Yes
+32161_0,Yes
+24311_1,Yes
+33931_0,Yes
+14215_1,Yes
+18496_0,Yes
+35229_0,Yes
+26096_5,Yes
+20706_0,Yes
+35701_0,Yes
+14978_0,Yes
+18260_1,Yes
+29271_0,Yes
+21651_1,Yes
+20971_0,Yes
+26252_3,Yes
+13791_0,Yes
+23868_3,Serbia
+27116_0,Serbia
+17904_0,Serbia
+27490_3,Serbia
+25038_0,Serbia
+30303_1,Serbia
+43047_1,Serbia
+42997_2,Serbia
+18013_3,Serbia
+44566_2,Serbia
+21670_0,Serbia
+34176_0,Serbia
+18013_4,Serbia
+28558_0,Serbia
+28552_0,Serbia
+47064_2,Serbia
+34912_0,Serbia
+22686_2,Serbia
+32584_0,Serbia
+43479_8,Person in the left
+43058_2,Person in the left
+42963_5,Person in the left
+42922_0,Person in the left
+44783_1,Person in the left
+40821_11,Person in the left
+43024_7,Person in the left
+40821_5,Person in the left
+34380_0,Person in the left
+40821_9,Person in the left
+42963_4,Person in the left
+40821_4,Person in the left
+43479_12,Person in the left
+45514_11,Person in the left
+27110_1,Person in the left
+45847_5,Person in the left
+43479_5,Person in the left
+22236_0,Person in the left
+42202_1,Person in the left
+20549_3,Asia
+17642_1,Asia
+16019_1,Asia
+16722_2,Asia
+23283_1,Asia
+17413_1,Asia
+34883_1,Asia
+33110_1,Asia
+29478_1,Asia
+16551_0,Asia
+35671_0,Asia
+23159_0,No
+23856_1,No
+35783_0,No
+14356_0,No
+28551_0,No
+21892_0,No
+36261_0,No
+27237_1,No
+47167_1,No
+41539_5,1
+41539_2,1
+43582_0,1
+44660_5,1
+46672_1,1
+46672_0,1
+39409_4,1
+39409_3,1
+45423_2,1
+44660_17,1
+40762_1,1
+41228_12,1
+43039_0,1
+44660_2,1
+43799_4,1
+41617_13,1
+44660_6,1
+46979_0,1
+43799_2,1
+43390_8,1
+43858_1,1
+43799_3,1
+20549_0,Person in the left
+26181_0,Person in the left
+32771_1,Person in the left
+20828_0,Person in the left
+31528_1,Person in the left
+24752_0,Person in the left
+35638_2,Person in the left
+16722_0,Person in the left
+16317_0,Person in the left
+14251_4,Person in the left
+22865_1,Person in the left
+29101_0,Person in the left
+16845_0,Person in the left
+18362_0,Person in the left
+36178_1,Person in the left
+18255_1,Person in the left
+26043_2,Person in the left
+13867_0,Person in the left
+18505_1,Person in the left
+17225_4,Person in the left
+17069_0,Person in the left
+3152_8,No
+3152_5,No
+3152_9,No
+3152_11,No
+3152_7,No
+3152_12,No
+2888_4,No
+1311_2,No
+1311_6,No
+2888_0,No
+1311_7,No
+2888_9,No
+1311_4,No
+1311_5,No
+2888_13,No
+2888_7,No
+1311_19,No
+3152_3,No
+3152_0,No
+46398_5,No
+46398_14,No
+43303_12,No
+43303_0,No
+43303_6,No
+3358_13,No
+2666_4,No
+2927_0,No
+3358_3,No
+3358_0,No
+3358_9,No
+2666_3,No
+863_0,No
+863_8,No
+43985_2,No
+1296_14,No
+43985_14,No
+863_1,No
+20739_1,Europe
+32774_0,Europe
+19907_0,Europe
+24252_0,Europe
+36257_0,Europe
+25691_1,Europe
+23113_0,Europe
+15539_0,Europe
+33073_1,Europe
+28559_0,Europe
+35486_1,Europe
+24380_1,Europe
+27569_0,Europe
+20395_0,Europe
+34558_0,Europe
+28222_0,Europe
+18925_0,Europe
+26936_0,86
+17413_0,86
+34003_0,86
+46233_1,86
+32625_0,86
+17823_0,86
+23269_0,86
+36294_0,86
+34476_0,86
+14560_0,86
+23347_0,86
+32445_0,86
+22904_1,86
+31122_0,86
+18076_1,86
+35338_0,86
+28592_0,86
+21419_0,86
+30840_2,86
+22865_0,86
+36178_0,86
+45331_5,Yes
+45052_3,Yes
+44660_1,Yes
+45633_14,Yes
+45331_9,Yes
+44363_5,Yes
+43799_1,Yes
+45658_4,Yes
+41944_2,Yes
+42622_1,Yes
+43541_3,Yes
+43541_2,Yes
+43757_7,Yes
+43020_11,Yes
+45052_6,Yes
+43541_4,Yes
+43757_8,Yes
+45633_2,Yes
+43167_7,Yes
+43020_5,Yes
+43734_5,Yes
+43757_2,Yes
+43734_12,Yes
+43734_2,Yes
+43390_0,Yes
+41617_1,Yes
+43757_3,Yes
+45052_0,Yes
+21437_0,94
+15566_1,94
+43875_2,94
+26377_0,94
+17456_0,94
+34099_1,94
+46077_1,94
+34821_2,94
+42211_3,94
+28372_1,94
+34821_3,94
+25421_1,94
+42997_7,94
+24473_3,94
+46747_1,94
+24300_0,94
+17519_0,Andrew Jackson
+28455_0,Andrew Jackson
+21673_0,Andrew Jackson
+33520_1,Andrew Jackson
+17270_1,Andrew Jackson
+20068_0,Andrew Jackson
+27098_1,Andrew Jackson
+16028_0,Andrew Jackson
+21472_0,Andrew Jackson
+14856_1,Andrew Jackson
+32676_1,Andrew Jackson
+20691_0,Andrew Jackson
+36009_0,Andrew Jackson
+21535_0,Andrew Jackson
+14089_0,Andrew Jackson
+23779_1,Andrew Jackson
+26604_1,Andrew Jackson
+44514_8,1
+45968_2,1
+43308_3,1
+17938_3,1
+20761_0,1
+14333_0,1
+46857_4,1
+32660_0,1
+43308_2,1
+43500_1,1
+43040_2,1
+44675_1,1
+46857_3,1
+46829_5,1
+42976_5,1
+46038_5,1
+44514_3,1
+46038_12,1
+42976_13,1
+35439_1,1
+42976_3,1
+33537_0,1
+18439_0,No
+33111_0,No
+16464_0,No
+17034_0,No
+22705_1,No
+34236_0,No
+20144_1,No
+14562_2,No
+29938_1,No
+20506_0,No
+16529_2,No
+35049_1,No
+25559_0,No
+33709_0,No
+32206_1,Europe
+26591_0,Europe
+13546_1,Europe
+25667_0,Europe
+34456_6,Europe
+24338_1,Europe
+24091_0,Europe
+31016_0,Europe
+18741_0,Europe
+32571_0,Europe
+35973_0,Europe
+42555_3,Europe
+21682_0,Europe
+18661_0,Europe
+17218_0,Europe
+31385_0,Europe
+31853_0,Europe
+31358_3,Europe
+23011_0,Europe
+18127_0,Europe
+33571_1,Europe
+33976_0,Europe
+19304_0,Europe
+24749_1,Europe
+13830_0,57
+24333_3,57
+29325_1,57
+16027_0,57
+24943_0,57
+26938_0,57
+23206_1,57
+23929_0,57
+17734_4,57
+32889_0,57
+20917_0,57
+35914_0,57
+32445_5,57
+28537_0,57
+27954_0,57
+16892_0,57
+20921_0,57
+32303_0,57
+22874_3,57
+21540_0,57
+18663_4,57
+18753_4,United Kingdom
+16462_0,United Kingdom
+23533_1,United Kingdom
+16537_0,United Kingdom
+16393_1,United Kingdom
+34673_0,United Kingdom
+32489_0,United Kingdom
+17775_0,United Kingdom
+33318_0,United Kingdom
+15053_0,United Kingdom
+23014_0,United Kingdom
+32181_2,United Kingdom
+35751_3,United Kingdom
+30781_4,United Kingdom
+31843_0,United Kingdom
+17759_2,United Kingdom
+33690_1,United Kingdom
+14859_1,United Kingdom
+15736_0,United Kingdom
+36060_0,United Kingdom
+35326_0,United Kingdom
+18466_0,United Kingdom
+31919_4,United Kingdom
+34606_0,No
+30650_0,No
+35751_2,No
+31888_0,No
+24310_1,No
+17759_3,No
+14619_0,No
+33372_0,No
+35489_0,No
+13970_5,No
+20750_4,No
+15131_0,No
+15339_1,No
+30585_2,No
+31875_2,No
+26262_0,No
+31126_0,No
+26388_0,No
+16774_0,No
+30585_0,No
+35780_3,No
+30675_4,No
+14091_0,No
+47043_0,Buffalo Bill
+41617_16,Buffalo Bill
+40762_0,Buffalo Bill
+43799_13,Buffalo Bill
+43799_5,Buffalo Bill
+43541_12,Buffalo Bill
+36355_1,Buffalo Bill
+39409_1,Buffalo Bill
+38508_6,Buffalo Bill
+43390_12,Buffalo Bill
+28500_1,Buffalo Bill
+44932_0,Buffalo Bill
+41228_11,Buffalo Bill
+43390_10,Buffalo Bill
+45633_3,Buffalo Bill
+43390_5,Buffalo Bill
+45658_12,Buffalo Bill
+43390_13,Buffalo Bill
+45658_2,Buffalo Bill
+44363_12,Buffalo Bill
+45331_2,Buffalo Bill
+41617_3,Buffalo Bill
+45052_10,Buffalo Bill
+45658_10,Buffalo Bill
+17225_1,No
+19859_0,No
+30886_0,No
+24117_0,No
+20549_7,No
+46233_3,No
+15332_0,No
+35095_1,No
+18419_0,No
+18088_0,No
+25851_0,No
+34386_0,No
+16143_0,No
+26905_0,No
+22281_0,No
+16567_0,No
+23449_0,No
+19554_4,No
+29222_0,No
+17415_0,Person in the left
+35636_0,Person in the left
+31809_0,Person in the left
+35615_0,Person in the left
+33966_0,Person in the left
+33372_2,Person in the left
+34490_0,Person in the left
+30930_0,Person in the left
+32901_2,Person in the left
+31724_0,Person in the left
+34714_0,Person in the left
+17093_0,Person in the left
+18753_0,Person in the left
+31460_0,Person in the left
+30633_0,Person in the left
+23420_0,Person in the left
+18128_0,Person in the left
+24889_1,Person in the left
+16268_2,Person in the left
+33128_0,Person in the left
+16739_0,Person in the left
+43500_10,3
+43500_13,3
+44731_2,3
+32660_1,3
+44675_2,3
+28189_0,3
+42756_1,3
+34077_0,3
+41282_0,3
+41282_1,3
+43040_11,3
+14333_4,3
+43040_13,3
+44514_9,3
+28635_5,3
+33537_1,3
+45238_10,3
+45968_5,3
+28635_3,3
+44514_2,3
+26579_0,3
+46038_3,3
+44514_14,3
+46857_5,3
+28538_0,Yes
+22779_0,Yes
+28466_1,Yes
+20493_1,Yes
+26253_0,Yes
+30313_0,Yes
+21153_0,Yes
+24837_1,Yes
+32526_0,Yes
+21399_0,Yes
+18226_0,No
+29789_2,No
+35582_0,No
+15312_3,No
+23849_1,No
+28755_1,No
+23556_0,No
+18503_0,No
+35142_0,No
+21106_1,No
+16803_0,No
+22530_1,No
+28101_1,No
+43227_3,1
+43227_4,1
+43227_5,1
+41270_14,1
+40685_11,1
+44438_2,1
+41165_13,1
+41270_13,1
+41078_4,1
+40685_3,1
+41078_3,1
+39619_2,1
+41078_14,1
+39619_9,1
+41078_8,1
+39619_6,1
+41270_19,1
+39619_8,1
+41078_2,1
+39619_5,1
+41078_11,1
+39619_1,1
+39634_6,1
+41078_16,1
+44438_1,1
+39634_12,1
+45602_0,1
+41165_10,1
+41165_3,1
+41165_5,1
+43415_5,1
+43415_2,1
+14197_0,1
+23768_1,1
+28990_0,1
+22514_1,1
+24196_0,1
+45371_1,1
+44809_2,1
+40273_9,1
+26728_3,1
+30654_4,1
+43068_2,1
+19409_0,1
+40273_8,1
+45995_0,1
+20639_1,1
+19281_1,1
+21658_1,1
+33759_0,1
+28323_0,1
+31840_1,1
+22742_1,1
+19158_0,United States of America
+44104_1,United States of America
+19277_1,United States of America
+41750_9,United States of America
+23571_1,United States of America
+43104_7,United States of America
+26425_1,United States of America
+42117_12,United States of America
+38350_10,United States of America
+38350_14,United States of America
+41056_14,United States of America
+41750_15,United States of America
+43981_3,United States of America
+41750_5,United States of America
+17416_1,United States of America
+38350_4,United States of America
+44782_0,United States of America
+17416_3,United States of America
+41056_6,United States of America
+43981_6,United States of America
+45403_3,United States of America
+46674_2,United States of America
+46674_5,United States of America
+41750_6,United States of America
+24450_0,84
+29066_0,84
+32291_0,84
+35005_1,84
+20364_1,84
+18157_1,84
+48007_13,84
+46077_2,84
+46077_8,84
+26087_0,84
+22270_3,84
+21925_1,84
+35080_0,84
+32447_4,84
+46077_10,84
+33908_0,84
+39760_1,84
+22577_1,84
+32369_0,84
+43735_3,Carlos Queiroz
+42962_11,Carlos Queiroz
+43927_2,Carlos Queiroz
+42962_0,Carlos Queiroz
+42962_8,Carlos Queiroz
+41405_18,Carlos Queiroz
+43735_10,Carlos Queiroz
+42962_10,Carlos Queiroz
+45760_15,Carlos Queiroz
+41405_6,Carlos Queiroz
+44515_17,Carlos Queiroz
+43958_5,Carlos Queiroz
+42194_8,Carlos Queiroz
+42194_6,Carlos Queiroz
+38381_6,Carlos Queiroz
+45781_3,Carlos Queiroz
+42194_15,Carlos Queiroz
+42194_13,Carlos Queiroz
+38381_1,Carlos Queiroz
+38381_3,Carlos Queiroz
+42194_5,Carlos Queiroz
+43958_14,Carlos Queiroz
+42176_2,Carlos Queiroz
+42176_0,Carlos Queiroz
+41831_5,Carlos Queiroz
+15881_1,Carlos Queiroz
+45560_1,Carlos Queiroz
+41831_12,Carlos Queiroz
+45560_11,Carlos Queiroz
+42176_3,Carlos Queiroz
+34003_2, 1963
+33887_0, 1963
+46233_5, 1963
+17746_0, 1963
+19553_0, 1963
+17135_0, 1963
+35075_0, 1963
+33564_0, 1963
+29481_1, 1963
+30282_0, 1963
+25851_5, 1963
+18397_0, 1963
+29677_1, 1963
+16529_0,Estonia
+36122_0,Estonia
+47352_5,Estonia
+21057_0,Estonia
+20020_0,Estonia
+27230_1,Estonia
+15770_1,Estonia
+18109_0,Estonia
+22726_0,Estonia
+36257_5,Estonia
+47352_3,Estonia
+24909_0,Estonia
+18621_0,Estonia
+22861_1,Estonia
+19780_0,72
+22310_0,72
+23372_1,72
+21244_0,72
+42902_7,72
+27490_1,72
+23043_0,72
+14501_1,72
+15644_0,72
+25888_0,72
+28232_0,72
+19543_0,72
+28838_1,72
+44566_5,72
+26077_0,72
+30086_1,72
+29784_0,72
+18020_1,72
+32717_0,72
+25111_1,72
+16988_0,72
+42963_0,Gaston Glass
+43935_11,Gaston Glass
+43515_4,Gaston Glass
+46257_2,Gaston Glass
+40720_5,Gaston Glass
+26167_0,Gaston Glass
+46257_5,Gaston Glass
+40821_0,Gaston Glass
+40821_1,Gaston Glass
+40720_3,Gaston Glass
+40576_3,Gaston Glass
+43515_3,Gaston Glass
+44731_3,Gaston Glass
+45514_3,Gaston Glass
+43479_0,Gaston Glass
+40720_2,Gaston Glass
+45847_1,Gaston Glass
+45847_0,Gaston Glass
+25817_0,Gaston Glass
+43479_1,Gaston Glass
+42756_5,Gaston Glass
+46518_2,Gaston Glass
+41282_3,Gaston Glass
+46080_1,Gaston Glass
+42756_2,Gaston Glass
+29230_1,65
+43610_4,65
+43058_8,65
+42922_3,65
+43610_12,65
+43610_3,65
+22975_3,65
+43058_11,65
+40360_1,65
+18407_5,65
+43058_9,65
+45666_5,65
+42080_5,65
+43058_3,65
+45666_4,65
+18407_0,65
+42202_5,65
+43058_12,65
+45666_8,65
+20415_0,65
+42202_3,65
+36347_1,65
+29230_0,65
+40917_3,4 years
+42736_4,4 years
+43410_0,4 years
+43410_1,4 years
+3480_0,4 years
+3480_3,4 years
+41208_0,4 years
+43786_14,4 years
+42573_4,4 years
+40065_3,4 years
+40917_0,4 years
+42573_6,4 years
+14014_0,4 years
+42736_1,4 years
+42736_0,4 years
+43786_2,4 years
+40065_1,4 years
+40065_0,4 years
+46860_13,4 years
+42103_0,4 years
+42573_1,4 years
+16736_0,4 years
+46860_8,4 years
+41205_12,4 years
+17622_3,4 years
+46634_7,4 years
+2666_7,Yes
+43985_8,Yes
+43985_6,Yes
+1296_13,Yes
+43985_3,Yes
+43985_11,Yes
+1296_0,Yes
+863_7,Yes
+43985_9,Yes
+43985_5,Yes
+1296_2,Yes
+863_3,Yes
+1296_6,Yes
+863_5,Yes
+863_2,Yes
+863_4,Yes
+3107_11,Yes
+3107_7,Yes
+39130_11,Yes
+3107_0,Yes
+3107_10,Yes
+3107_5,Yes
+39130_3,Yes
+39130_5,Yes
+39130_4,Yes
+3107_13,Yes
+3107_17,Yes
+3107_12,Yes
+3107_1,Yes
+3107_2,Yes
+46583_0,Yes
+46583_4,Yes
+46583_1,Yes
+41832_11,Yes
+1297_0,Yes
+37140_10,Yes
+1297_9,Yes
+43351_9,Yes
+41832_17,Yes
+43351_10,Yes
+1297_2,Yes
+46293_3,1
+45785_1,1
+46293_12,1
+46293_10,1
+29580_6,1
+46351_11,1
+44081_7,1
+44104_13,1
+44081_12,1
+46351_10,1
+46293_9,1
+46293_4,1
+46351_9,1
+46351_7,1
+44996_1,1
+47153_4,1
+44081_5,1
+44782_11,1
+28781_1,1
+24518_0,1
+29580_1,1
+32775_4,North America
+16268_0,North America
+31160_0,North America
+14859_0,North America
+33690_0,North America
+18181_1,North America
+13757_3,North America
+28080_3,North America
+13757_2,North America
+34083_0,North America
+30867_0,North America
+30381_0,North America
+35746_0,North America
+15339_0,North America
+33415_0,North America
+34443_0,North America
+32775_0,North America
+33291_0,North America
+24105_0,Yes
+17135_1,Yes
+28755_0,Yes
+27673_1,Yes
+15938_0,Yes
+15602_0,Yes
+14553_0,Yes
+15048_2,Yes
+16152_0,Yes
+19502_0,Yes
+30282_1,Yes
+20435_2,Yes
+22481_0,Yes
+35424_3,Yes
+13582_0,No
+15735_0,No
+17692_0,No
+14426_3,No
+14426_4,No
+20197_0,No
+31403_0,No
+33245_3,No
+23672_0,No
+33571_0,No
+18426_0,No
+13371_4,No
+31094_0,No
+19834_0,No
+24489_0,No
+33348_0,No
+33225_0,No
+15027_0,No
+18238_0,No
+23072_1,United States of America
+16995_1,United States of America
+24954_1,United States of America
+16194_0,United States of America
+24002_1,United States of America
+32979_0,United States of America
+25663_1,United States of America
+17581_0,United States of America
+15718_6,United States of America
+16638_1,United States of America
+26961_1,United States of America
+22985_0,United States of America
+45931_2,United States of America
+46722_5,United States of America
+26741_0,United States of America
+32537_0,United States of America
+23113_1,United States of America
+36259_1,United States of America
+32774_1,United States of America
+36259_3,United States of America
+36259_4,United States of America
+32818_1,Europe
+13592_0,Europe
+36138_3,Europe
+21994_0,Europe
+34398_0,Europe
+27168_4,Europe
+22390_0,Europe
+17225_0,Europe
+32298_0,Europe
+30509_0,Europe
+31747_0,Europe
+41208_9,Person in the right
+45408_3,Person in the right
+20936_0,Person in the right
+41208_5,Person in the right
+43410_11,Person in the right
+41208_13,Person in the right
+43410_15,Person in the right
+3480_11,Person in the right
+43410_2,Person in the right
+42736_12,Person in the right
+39922_1,Person in the right
+43410_14,Person in the right
+44383_12,Person in the right
+41208_8,Person in the right
+40065_9,Person in the right
+32224_0,Person in the right
+44383_8,Person in the right
+46642_12,Person in the right
+40065_6,Person in the right
+3480_5,Person in the right
+3480_10,Person in the right
+40065_14,Person in the right
+44383_13,Person in the right
+42736_5,Person in the right
+40917_4,Person in the right
+42573_2,Person in the right
+42103_11,Person in the right
+32936_5,Europe
+43875_1,Europe
+22664_0,Europe
+25481_1,Europe
+22446_0,Europe
+24747_0,Europe
+30617_0,Europe
+21450_1,Europe
+14484_0,Europe
+33575_5,Europe
+43875_0,Europe
+34099_3,Europe
+28190_1,Europe
+33575_0,Europe
+26784_5,Europe
+23793_0,Europe
+19349_3,Europe
+44483_12,Nancy Reagan
+42076_3,Nancy Reagan
+45685_11,Nancy Reagan
+41931_3,Nancy Reagan
+44483_1,Nancy Reagan
+46438_11,Nancy Reagan
+46438_10,Nancy Reagan
+46438_14,Nancy Reagan
+46438_4,Nancy Reagan
+41931_8,Nancy Reagan
+45685_9,Nancy Reagan
+41931_1,Nancy Reagan
+41821_13,Nancy Reagan
+41821_14,Nancy Reagan
+45834_3,Nancy Reagan
+45096_5,Nancy Reagan
+46644_1,Nancy Reagan
+44626_1,Nancy Reagan
+42735_11,Nancy Reagan
+44626_0,Nancy Reagan
+42735_2,Nancy Reagan
+1553_4,Nancy Reagan
+42735_3,Nancy Reagan
+45834_9,Nancy Reagan
+39725_15,Nancy Reagan
+42735_1,Nancy Reagan
+25793_0,Yes
+35049_3,Yes
+15819_1,Yes
+35897_1,Yes
+29499_0,Yes
+22122_0,Yes
+23886_1,Yes
+24946_1,Yes
+31364_0,Yes
+17180_0,Yes
+36086_0,Yes
+33107_6,Yes
+20625_0,Yes
+34738_1,Yes
+32809_1,Yes
+25968_1,Yes
+30677_0,Yes
+24909_1,Yes
+30281_0,Yes
+26506_0,Yes
+42448_1,Yes
+19582_0,No
+28881_0,No
+14595_0,No
+23435_3,No
+29933_1,No
+18223_1,No
+21980_1,No
+33306_0,No
+27812_0,No
+31445_0,No
+17235_0,No
+36138_0,No
+17799_0,No
+29271_1,No
+17167_0,No
+18066_0,No
+30736_0,No
+43882_11,No
+41287_13,No
+41205_3,No
+41287_2,No
+41287_3,No
+43882_13,No
+46860_5,No
+17622_0,No
+41287_8,No
+45423_12,No
+43582_9,No
+46634_9,No
+41636_9,No
+41636_16,No
+46672_2,No
+41636_5,No
+46634_3,No
+46672_5,No
+41636_15,No
+47043_10,No
+46672_13,No
+46634_2,No
+40762_2,No
+40762_9,No
+47043_3,No
+2952_2,80
+44535_5,80
+39316_9,80
+3100_14,80
+44509_8,80
+45285_1,80
+3100_6,80
+44535_6,80
+45110_3,80
+44509_7,80
+44509_9,80
+45110_5,80
+44509_15,80
+45110_11,80
+39316_11,80
+39316_4,80
+39316_3,80
+39617_18,80
+44483_2,80
+3100_8,80
+39316_13,80
+3100_4,80
+3100_5,80
+44535_1,80
+43678_5,80
+3100_7,80
+39617_8,80
+39617_13,80
+43678_3,80
+3100_15,80
+45110_1,80
+1158_1,57
+3103_11,57
+1158_6,57
+1941_12,57
+37400_13,57
+37400_2,57
+37140_1,57
+43521_12,57
+42191_8,57
+40679_1,57
+42191_5,57
+43521_10,57
+42191_7,57
+37400_8,57
+38632_20,57
+37140_2,57
+40679_11,57
+37140_0,57
+1941_10,57
+1941_8,57
+38632_3,57
+38632_8,57
+38632_9,57
+40679_12,57
+38632_6,57
+37400_4,57
+37400_3,57
+43521_1,57
+37400_5,57
+40679_14,57
+43521_13,57
+45684_0,57
+1296_4,58
+43985_16,58
+1296_1,58
+863_6,58
+1296_3,58
+1296_8,58
+43985_1,58
+43985_4,58
+1296_10,58
+1296_12,58
+43985_0,58
+39130_2,58
+39130_9,58
+3107_4,58
+39130_0,58
+46583_3,58
+46583_2,58
+46583_12,58
+46583_13,58
+46583_5,58
+37140_4,58
+37140_6,58
+37140_3,58
+37140_8,58
+1297_6,58
+41832_5,58
+1297_3,58
+43351_8,58
+43351_3,58
+41832_12,58
+1297_4,58
+43351_0,58
+1297_7,58
+43351_5,58
+1297_1,58
+34635_0,17 years
+32134_0,17 years
+31571_0,17 years
+30817_0,17 years
+31981_0,17 years
+26270_0,17 years
+31824_0,17 years
+20878_0,17 years
+34730_3,17 years
+29759_1,17 years
+33021_2,17 years
+32240_0,17 years
+28926_1,17 years
+33917_3,17 years
+18037_0,17 years
+33021_0,17 years
+17909_0,17 years
+13690_0,17 years
+35672_0,17 years
+30635_0,17 years
+26707_0,17 years
+34118_0,17 years
+3152_10,No
+43303_1,No
+43303_14,No
+43303_13,No
+2666_11,No
+3358_2,No
+863_15,No
+43985_13,No
+1296_5,No
+3107_15,No
+3107_16,No
+39130_17,No
+3107_3,No
+46583_14,No
+37140_9,No
+1297_5,No
+1297_8,No
+43489_14,No
+41733_11,No
+3114_6,No
+44458_5,No
+43400_2,No
+39429_1,No
+42195_1,No
+42195_2,No
+46986_10,No
+39429_13,No
+46986_3,No
+29137_1,1
+35828_0,1
+21925_0,1
+47832_1,1
+41880_0,1
+21449_0,1
+28649_3,1
+41880_1,1
+22577_0,1
+33575_1,1
+33508_0,1
+22511_0,1
+23793_1,1
+22823_1,1
+32204_3,1
+14372_0,1
+18211_0,1
+22434_0,1
+46747_4,1
+45110_0,Person in the right
+38532_9,Person in the right
+46438_12,Person in the right
+39855_16,Person in the right
+45032_2,Person in the right
+42076_10,Person in the right
+39617_14,Person in the right
+38532_8,Person in the right
+38532_5,Person in the right
+3100_3,Person in the right
+43678_0,Person in the right
+42076_2,Person in the right
+3100_0,Person in the right
+39855_10,Person in the right
+3100_2,Person in the right
+3100_1,Person in the right
+41931_15,Person in the right
+38532_4,Person in the right
+42076_4,Person in the right
+39617_3,Person in the right
+38532_12,Person in the right
+39617_19,Person in the right
+41981_5,Person in the right
+44483_0,Person in the right
+38532_3,Person in the right
+45032_1,Person in the right
+41931_11,Person in the right
+46438_5,Person in the right
+39617_2,Person in the right
+41931_12,Person in the right
+38532_2,Person in the right
+39855_1,Person in the right
+14453_0,Person in the right
+45026_4,Person in the right
+29261_0,Ahmet DavutoÄlu
+30489_0,Ahmet DavutoÄlu
+34223_0,Ahmet DavutoÄlu
+23849_7,Ahmet DavutoÄlu
+13464_0,Ahmet DavutoÄlu
+32356_0,Ahmet DavutoÄlu
+30248_0,Ahmet DavutoÄlu
+28780_3,Ahmet DavutoÄlu
+22927_5,Ahmet DavutoÄlu
+28101_0,Ahmet DavutoÄlu
+18484_0,Ahmet DavutoÄlu
+20158_1,Ahmet DavutoÄlu
+20929_1,Ahmet DavutoÄlu
+23849_0,Ahmet DavutoÄlu
+33227_2,No
+18155_0,No
+26273_1,No
+18568_3,No
+36080_0,No
+32918_1,No
+26515_0,No
+32918_4,No
+19304_1,No
+21651_0,No
+18260_0,No
+16645_2,No
+24311_0,No
+30697_0,No
+25956_0,No
+14215_0,No
+41981_1,Narendra Modi
+44450_12,Narendra Modi
+44450_11,Narendra Modi
+44626_14,Narendra Modi
+46438_1,Narendra Modi
+45685_1,Narendra Modi
+41931_0,Narendra Modi
+46644_5,Narendra Modi
+1553_6,Narendra Modi
+41821_12,Narendra Modi
+45096_13,Narendra Modi
+44626_17,Narendra Modi
+41821_17,Narendra Modi
+44626_4,Narendra Modi
+41821_15,Narendra Modi
+45096_12,Narendra Modi
+46644_2,Narendra Modi
+45097_2,Narendra Modi
+45097_3,Narendra Modi
+45096_11,Narendra Modi
+41821_4,Narendra Modi
+1553_8,Narendra Modi
+45096_3,Narendra Modi
+45096_15,Narendra Modi
+41821_6,Narendra Modi
+1553_7,Narendra Modi
+1553_13,Narendra Modi
+45834_12,Narendra Modi
+45096_4,Narendra Modi
+42176_16,Person in the left
+45560_2,Person in the left
+42176_5,Person in the left
+42176_1,Person in the left
+41831_16,Person in the left
+42176_4,Person in the left
+45173_11,Person in the left
+44885_15,Person in the left
+44640_0,Person in the left
+44640_3,Person in the left
+44885_1,Person in the left
+44885_11,Person in the left
+47004_3,Person in the left
+47004_14,Person in the left
+44640_17,Person in the left
+47004_0,Person in the left
+45682_11,Person in the left
+1023_0,Person in the left
+1028_15,Person in the left
+43311_9,Person in the left
+44170_5,Person in the right
+27533_3,Person in the right
+44170_3,Person in the right
+19996_1,Person in the right
+39128_3,Person in the right
+44351_2,Person in the right
+44359_2,Person in the right
+44170_4,Person in the right
+45303_3,Person in the right
+14614_0,Person in the right
+44351_5,Person in the right
+43129_1,Person in the right
+44351_8,Person in the right
+32993_0,Person in the right
+24679_1,Person in the right
+29401_1,Person in the right
+45303_5,Person in the right
+25279_0,Person in the right
+29198_0,Person in the right
+26959_1,64
+23045_0,64
+24105_3,64
+27961_0,64
+22481_1,64
+24025_1,64
+21115_0,64
+29454_1,64
+17196_0,64
+31576_5,64
+25544_0,64
+29385_1,64
+28301_1,64
+24943_1,64
+29454_3,64
+23929_1,64
+18187_0,64
+22537_0,64
+13689_0,No
+13757_0,No
+15806_1,No
+18523_1,No
+36020_3,No
+30130_0,No
+19098_1,No
+31319_0,No
+16761_0,No
+26970_0,No
+34689_0,No
+33164_0,No
+31381_0,No
+16286_0,No
+25022_0,No
+16379_0,No
+34754_0,No
+36020_0,No
+20789_0,No
+23105_1,59
+27179_0,59
+29494_1,59
+27836_0,59
+19224_0,59
+19738_3,59
+25099_5,59
+20261_0,59
+26479_1,59
+21967_1,59
+19737_0,59
+21535_7,59
+24714_0,59
+22371_0,59
+14702_1,59
+26728_1,John Quincy Adams
+40273_3,John Quincy Adams
+21574_0,John Quincy Adams
+16437_0,John Quincy Adams
+30177_1,John Quincy Adams
+43895_2,John Quincy Adams
+40273_4,John Quincy Adams
+45995_1,John Quincy Adams
+27259_0,John Quincy Adams
+43895_3,John Quincy Adams
+14717_2,John Quincy Adams
+30177_3,John Quincy Adams
+34105_0,John Quincy Adams
+43083_12,Yes
+43083_6,Yes
+45684_6,Yes
+43083_5,Yes
+43153_5,Yes
+45684_5,Yes
+45684_12,Yes
+43083_2,Yes
+43153_2,Yes
+43083_10,Yes
+45684_3,Yes
+43083_14,Yes
+43153_1,Yes
+45684_4,Yes
+41229_18,Yes
+41942_1,Yes
+38072_6,Yes
+41229_1,Yes
+41942_5,Yes
+38149_0,Yes
+45255_5,Yes
+38149_3,Yes
+44846_5,Yes
+45255_15,Yes
+45255_13,Yes
+44846_1,Yes
+45255_6,Yes
+45255_9,Yes
+41942_11,Yes
+39993_6,15 years
+39993_4,15 years
+47153_0,15 years
+43981_5,15 years
+43981_4,15 years
+41750_3,15 years
+46674_3,15 years
+43104_14,15 years
+42117_3,15 years
+45403_5,15 years
+43104_3,15 years
+39213_8,15 years
+42900_1,15 years
+19369_4,15 years
+44197_7,15 years
+44197_4,15 years
+39253_10,15 years
+46544_4,15 years
+39253_5,15 years
+46829_4,Africa
+46829_13,Africa
+33922_1,Africa
+43040_1,Africa
+45238_5,Africa
+44514_0,Africa
+25633_1,Africa
+21301_0,Africa
+45968_1,Africa
+46829_2,Africa
+34833_2,Africa
+45229_5,Africa
+25125_1,Africa
+45968_0,Africa
+19223_5,Africa
+45238_2,Africa
+17938_0,Africa
+46857_0,Africa
+25633_3,Africa
+43308_1,Africa
+15847_2,Africa
+23181_1,Africa
+30068_0,Africa
+30828_0,Yes
+34998_0,Yes
+31589_0,Yes
+26023_0,Yes
+31760_2,Yes
+19096_1,Yes
+26749_2,Yes
+16581_0,Yes
+17656_0,Yes
+26273_0,Yes
+31787_0,Yes
+30709_0,Yes
+14935_0,Yes
+14734_0,Yes
+21774_0,Yes
+33317_0,Yes
+32918_0,Yes
+14489_2,Yes
+1311_16,Hussein of Jordan
+2888_2,Hussein of Jordan
+1311_12,Hussein of Jordan
+2888_16,Hussein of Jordan
+1311_3,Hussein of Jordan
+1311_18,Hussein of Jordan
+2888_3,Hussein of Jordan
+2888_11,Hussein of Jordan
+2888_10,Hussein of Jordan
+2888_5,Hussein of Jordan
+1311_17,Hussein of Jordan
+2888_12,Hussein of Jordan
+1311_1,Hussein of Jordan
+2888_1,Hussein of Jordan
+3152_1,Hussein of Jordan
+46398_1,Hussein of Jordan
+46398_3,Hussein of Jordan
+46398_2,Hussein of Jordan
+46398_0,Hussein of Jordan
+43303_5,Hussein of Jordan
+43303_4,Hussein of Jordan
+43303_3,Hussein of Jordan
+43303_2,Hussein of Jordan
+2927_9,Hussein of Jordan
+3358_11,Hussein of Jordan
+2927_4,Hussein of Jordan
+2666_16,Hussein of Jordan
+2927_5,Hussein of Jordan
+3358_4,Hussein of Jordan
+2666_2,Hussein of Jordan
+3358_7,Hussein of Jordan
+2927_3,Hussein of Jordan
+2666_1,Hussein of Jordan
+3358_10,Hussein of Jordan
+2927_14,Hussein of Jordan
+2927_8,Hussein of Jordan
+3358_1,Hussein of Jordan
+2927_1,Hussein of Jordan
+2666_5,Hussein of Jordan
+2927_2,Hussein of Jordan
+2666_9,Hussein of Jordan
+3358_8,Hussein of Jordan
+2666_0,Hussein of Jordan
+3358_5,Hussein of Jordan
+29523_1,Yes
+22489_1,Yes
+35486_0,Yes
+24380_0,Yes
+33107_0,Yes
+25495_0,Yes
+46173_0,Yes
+23708_0,Yes
+15927_0,Yes
+15827_1,Yes
+46173_1,Yes
+45342_1,Yes
+45994_1,North America
+32537_1,North America
+42448_2,North America
+21545_0,North America
+27237_0,North America
+33814_4,North America
+29924_0,North America
+29147_0,North America
+25877_0,North America
+19786_0,North America
+15741_0,North America
+26636_1,North America
+27230_6,North America
+22388_0,North America
+24647_0,North America
+32537_3,North America
+29346_0,North America
+34955_0,United States of America
+47002_2,United States of America
+44996_12,United States of America
+17191_0,United States of America
+45597_12,United States of America
+27804_0,United States of America
+45785_4,United States of America
+16017_0,United States of America
+43636_1,United States of America
+43636_0,United States of America
+44996_9,United States of America
+39916_2,United States of America
+47002_1,United States of America
+39916_0,United States of America
+46917_0,United States of America
+43226_1,United States of America
+44996_14,United States of America
+44996_2,United States of America
+44996_8,United States of America
+44221_1,United States of America
+44996_13,United States of America
+47207_4,United States of America
+29583_0,United States of America
+39213_10,64
+19369_1,64
+39213_5,64
+42900_0,64
+45131_0,64
+19369_3,64
+45201_2,64
+43356_5,64
+29145_0,64
+43929_4,64
+43929_13,64
+25607_0,64
+44197_3,64
+39213_3,64
+43356_4,64
+39213_4,64
+28489_0,64
+42928_0,64
+19369_0,64
+25114_0,64
+44197_11,64
+46544_10,64
+46544_8,64
+43242_12,64
+46544_11,64
+44197_13,64
+39253_6,64
+44111_4,No
+29561_0,No
+28973_3,No
+40273_2,No
+44111_3,No
+23768_0,No
+24280_1,No
+43895_0,No
+22514_0,No
+22107_2,No
+30177_0,No
+44111_2,No
+43857_5,No
+46125_5,No
+43129_5,South America
+43402_5,South America
+46410_2,South America
+26495_1,South America
+43129_3,South America
+18271_0,South America
+43402_3,South America
+42976_1,South America
+46829_0,South America
+26495_3,South America
+45229_3,South America
+46038_1,South America
+44170_8,South America
+27686_0,South America
+23930_1,South America
+27533_1,South America
+19223_0,South America
+45238_1,South America
+29072_0,South America
+21806_0,Switzerland
+32255_1,Switzerland
+22396_0,Switzerland
+24146_0,Switzerland
+22352_1,Switzerland
+27590_0,Switzerland
+21559_1,Switzerland
+17997_1,Switzerland
+22355_1,Switzerland
+28563_0,Switzerland
+14217_0,Switzerland
+13364_2,Switzerland
+27215_0,Switzerland
+16156_5,Switzerland
+35538_0,Switzerland
+21124_1,Switzerland
+30302_1,Switzerland
+23064_1,Switzerland
+32482_1,Switzerland
+26514_0,Switzerland
+17051_0,Yes
+15567_2,Yes
+24252_1,Yes
+34558_1,Yes
+15718_0,Yes
+35049_0,Yes
+16995_0,Yes
+23072_0,Yes
+28948_0,Yes
+16266_0,Yes
+25160_4,Yes
+20580_0,Yes
+16008_0,Yes
+14493_0,Yes
+25160_3,Yes
+15587_1,No
+30302_0,No
+14216_0,No
+20103_0,No
+21967_0,No
+17270_0,No
+21124_0,No
+13718_1,No
+33988_0,No
+28556_1,No
+32482_0,No
+14856_0,No
+34991_0,No
+24259_0,No
+35246_0,No
+32676_0,No
+27146_0,No
+17965_0,No
+15720_0,No
+17196_1,No
+40745_1,Buffalo Bill
+39109_9,Buffalo Bill
+1023_10,Buffalo Bill
+39109_6,Buffalo Bill
+46986_12,Buffalo Bill
+39109_4,Buffalo Bill
+3007_13,Buffalo Bill
+39429_17,Buffalo Bill
+46986_9,Buffalo Bill
+3007_7,Buffalo Bill
+40745_4,Buffalo Bill
+40745_12,Buffalo Bill
+39429_2,Buffalo Bill
+39429_10,Buffalo Bill
+39109_15,Buffalo Bill
+39109_3,Buffalo Bill
+40745_13,Buffalo Bill
+1023_7,Buffalo Bill
+42195_5,Buffalo Bill
+46986_5,Buffalo Bill
+42848_3,Buffalo Bill
+3103_12,Buffalo Bill
+1223_15,Buffalo Bill
+1158_2,Buffalo Bill
+42848_4,Buffalo Bill
+44515_16,Buffalo Bill
+3207_3,Buffalo Bill
+3103_1,Buffalo Bill
+42848_5,Buffalo Bill
+42848_12,Buffalo Bill
+3207_9,Buffalo Bill
+1223_0,Buffalo Bill
+3207_0,Buffalo Bill
+1158_8,Buffalo Bill
+25513_1,North America
+46987_11,North America
+24459_0,North America
+43068_1,North America
+46987_7,North America
+43240_6,North America
+41880_2,North America
+29521_0,North America
+20222_0,North America
+34528_0,North America
+46987_3,North America
+32369_1,North America
+46125_0,North America
+43857_0,North America
+19173_0,North America
+43857_1,North America
+45682_15,No
+45682_1,No
+1028_5,No
+45626_5,No
+45602_2,No
+45626_15,No
+45626_11,No
+45626_3,No
+45173_9,No
+41597_11,No
+44231_5,No
+44231_11,No
+39378_5,No
+44231_9,No
+1616_3,No
+44615_0,No
+45653_8,No
+39378_0,No
+45653_9,No
+39378_14,No
+44231_12,No
+39378_3,No
+39378_1,No
+45173_3,No
+35075_1,30
+24729_0,30
+18390_0,30
+33862_0,30
+17746_1,30
+18783_1,30
+19820_0,30
+31520_0,30
+20728_0,30
+18663_2,30
+28013_0,30
+33973_0,30
+28766_0,30
+23136_1,30
+22426_1,No
+24320_0,No
+13486_1,No
+27725_0,No
+18179_0,No
+21801_0,No
+31762_0,No
+20125_0,No
+17375_0,No
+34929_0,No
+34949_0,No
+29699_3,No
+18223_0,No
+27105_0,No
+29326_0,No
+33264_0,No
+25377_0,No
+35840_0,No
+34065_0,No
+36300_0,No
+24002_0,No
+47352_2,No
+13278_0,No
+32366_0,No
+28532_1,No
+35427_0,No
+34738_0,No
+32809_0,No
+25968_0,No
+47352_11,No
+46155_2,No
+47352_4,No
+46173_5,No
+40576_4,Person in the left
+21616_0,Person in the left
+43515_0,Person in the left
+28189_1,Person in the left
+29946_1,Person in the left
+44274_1,Person in the left
+40576_2,Person in the left
+45514_0,Person in the left
+44445_4,Person in the left
+23733_0,Person in the left
+40720_1,Person in the left
+46257_1,Person in the left
+46257_0,Person in the left
+44675_5,Person in the left
+44731_7,Person in the left
+26579_1,Person in the left
+33789_0,Person in the left
+43935_3,Person in the left
+22522_0,Europe
+35439_0,Europe
+24069_1,Europe
+44193_5,Europe
+44170_11,Europe
+44359_3,Europe
+39128_4,Europe
+23930_0,Europe
+28630_0,Europe
+45995_11,Europe
+39128_2,Europe
+45303_1,Europe
+24781_5,Europe
+21965_1,67
+29296_1,67
+22877_0,67
+23932_2,67
+22123_1,67
+35444_0,67
+23283_0,67
+33386_0,67
+17642_0,67
+20637_1,67
+31880_2,67
+27168_1,67
+28776_0,67
+29296_3,67
+13588_0,67
+32188_0,67
+14314_0,67
+33110_0,67
+21327_1,67
+18228_0,No
+15949_3,No
+17736_0,No
+13546_5,No
+32206_0,No
+24253_0,No
+17347_0,No
+19815_3,No
+31639_0,No
+20197_1,No
+22331_0,No
+29671_0,No
+23705_0,No
+36161_4,No
+31760_0,No
+44287_3,Ernest Bevin
+43480_14,Ernest Bevin
+45256_11,Ernest Bevin
+39931_3,Ernest Bevin
+44594_1,Ernest Bevin
+39367_5,Ernest Bevin
+40359_0,Ernest Bevin
+39367_11,Ernest Bevin
+44287_0,Ernest Bevin
+43480_3,Ernest Bevin
+44287_1,Ernest Bevin
+39931_1,Ernest Bevin
+44787_0,Ernest Bevin
+45285_15,Ernest Bevin
+37351_6,Ernest Bevin
+39367_0,Ernest Bevin
+2952_10,Ernest Bevin
+2952_4,Ernest Bevin
+2952_5,Ernest Bevin
+37351_5,Ernest Bevin
+45285_5,Ernest Bevin
+41736_4,Ernest Bevin
+37351_4,Ernest Bevin
+45285_2,Ernest Bevin
+44535_12,Ernest Bevin
+2952_0,Ernest Bevin
+20452_0,North America
+32526_3,North America
+20261_1,North America
+26604_6,North America
+22371_1,North America
+35443_1,North America
+21472_3,North America
+21422_0,North America
+22982_0,North America
+20774_1,North America
+21844_0,North America
+21693_0,North America
+19738_1,North America
+15595_0,North America
+20261_7,North America
+32794_1,North America
+18690_0,North America
+32598_1,North America
+21559_3,North America
+26749_3,Europe
+34084_0,Europe
+14586_0,Europe
+22021_0,Europe
+32145_0,Europe
+15134_3,Europe
+31522_0,Europe
+34456_0,Europe
+18568_0,Europe
+14122_0,Europe
+22402_1,Europe
+17730_0,Europe
+26308_0,Europe
+25604_1,Europe
+34664_0,Europe
+25845_0,Europe
+35737_0,Europe
+14489_3,Europe
+16868_0,Europe
+17422_1,Europe
+30720_0,Europe
+33200_0,Europe
+18671_0,Europe
+44782_3,Katharine Hepburn
+46351_1,Katharine Hepburn
+19160_0,Katharine Hepburn
+39993_8,Katharine Hepburn
+39993_5,Katharine Hepburn
+44081_0,Katharine Hepburn
+14790_1,Katharine Hepburn
+33730_0,Katharine Hepburn
+26425_3,Katharine Hepburn
+41056_11,Katharine Hepburn
+41750_8,Katharine Hepburn
+41056_5,Katharine Hepburn
+41056_15,Katharine Hepburn
+45403_12,Katharine Hepburn
+41750_14,Katharine Hepburn
+41056_2,Katharine Hepburn
+42117_5,Katharine Hepburn
+31403_3,Joseph Chamberlain
+13546_0,Joseph Chamberlain
+15990_0,Joseph Chamberlain
+19096_0,Joseph Chamberlain
+34234_2,Joseph Chamberlain
+16263_0,Joseph Chamberlain
+31358_0,Joseph Chamberlain
+23137_0,Joseph Chamberlain
+31294_0,Joseph Chamberlain
+16328_0,Joseph Chamberlain
+15654_0,Joseph Chamberlain
+14963_0,Joseph Chamberlain
+30110_0,Joseph Chamberlain
+17781_5,Joseph Chamberlain
+33338_0,Joseph Chamberlain
+33647_0,Joseph Chamberlain
+32489_2,Joseph Chamberlain
+16256_0,Joseph Chamberlain
+24709_1,Andrew Jackson
+26636_0,Andrew Jackson
+46155_12,Andrew Jackson
+46722_4,Andrew Jackson
+19590_1,Andrew Jackson
+27409_0,Andrew Jackson
+16638_0,Andrew Jackson
+47352_7,Andrew Jackson
+32876_1,Andrew Jackson
+45342_5,Andrew Jackson
+25160_0,Andrew Jackson
+36259_0,Andrew Jackson
+22982_1,Andrew Jackson
+16245_0,Andrew Jackson
+29232_0,Andrew Jackson
+24709_0,Andrew Jackson
+46173_2,Andrew Jackson
+42202_15,Person in the left
+19206_1,Person in the left
+42080_15,Person in the left
+41641_1,Person in the left
+22975_0,Person in the left
+45666_6,Person in the left
+23686_0,Person in the left
+42080_2,Person in the left
+43024_8,Person in the left
+43024_5,Person in the left
+43024_3,Person in the left
+42963_3,Person in the left
+42922_1,Person in the left
+44783_0,Person in the left
+32954_0,Person in the left
+43479_13,Person in the left
+43610_0,Person in the left
+43024_4,Person in the left
+40821_3,Person in the left
+40821_10,Person in the left
+45514_14,Person in the left
+19206_0,Person in the left
+40821_13,Person in the left
+40821_12,Person in the left
+40821_2,Person in the left
+45666_1,Person in the left
+14666_0,94
+29670_0,94
+33142_3,94
+31038_0,94
+31740_0,94
+15811_0,94
+30782_0,94
+22598_4,94
+16256_3,94
+17093_1,94
+17781_0,94
+17550_0,94
+31312_0,94
+16462_3,94
+17171_0,94
+33245_0,94
+22598_0,94
+19349_0,South America
+19543_4,South America
+18718_0,South America
+21570_1,South America
+19543_3,South America
+35050_1,South America
+15308_1,South America
+42997_11,South America
+21777_1,South America
+29355_1,South America
+21570_3,South America
+21563_1,South America
+19779_3,South America
+19779_2,South America
+32810_1,South America
+34176_1,South America
+16064_1,South America
+28370_1,73
+31880_0,73
+19623_0,73
+18179_3,73
+18548_0,73
+18212_0,73
+26080_2,73
+34305_1,73
+17792_0,73
+29296_0,73
+20637_0,73
+14192_0,73
+30958_4,73
+21327_0,73
+15884_0,73
+30689_1,52
+20691_1,52
+30314_0,52
+21673_3,52
+25691_0,52
+21900_0,52
+15680_0,52
+20510_0,52
+14465_0,52
+35557_0,52
+29510_0,52
+30034_0,52
+34795_0,52
+33542_0,1
+46173_3,1
+33627_0,1
+19274_0,1
+19590_0,1
+22490_0,1
+27640_0,1
+30132_0,1
+16334_0,1
+45342_3,1
+46722_0,1
+21153_1,1
+43020_1,91
+23173_5,91
+43226_12,91
+39916_12,91
+43167_3,91
+46917_12,91
+44808_11,91
+38647_2,91
+43636_2,91
+44808_15,91
+44808_2,91
+38647_0,91
+43226_3,91
+39916_9,91
+44808_5,91
+16017_2,91
+35376_1,91
+43636_4,91
+17191_1,91
+39916_10,91
+39916_3,91
+44808_14,91
+44808_3,91
+40275_1,91
+43757_1,91
+40275_0,91
+27804_1,91
+43252_5,91
+39916_14,91
+44221_10,91
+44221_5,91
+39916_5,91
+44221_14,91
+16017_3,91
+47002_4,91
+43226_13,91
+16017_4,91
+46917_3,91
+19737_1,Yes
+34115_0,Yes
+22861_0,Yes
+26514_1,Yes
+20068_1,Yes
+46155_1,Yes
+32876_0,Yes
+21673_1,Yes
+19737_3,Yes
+33073_0,Yes
+23217_0,Yes
+47352_1,Yes
+29861_1,Yes
+25787_0,Yes
+25000_0,Yes
+47352_0,Yes
+43071_5,6 years
+13358_1,6 years
+16173_1,6 years
+23895_1,6 years
+46099_5,6 years
+23710_1,6 years
+36059_1,6 years
+23258_1,6 years
+19257_0,6 years
+28263_1,6 years
+17844_0,6 years
+19577_0,6 years
+43018_0,Yes
+47153_11,Yes
+47153_15,Yes
+19160_1,Yes
+44081_3,Yes
+40411_15,Yes
+21386_0,Yes
+23571_6,Yes
+43117_4,Yes
+15455_0,Yes
+39993_3,Yes
+46351_0,Yes
+17311_0,Yes
+41056_8,Yes
+28781_0,Yes
+38350_6,Yes
+20858_0,Yes
+29580_0,Yes
+44081_1,Yes
+47153_1,Yes
+1023_11,3
+41942_16,3
+45255_2,3
+41229_11,3
+38072_3,3
+38072_14,3
+41229_7,3
+38149_1,3
+3025_10,3
+39475_4,3
+39475_3,3
+44515_3,3
+41314_15,3
+39475_10,3
+3025_1,3
+41182_5,3
+3025_5,3
+3025_4,3
+41314_10,3
+41314_11,3
+3025_11,3
+3025_7,3
+3025_16,3
+41182_4,3
+41314_5,3
+46792_12,3
+44515_10,3
+41314_1,3
+3025_3,3
+42735_4,None
+42735_16,None
+45834_2,None
+1553_2,None
+45834_14,None
+45096_1,None
+18964_0,None
+47077_3,None
+45097_0,None
+42735_0,None
+39725_13,None
+39425_7,None
+45834_1,None
+39725_5,None
+45834_0,None
+41175_12,None
+41175_9,None
+46968_5,None
+39725_3,None
+46968_3,None
+43539_2,None
+39425_3,None
+39725_0,None
+34065_1,Romania
+32741_0,Romania
+19909_0,Romania
+28107_0,Romania
+27779_0,Romania
+24531_1,Romania
+23331_0,Romania
+22660_0,Romania
+20772_1,Romania
+26739_0,Romania
+21734_0,Romania
+34115_1,73
+34870_0,73
+15567_0,73
+23886_0,73
+26961_0,73
+24946_0,73
+29129_0,73
+18118_0,73
+19919_0,73
+30151_0,73
+29510_1,73
+19322_0,73
+24327_0,73
+20510_1,73
+46173_4,73
+25787_1,73
+23217_1,73
+30092_1,Silvio Berlusconi
+27889_0,Silvio Berlusconi
+16272_1,Silvio Berlusconi
+35447_1,Silvio Berlusconi
+25794_3,Silvio Berlusconi
+20493_0,Silvio Berlusconi
+22740_1,Silvio Berlusconi
+18421_1,Silvio Berlusconi
+28589_0,Silvio Berlusconi
+33792_1,Silvio Berlusconi
+13400_0,Silvio Berlusconi
+16463_1,Silvio Berlusconi
+16836_0,Silvio Berlusconi
+13292_1,Silvio Berlusconi
+29117_0,1
+20467_0,1
+30361_0,1
+35163_0,1
+20358_0,1
+32962_0,1
+13779_0,1
+19502_1,1
+23882_0,1
+17188_0,1
+18484_3,1
+28753_0,1
+36254_0,1
+29449_0,1
+29140_0,1
+28013_1,1
+21098_0,1
+31520_1,1
+19253_0,1
+23671_4,Yes
+23777_0,Yes
+28237_0,Yes
+27414_3,Yes
+35497_1,Yes
+16431_0,Yes
+47167_3,Yes
+21408_1,Yes
+35783_1,Yes
+22198_0,Yes
+26799_5,Yes
+28321_1,Yes
+21546_0,Yes
+39725_12,Yes
+47077_0,Yes
+43101_1,Yes
+39725_2,Yes
+44920_12,Yes
+44920_15,Yes
+44383_11,Yes
+3480_4,Yes
+42736_2,Yes
+42736_17,Yes
+41208_1,Yes
+42736_3,Yes
+42103_17,Yes
+46634_6,Yes
+41636_14,Yes
+46672_14,Yes
+43582_8,Yes
+41287_5,Yes
+41205_5,Yes
+43882_4,Yes
+43882_10,Yes
+41205_4,Yes
+46672_3,Yes
+28722_0,Yes
+46672_12,Yes
+21365_1,No
+27322_0,No
+27668_0,No
+47167_7,No
+21851_3,No
+47167_5,No
+23671_1,No
+18003_0,No
+27414_1,No
+47064_0,No
+26588_1,No
+34399_0,No
+15893_1,No
+16340_0,Anton Drexler
+39213_2,Anton Drexler
+39213_0,Anton Drexler
+44197_5,Anton Drexler
+39253_8,Anton Drexler
+21643_0,Anton Drexler
+27124_1,Anton Drexler
+43929_0,Anton Drexler
+25804_0,Anton Drexler
+43356_1,Anton Drexler
+18406_5,Anton Drexler
+45348_11,Anton Drexler
+46544_3,Anton Drexler
+40232_7,Anton Drexler
+46544_2,Anton Drexler
+25068_6,Anton Drexler
+43817_13,Anton Drexler
+43817_5,Anton Drexler
+45572_15,Anton Drexler
+43352_8,Andrew Jackson
+44512_15,Andrew Jackson
+43227_8,Andrew Jackson
+39619_15,Andrew Jackson
+41078_9,Andrew Jackson
+41270_4,Andrew Jackson
+45602_1,Andrew Jackson
+39926_13,Andrew Jackson
+39926_6,Andrew Jackson
+40359_12,Andrew Jackson
+44594_2,Andrew Jackson
+44594_8,Andrew Jackson
+39931_6,Andrew Jackson
+40359_3,Andrew Jackson
+39931_10,Andrew Jackson
+39367_8,Andrew Jackson
+39367_4,Andrew Jackson
+39931_0,Andrew Jackson
+2952_14,Andrew Jackson
+44509_12,Andrew Jackson
+37351_10,Andrew Jackson
+2952_3,Andrew Jackson
+44509_10,Andrew Jackson
+41736_0,Andrew Jackson
+30846_0,Andrew Jackson
+29795_0,Andrew Jackson
+18307_0,Andrew Jackson
+33299_0,Andrew Jackson
+28346_0,Andrew Jackson
+24091_1,Andrew Jackson
+16595_0,Andrew Jackson
+33858_0,Andrew Jackson
+18613_0,Andrew Jackson
+17221_0,Andrew Jackson
+28880_0,Andrew Jackson
+26148_1,Andrew Jackson
+32292_0,Andrew Jackson
+13486_0,Andrew Jackson
+33879_0,Andrew Jackson
+20530_0,Andrew Jackson
+25128_1,United States of America
+22537_3,United States of America
+17754_1,United States of America
+30722_0,United States of America
+30248_1,United States of America
+19820_1,United States of America
+15938_1,United States of America
+35652_0,United States of America
+33326_0,United States of America
+26517_0,United States of America
+36227_0,United States of America
+16577_0,United States of America
+22963_0,United States of America
+34305_0,United States of America
+15293_0,United States of America
+33488_0,United States of America
+30958_0,United States of America
+30733_2,United States of America
+32703_0,United States of America
+13693_2,United States of America
+15917_0,United States of America
+27842_1,United States of America
+33398_0,United States of America
+28708_1,United States of America
+35676_0,United States of America
+21980_0,United States of America
+22939_0,United States of America
+31183_0,No
+14122_2,No
+14027_0,No
+23396_1,No
+25165_1,No
+29304_0,No
+29344_0,No
+26008_1,No
+26096_0,No
+26591_1,No
+29699_0,No
+25667_1,No
+18257_1,No
+13693_0,No
+21682_1,No
+22426_0,No
+40917_15,Yes
+43410_3,Yes
+44383_5,Yes
+44383_7,Yes
+44383_3,Yes
+42573_3,Yes
+42103_12,Yes
+46642_5,Yes
+40917_2,Yes
+45408_0,Yes
+46642_2,Yes
+3480_1,Yes
+3480_2,Yes
+42103_5,Yes
+40065_5,Yes
+24177_0,Yes
+42573_5,Yes
+43786_4,Yes
+42103_3,Yes
+40065_7,Yes
+40065_4,Yes
+44383_0,Yes
+40917_1,Yes
+46642_1,Yes
+40065_2,Yes
+43786_1,Yes
+42573_0,Yes
+14146_0,2
+33922_3,2
+42976_2,2
+27738_0,2
+45238_13,2
+22162_0,2
+45238_3,2
+43040_0,2
+46410_5,2
+46829_6,2
+46410_3,2
+27686_1,2
+44514_1,2
+45238_8,2
+15313_2,2
+45238_12,2
+25633_4,2
+19859_1,1
+28861_0,1
+28281_1,1
+30046_0,1
+30886_1,1
+16143_2,1
+19931_0,1
+21155_0,1
+17104_0,1
+28257_1,1
+36330_3,1
+23529_0,1
+18698_0,1
+16044_0,1
+32800_0,1
+18362_1,1
+20435_0,1
+20929_0,1
+26804_1,1
+22355_3,1
+21817_1,1
+20774_0,1
+14442_0,1
+19380_0,1
+18421_3,1
+35234_0,1
+19738_0,1
+29494_0,1
+16184_1,1
+32710_0,1
+23105_0,1
+46832_5,0 years
+46832_13,0 years
+21305_3,0 years
+46832_8,0 years
+44359_0,0 years
+34318_0,0 years
+44359_1,0 years
+27024_0,0 years
+39128_0,0 years
+43895_7,0 years
+39128_1,0 years
+21049_0,0 years
+45371_5,0 years
+44170_1,0 years
+45371_4,0 years
+45995_3,0 years
+30089_1,0 years
+39316_1,Margot Grahame
+44483_3,Margot Grahame
+20562_1,Margot Grahame
+39855_5,Margot Grahame
+41981_10,Margot Grahame
+43678_1,Margot Grahame
+42076_5,Margot Grahame
+20562_3,Margot Grahame
+41931_2,Margot Grahame
+41201_1,Margot Grahame
+41981_9,Margot Grahame
+46438_9,Margot Grahame
+41981_18,Margot Grahame
+20562_0,Margot Grahame
+45685_10,Margot Grahame
+41931_10,Margot Grahame
+39617_1,Margot Grahame
+45685_2,Margot Grahame
+45026_11,Margot Grahame
+45026_3,Margot Grahame
+39855_2,Margot Grahame
+38532_1,Margot Grahame
+45685_3,Margot Grahame
+45685_5,Margot Grahame
+46438_2,Margot Grahame
+45026_5,Margot Grahame
+38532_0,Margot Grahame
+41931_5,Margot Grahame
+42076_0,Margot Grahame
+21201_3,Abraham Lincoln
+26747_0,Abraham Lincoln
+23895_0,Abraham Lincoln
+36059_0,Abraham Lincoln
+29499_1,Abraham Lincoln
+42448_4,Abraham Lincoln
+21665_0,Abraham Lincoln
+43071_0,Abraham Lincoln
+15718_2,Abraham Lincoln
+29008_0,37
+32558_0,37
+46233_0,37
+19204_0,37
+15830_0,37
+29296_4,37
+34489_0,37
+31880_3,37
+18242_0,37
+18090_0,37
+29478_0,37
+21351_0,37
+13610_0,37
+34997_1,37
+31517_0,37
+14160_0,37
+15506_1,37
+15566_3,75
+35693_0,75
+32553_0,75
+24747_1,75
+47832_0,75
+32447_0,75
+29254_0,75
+21439_0,75
+25054_0,75
+23374_1,75
+16964_0,75
+20105_0,75
+24798_0,75
+36272_1,No
+23139_1,No
+29788_1,No
+42448_11,No
+26534_0,No
+16464_1,No
+25393_0,No
+30284_0,No
+17360_0,No
+42448_12,No
+23258_0,No
+23224_0,No
+23765_0,No
+46099_0,No
+20924_0,No
+29788_0,No
+45685_16,1
+41931_9,1
+42076_1,1
+44450_13,1
+44626_3,1
+44450_5,1
+44450_18,1
+44626_11,1
+45685_0,1
+45026_0,1
+44626_16,1
+44626_5,1
+1553_11,1
+46644_9,1
+41821_2,1
+14166_1,1
+15355_0,1
+42735_12,1
+45096_2,1
+1553_9,1
+47077_11,1
+42735_5,1
+45097_14,1
+45097_13,1
+42735_17,1
+20314_4,Yes
+21766_1,Yes
+42211_5,Yes
+42211_2,Yes
+19349_2,Yes
+19496_1,Yes
+19216_0,Yes
+22823_0,Yes
+23374_0,Yes
+43047_7,Yes
+15566_0,Yes
+14695_0,Yes
+16565_0,Yes
+36028_0,Yes
+27881_1,Yes
+20314_6,Yes

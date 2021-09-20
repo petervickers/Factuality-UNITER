@@ -17,8 +17,8 @@ from utils.logger import LOGGER
 def save_training_meta(args):
     if args.rank > 0:
         return
-
-    if not exists(args.output_dir):
+    
+    if not exists(args.output_dir) or not exists(join(args.output_dir, 'log')):     
         os.makedirs(join(args.output_dir, 'log'))
         os.makedirs(join(args.output_dir, 'ckpt'))
 

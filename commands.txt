@@ -15,4 +15,4 @@ source launch_container.sh $PATH_TO_STORAGE/txt_db     /dpeter/datasets/UNITER-s
 test
 export PATH_TO_STORAGE=/data/peter/datasets/UNITER-storage/KVQA-KG
 source launch_container.sh $PATH_TO_STORAGE/txt_db /data/peter/datasets/UNITER-storage/KVQA/img_db $PATH_TO_STORAGE/finetune $PATH_TO_STORAGE/pretrained
-python inf_kvqa_kg.py --txt_db /txt/kvqa_test_questions.db/ --img_db /img/all/ --output_dir /storage --checkpoint 6000 --pin_mem --fp16
+python inf_kvqa_kg.py --txt_db /txt/kvqa_test_questions.db/ --img_db /img --output_dir /storage --checkpoint 6000 --pin_mem --fp16

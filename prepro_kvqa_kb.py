@@ -17,8 +17,6 @@ from pytorch_pretrained_bert import BertTokenizer
 from data.data import open_lmdb
 from  kvqa_facts import RelationExtractor
 
-SEPERATE_MEMNET = True
-
 @curry
 def bert_tokenize(tokenizer, text):
     ids = []
@@ -32,7 +30,8 @@ def bert_tokenize(tokenizer, text):
 
 
 def process_kvqa(jsonl, db, tokenizer, missing=None, kvqa_split=0, 
-                 memnet=False, fold=0, only_spatial=False):
+                 use_facts=True, fold=0, only_spatial=False):
+    print(use_facts)
     id2len = {}
     txt2img = {}  # not sure if useful
     ans2idx = {}
@@ -43,7 +42,40 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, kvqa_split=0,
 
     json_loaded = json.load(jsonl)   
     
-    print(f'With fold {fold}, split {kvqa_split} and memnet {memnet}')
+    all_facts = []
+    
+    for data_idx, data in tqdm(json_loaded.items(), desc='processing KVQA for facts'):
+        img_id = data['imgPath'].split('/')[-1]
+        img_name = img_id.split('.')[0]
+        #img_fname = (f'nlvr2_{img_id[:-4]}.npz')
+        img_fname = (f'nlvr2_{img_name}.npz')
+        img_path = os.path.join('/img_feat', img_fname)
+        if not os.path.isfile(img_path):
+            #print(f'Features not generated for {img_path}, skipping...')
+            continue
+        if len(data['Type of Question']) != len(data['Questions']):
+            #print(f'WARNING: question type labels broken at index {data_idx}')
+            continue
+        for q_idx in range(len(data['Questions'])):
+            
+            
+            # handle KVQA split format
+            if int(data['split'][fold]) != kvqa_split:
+                continue 
+            
+            if data['Answers'][q_idx] not in ans2idx:
+                #print(f'Adding new answer {example["target"]} at position {len(ans2idx)}')
+                ans2idx[data['Answers'][q_idx]] = len(ans2idx)
+                
+            all_facts.append(data['facts'])
+            
+    import random
+
+    random.shuffle(all_facts)
+            
+    
+    
+    print(f'With fold {fold}, split {kvqa_split} and use_facts {use_facts}')
     total = 0
     processed = 0
     all_qs = set()
@@ -89,20 +121,21 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, kvqa_split=0,
             example['target'] = data['Answers'][q_idx]
             example['type'] = data['Type of Question'][q_idx]
             example['Qids'] = data['Qids']            
-
             
-        
+       
             id_ = example['identifier']
-            
-            if memnet:
-                sent_in = example['sentence'] + ' [SEP] ' + ' [SEP] '.join(data['facts'])
+         
+            if use_facts:
+                #sent_in = example['sentence'] + ' [SEP] ' + ' [SEP] '.join(data['facts'])
+                sent_in = example['sentence'] + ' [SEP] ' + ' [SEP] '.join(all_facts.pop())
                 
-            else:
+            else: 
+                print(example['sentence'])
                 sent_in = example['sentence']
-                example['facts'] = [tokenizer(fact) for fact in data['facts']]
-                
+                print('_________________\n', sent_in)            
+            #example['facts'] = [tokenizer(fact) for fact in data['facts']]    
             input_ids = tokenizer(sent_in)[:412]
-            
+
             txt2img[id_] = img_fname
             id2len[id_] = len(input_ids)
             
@@ -112,7 +145,7 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, kvqa_split=0,
             example['img_fname'] = img_fname
 
             idx2type[id_] = example['type']
-            idx2question[id_] = example['sentence']
+            idx2question[id_] = input_ids
             if example is not None:
                 db[id_] = example
     print(f'Max length of question+facts: {max_len}')        
@@ -124,6 +157,8 @@ def process_kvqa(jsonl, db, tokenizer, missing=None, kvqa_split=0,
 
 
 def main(opts):
+    print(args.use_facts)
+    print(opts.output)
     if not exists(opts.output):
         os.makedirs(opts.output)
     else:
@@ -156,9 +191,9 @@ def main(opts):
                                                                              tokenizer, \
                                                                              missing_imgs, \
                                                                              kvqa_split=args.split, 
-                                                                             memnet=args.use_memnet, 
+                                                                             use_facts=args.use_facts, 
                                                                              fold=args.fold, \
-                                                                             only_spatial=True)
+                                                                             only_spatial=False)
             
     with open(f'{opts.output}/id2len.json', 'w') as f:
         json.dump(id2lens, f)
@@ -171,6 +206,15 @@ def main(opts):
     with open(f'{opts.output}/idx2question.json', 'w') as f:
         json.dump(idx2question, f)
 
+def str2bool(v):
+    if isinstance(v, bool):
+       return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -182,8 +226,10 @@ if __name__ == '__main__':
                         help='output dir of DB')
     parser.add_argument('--split', required=True,
                         help='train (0), val (1), or test (2)', type=int)
-    parser.add_argument('--use_memnet', required=True,
-                        help='Prepare data for UNITER (default) or UNITER+MemNet')
+    parser.add_argument('--use_facts', required=True,
+                        type=str2bool, nargs='?',
+                        const=True, default=False,
+                        help='Include facts in input text stream')
     parser.add_argument('--toker', default='bert-base-cased',
                         help='which BERT tokenizer to use')
     parser.add_argument('--fold', default='0',

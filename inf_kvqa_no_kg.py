@@ -122,39 +122,48 @@ def evaluate(model, eval_loader, label2ans, idx2type, save_logits=False, topk=1)
     types_all = {}
     logits = {}
     
-    for i, batch in enumerate(eval_loader):
-        qids = batch['qids']
-        scores = model(batch, compute_loss=False)
-        targets = batch['targets']
-        topk_correct, pred_answers = compute_score_with_answers(scores, targets, label2ans, topk=topk)
-        total_correct += topk_correct
+    
+    with open('incorrect_preds.txt', 'w') as out_txt:
+        for i, batch in enumerate(eval_loader):
+            qids = batch['qids']
+            scores = model(batch, compute_loss=False)
+            targets = batch['targets']
+            topk_correct, pred_answers = compute_score_with_answers(scores, targets, label2ans, topk=topk)
+            total_correct += topk_correct
 
-        true_answers = [label2ans[i] for i in targets.cpu().tolist()]
+            true_answers = [label2ans[i] for i in targets.cpu().tolist()]
+            seen = set()
+            for qid, y, y_hat in zip(qids, true_answers, pred_answers):
+                if qid in seen:
+                    print('FATAL')
+                    exit()
+                seen.add(qid)
+                for q_type in idx2type[qid]:
+                    if q_type == 'Italy':
+                        continue                
+                    types_all[q_type] = types_all.get(q_type, 0) + 1
+                    if y in y_hat:
+                        types_correct[q_type] = types_correct.get(q_type, 0) + 1
+                if y not in y_hat:
+                    out_txt.write(f'{qid},{pred_answers[0][0]}')
+                    out_txt.write('\n')
+                
+            # display answers
+            #print("\n".join("Correct with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x in y))
+            for qid, answer in zip(qids, pred_answers):
+                results.append({'answer': answer, 'question_id': int(qid)})
+            if save_logits:
+                scores = scores.cpu()
+                for i, qid in enumerate(qids):
+                    logits[qid] = scores[i].half().numpy()
+            if i % 100 == 0 and hvd.rank() == 0:
+                n_results = len(results)
+                n_results *= hvd.size()   # an approximation to avoid hangs
+                LOGGER.info(f'{n_results}/{len(eval_loader.dataset)} '
+                            'answers predicted')
+            n_ex += len(qids)
+        total_score = total_correct / n_ex
         
-        for qid, y, y_hat in zip(qids, true_answers, pred_answers):
-            for q_type in idx2type[qid]:
-                if q_type == 'Italy':
-                    continue                
-                types_all[q_type] = types_all.get(q_type, 0) + 1
-                if y in y_hat:
-                    types_correct[q_type] = types_correct.get(q_type, 0) + 1
-        
-            
-        # display answers
-        #print("\n".join("Correct with True: {} Predicted: {}".format(str(x), (', ').join([str(yi) for yi in y])) for x, y in zip(true_answers, pred_answers) if x in y))
-        for qid, answer in zip(qids, pred_answers):
-            results.append({'answer': answer, 'question_id': int(qid)})
-        if save_logits:
-            scores = scores.cpu()
-            for i, qid in enumerate(qids):
-                logits[qid] = scores[i].half().numpy()
-        if i % 100 == 0 and hvd.rank() == 0:
-            n_results = len(results)
-            n_results *= hvd.size()   # an approximation to avoid hangs
-            LOGGER.info(f'{n_results}/{len(eval_loader.dataset)} '
-                        'answers predicted')
-        n_ex += len(qids)
-    total_score = total_correct / n_ex
     print(f'Total score is {"{:.2f}".format(total_score*100)}%')
     
     type_score = {}

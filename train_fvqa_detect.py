@@ -2,7 +2,7 @@
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
 
-UNITER finetuning for VQA
+UNITER finetuning for FVQA prediction stage
 """
 import argparse
 import json
@@ -104,15 +104,17 @@ def main(opts):
     set_random_seed(opts.seed)
   
   
+    
     label2ans = json.load(open(f'{opts.label_to_ans}'))
-    label2ans = {int(label): ans for label, ans in label2ans.items()}        
+    label2ans = {int(label): ans for label, ans in label2ans.items()}    
+    
+    # Add unknown
+    label2ans[len(label2ans)] = 'UNK'
     ans2label = {ans: label for label, ans in label2ans.items()}
-        
-    assert (len(ans2label) == len(label2ans))
+
 
     # load DBs and image dirs
     img_path = opts.img_db
-    print(img_path)
     img_db = DetectFeatLmdb(img_path, opts.conf_th, opts.max_bb, opts.min_bb,
                             opts.num_bb, opts.compressed_db)
                                  
@@ -285,11 +287,10 @@ def validate(model, val_loader, label2ans):
     st = time()
     results = {}
     for i, batch in enumerate(val_loader):
-        scores = model(batch, compute_loss=False)        
+        scores = model(batch, compute_loss=False)
         targets = batch['targets']
-        targets_np = targets.cpu().numpy() 
         loss = F.cross_entropy(
-            scores, targets, reduction='sum')     
+            scores, targets, reduction='sum')
         val_loss += loss.item()
         tot_score += compute_score_with_logits(scores, targets).sum().item()
         answers = [label2ans[i]

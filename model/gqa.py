@@ -20,6 +20,8 @@ class UniterForGeneralQuestionAnswering(UniterPreTrainedModel):
     """
     def __init__(self, config, img_dim, num_answer):
         super().__init__(config)
+        print(config)
+        print(type(config))
         self.uniter = UniterModel(config, img_dim)
         self.vqa_output = nn.Sequential(
             nn.Linear(config.hidden_size, config.hidden_size*2),

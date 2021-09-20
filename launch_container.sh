@@ -14,7 +14,7 @@ fi
 docker run --gpus '"'device=$CUDA_VISIBLE_DEVICES'"' --ipc=host --rm -it \
     --mount src=$(pwd),dst=/src,type=bind \
     --mount src=$OUTPUT,dst=/storage,type=bind \
-    --mount src=$PRETRAIN_DIR,dst=/pretrain,type=bind,readonly \
+    --mount src=$PRETRAIN_DIR,dst=/pretrain,type=bind \
     --mount src=$TXT_DB,dst=/txt,type=bind,readonly \
     --mount src=$IMG_DIR,dst=/img,type=bind,readonly \
     -e NVIDIA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES \
