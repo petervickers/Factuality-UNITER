@@ -9,6 +9,7 @@ from contextlib import contextmanager
 import io
 import json
 from os.path import exists
+import joblib
 
 import numpy as np
 import torch
@@ -251,6 +252,49 @@ class DetectFeatTxtTokDataset(Dataset):
         img_bb = torch.cat([bb, bb[:, 4:5]*bb[:, 5:]], dim=-1)
         num_bb = img_feat.size(0)
         return img_feat, img_bb, num_bb
+
+class DetectFeatTxtTokKgDataset(Dataset):
+    def __init__(self, txt_db, img_db, kg_db):
+        assert isinstance(txt_db, TxtTokLmdb)
+        assert isinstance(img_db, DetectFeatLmdb)
+        assert isinstance(kg_db, dict)
+        self.txt_db = txt_db
+        self.img_db = img_db
+        self.kg_db = kg_db
+        txt_lens, self.ids = get_ids_and_lens(txt_db)
+
+        txt2img = txt_db.txt2img
+        self.lens = [tl + self.img_db.name2nbb[txt2img[id_]]
+                     for tl, id_ in zip(txt_lens, self.ids)]
+
+    def __len__(self):
+        return len(self.ids)
+
+    def __getitem__(self, i):
+        id_ = self.ids[i]
+        example = self.txt_db[id_]
+        return example
+
+    def _get_img_feat(self, fname):
+        img_feat, bb = self.img_db[fname]
+        img_bb = torch.cat([bb, bb[:, 4:5]*bb[:, 5:]], dim=-1)
+        num_bb = img_feat.size(0)
+        return img_feat, img_bb, num_bb
+
+    def _get_kg_feat(self, i):
+        id_ = self.ids[i]
+        if int(id_) in self.kg_db:
+            kg_embs = self.kg_db[int(id_)]
+        else:
+            print(f'WARNING: no KG feat for sample with qid  {id_}')
+            kg_embs = np.zeros_like(self.kg_db.values())[0,:]
+            exit()
+        return kg_embs
+
+def KGLoader(kg_emb_path):
+    print(kg_emb_path)
+    kg_embs = joblib.load(kg_emb_path)
+    return(kg_embs)
 
 
 def pad_tensors(tensors, lens=None, pad=0):

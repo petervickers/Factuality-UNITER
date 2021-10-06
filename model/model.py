@@ -335,9 +335,11 @@ class UniterModel(UniterPreTrainedModel):
             input_ids, position_ids, txt_type_ids)
         img_emb = self._compute_img_embeddings(
             img_feat, img_pos_feat, img_masks, img_type_ids)
+        print(txt_emb.shape, img_emb.shape)
         # align back to most compact input
         gather_index = gather_index.unsqueeze(-1).expand(
             -1, -1, self.config.hidden_size)
+
         embedding_output = torch.gather(torch.cat([txt_emb, img_emb], dim=1),
                                         dim=1, index=gather_index)
         return embedding_output
@@ -371,6 +373,7 @@ class UniterModel(UniterPreTrainedModel):
         encoded_layers = self.encoder(
             embedding_output, extended_attention_mask,
             output_all_encoded_layers=output_all_encoded_layers)
+
         if not output_all_encoded_layers:
             encoded_layers = encoded_layers[-1]
         return encoded_layers

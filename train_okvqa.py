@@ -22,10 +22,11 @@ from horovod import torch as hvd
 from tqdm import tqdm
 
 from data import (TokenBucketSampler, PrefetchLoader,
-                  TxtTokLmdb, DetectFeatLmdb, ConcatDatasetWithLens,
-                  GqaDataset, GqaEvalDataset,
-                  gqa_collate, gqa_eval_collate)
-from model.gqa import UniterForGeneralQuestionAnswering
+                  TxtTokLmdb, DetectFeatLmdb, 
+                  KGLoader, ConcatDatasetWithLens,
+                  KavqaDataset, KavqaEvalDataset,
+                  kavqa_collate, kavqa_eval_collate)
+from model.kavqamodel import UniterForKGVisualQuestionAnswering
 from optim import AdamW, get_lr_sched
 
 from utils.logger import LOGGER, TB_LOGGER, RunningMeter, add_log_to_file
@@ -112,32 +113,32 @@ def main(opts):
 
     # load DBs and image dirs
     img_path = opts.img_db
-    print(img_path)
     img_db = DetectFeatLmdb(img_path, opts.conf_th, opts.max_bb, opts.min_bb,
                             opts.num_bb, opts.compressed_db)
                                  
-
+    # loag KG embeddings
+    kg_path = opts.kg_db
+    kg_db = KGLoader(opts.kg_db)
+    
     # train
     LOGGER.info(f"Loading Train Dataset "
                 f"{opts.train_txt_db}, {opts.img_db}")
-                
     train_txt_path = opts.train_txt_db    
     txt_db = TxtTokLmdb(train_txt_path, opts.max_txt_len)
-    train_dataset = GqaDataset(ans2label, txt_db, img_db)
-    
-    train_dataset.__getitem__(0)
-
-    
+    train_dataset = KavqaDataset(ans2label, txt_db, img_db, kg_db)
+    #print(train_dataset._get_kg_feat(42)[0].shape)
+        
     train_dataset = ConcatDatasetWithLens([train_dataset])
-    train_dataloader = build_dataloader(train_dataset, gqa_collate, True, opts)
-
+    train_dataloader = build_dataloader(train_dataset, kavqa_collate, True, opts)
+    
+    kg_dim = next(iter(kg_db.values())).shape[1]
+        
     # val
     LOGGER.info(f"Loading Train Dataset {opts.val_txt_db}, {opts.img_db}")
     val_txt_db = TxtTokLmdb(opts.val_txt_db, -1)
-    val_dataset = GqaEvalDataset(ans2label, val_txt_db, img_db)
-    val_dataloader = build_dataloader(val_dataset, gqa_eval_collate,
+    val_dataset = KavqaEvalDataset(ans2label, val_txt_db, img_db, kg_db)
+    val_dataloader = build_dataloader(val_dataset, kavqa_eval_collate,
                                       False, opts)
-
     # Prepare model
     if opts.checkpoint:
         checkpoint = torch.load(opts.checkpoint)
@@ -150,9 +151,9 @@ def main(opts):
     toker = json.load(open(f'{all_dbs[0]}/meta.json'))['bert']
     assert all(toker == json.load(open(f'{db}/meta.json'))['bert']
                for db in all_dbs)
-    model = UniterForGeneralQuestionAnswering.from_pretrained(
+    model = UniterForKGVisualQuestionAnswering.from_pretrained(
         opts.model_config, checkpoint,
-        img_dim=IMG_DIM, num_answer=len(ans2label))
+        img_dim=IMG_DIM, kg_dim=kg_dim, num_answer=len(ans2label))
     model.to(device)
     # make sure every process has same model parameters in the beginning
     broadcast_tensors([p.data for p in model.parameters()], 0)
@@ -161,7 +162,8 @@ def main(opts):
     # Prepare optimizer
     optimizer = build_optimizer(model, opts)
     model, optimizer = amp.initialize(model, optimizer,
-                                      enabled=opts.fp16, opt_level='O2')
+                                      opt_level='O1')
+
     global_step = 0
     if rank == 0:
         save_training_meta(opts)
@@ -191,6 +193,8 @@ def main(opts):
     # quick hack for amp delay_unscale bug
     optimizer.zero_grad()
     optimizer.step()
+
+    # EOD 27/09 - PV
     while True:
         for step, batch in enumerate(train_dataloader):
             n_examples += batch['input_ids'].size(0)
@@ -265,9 +269,8 @@ def main(opts):
             break
         n_epoch += 1
         LOGGER.info(f"finished {n_epoch} epochs")
-    if opts.num_train_steps % opts.valid_steps != 0:
         val_log, results = validate(model, val_dataloader, label2ans)
-        with open(f'{opts.output_dir}/results/'
+        with open(f'{opts.output_dir}/results/'                  
                   f'results_{global_step}_'
                   f'rank{rank}.json', 'w') as f:
             json.dump(results, f)
@@ -332,6 +335,9 @@ if __name__ == "__main__":
     parser.add_argument("--checkpoint",
                         default=None, type=str,
                         help="pretrained model")
+    parser.add_argument("--kg_db",
+                        default=None, type=str,
+                        help="location of KG embeddings")
 
     parser.add_argument(
         "--output_dir", default=None, type=str,
@@ -350,6 +356,8 @@ if __name__ == "__main__":
                         help='min number of bounding boxes')
     parser.add_argument('--num_bb', type=int, default=36,
                         help='static number of bounding boxes')
+    parser.add_argument('--image_kg', default=True, action='store_true',
+                        help='Use KG features from entities detected in images')
 
     # training parameters
     parser.add_argument("--train_batch_size", default=4096, type=int,
@@ -410,3 +418,6 @@ if __name__ == "__main__":
         assert args.num_bb + args.max_txt_len + 2 <= 512
 
     main(args)
+"""
+Copyright (c) Microsoft Corporation.
+"""
