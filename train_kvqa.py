@@ -265,6 +265,9 @@ def main(opts):
             break
         n_epoch += 1
         LOGGER.info(f"finished {n_epoch} epochs")
+        if n_epoch >= opts.num_train_epochs:
+            print('reached training limit epochs, stopping training')
+            break
     if opts.num_train_steps % opts.valid_steps != 0:
         val_log, results = validate(model, val_dataloader, label2ans)
         with open(f'{opts.output_dir}/results/'
@@ -368,6 +371,8 @@ if __name__ == "__main__":
     parser.add_argument("--valid_steps", default=1000, type=int,
                         help="Run validation every X steps")
     parser.add_argument("--num_train_steps", default=100000, type=int,
+                        help="Total number of training updates to perform.")
+    parser.add_argument("--num_train_epochs", default=100000, type=int,
                         help="Total number of training updates to perform.")
     parser.add_argument("--optim", default='adam',
                         choices=['adam', 'adamax', 'adamw'],

@@ -1,9 +1,9 @@
 {
-    "train_txt_db": "/txt/okvqa_train.db",
-	"label_to_ans": "/txt/okvqa_train.db/idx2ans.json",
-    "img_db": "/img/image_proc",
-    "val_txt_db":   "/txt/okvqa_val.db",
-    "test_txt_db": "/txt/okvqa_val.db", 
+    "train_txt_db": "/txt/fvqa_train_list_0.db",
+	"label_to_ans": "/txt/fvqa_train_list_0.db/idx2ans.json",
+    "img_db": "/img/all",
+    "val_txt_db":   "/txt/fvqa_test_list_0.db",
+    "test_txt_db": "/txt/fvqa_test_list_0.db", 
     "checkpoint": "/pretrain/uniter-base.pt",
     "model_config": "/src/config/uniter-base.json",
     "output_dir": "/storage/clevr/default",
@@ -18,7 +18,7 @@
     "learning_rate": 8e-05,
     "lr_mul": 10.0,
     "valid_steps": 500,
-    "num_train_steps": 10000000,
+    "num_train_steps": 6000,
     "optim": "adamw",
     "betas": [
         0.9,

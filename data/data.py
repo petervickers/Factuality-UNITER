@@ -8,6 +8,7 @@ from collections import defaultdict
 from contextlib import contextmanager
 import io
 import json
+import os
 from os.path import exists
 import joblib
 
@@ -254,13 +255,12 @@ class DetectFeatTxtTokDataset(Dataset):
         return img_feat, img_bb, num_bb
 
 class DetectFeatTxtTokKgDataset(Dataset):
-    def __init__(self, txt_db, img_db, kg_db):
+    def __init__(self, txt_db, img_db, kg_path):
         assert isinstance(txt_db, TxtTokLmdb)
         assert isinstance(img_db, DetectFeatLmdb)
-        assert isinstance(kg_db, dict)
         self.txt_db = txt_db
         self.img_db = img_db
-        self.kg_db = kg_db
+        self.kg_path = kg_path
         txt_lens, self.ids = get_ids_and_lens(txt_db)
 
         txt2img = txt_db.txt2img
@@ -283,12 +283,7 @@ class DetectFeatTxtTokKgDataset(Dataset):
 
     def _get_kg_feat(self, i):
         id_ = self.ids[i]
-        if int(id_) in self.kg_db:
-            kg_embs = self.kg_db[int(id_)]
-        else:
-            print(f'WARNING: no KG feat for sample with qid  {id_}')
-            kg_embs = np.zeros_like(self.kg_db.values())[0,:]
-            exit()
+        kg_embs = joblib.load(os.path.join('/kg/', str(id_)+'.pkl'))
         return kg_embs
 
 def KGLoader(kg_emb_path):

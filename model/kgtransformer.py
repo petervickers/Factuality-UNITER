@@ -879,7 +879,6 @@ class BertModel(BertPreTrainedModel):
         )
 
         sequence_output_t = encoded_layers_t[bert_layer_used]
-
         pooled_output_t = self.t_pooler(sequence_output_t)
 
         if not output_all_encoded_layers:

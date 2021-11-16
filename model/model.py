@@ -168,6 +168,8 @@ class UniterPreTrainedModel(nn.Module):
             print(key)
             if 'vqa_output' in key:
                 del_keys.append(key)
+            if 'kavqaprediction' in key:
+                del_keys.append(key)
             new_key = None
             if 'gamma' in key:
                 new_key = key.replace('gamma', 'weight')
@@ -180,10 +182,8 @@ class UniterPreTrainedModel(nn.Module):
         for old_key, new_key in zip(old_keys, new_keys):
             state_dict[new_key] = state_dict.pop(old_key)
         # TODO: REMOVE. forces training from scratch
-        #state_dict = {}
-        # TODO remove - hacky way to do transfer learning
-        #for key in del_keys:
-        #    state_dict.pop(key)
+        for key in del_keys:
+            state_dict.pop(key)
         missing_keys = []
         unexpected_keys = []
         error_msgs = []
@@ -335,7 +335,7 @@ class UniterModel(UniterPreTrainedModel):
             input_ids, position_ids, txt_type_ids)
         img_emb = self._compute_img_embeddings(
             img_feat, img_pos_feat, img_masks, img_type_ids)
-        print(txt_emb.shape, img_emb.shape)
+        
         # align back to most compact input
         gather_index = gather_index.unsqueeze(-1).expand(
             -1, -1, self.config.hidden_size)

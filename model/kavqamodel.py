@@ -14,7 +14,257 @@ from .kgtransformer import QuestionGraphTransformer
 
 from .cti_model.fcnet import FCNet
 from .cti_model.tcnet import TCNet
-from .cti_model.triattention import TriAttention
+
+class SuperSimpleNet(nn.Module):
+    """
+        Simple class for non-linear fully-connected network
+    """
+
+    def __init__(self, dims, act="ReLU", dropout=0):
+        super(SuperSimpleNet, self).__init__()
+
+        self.drop = nn.Dropout(0.2)
+        self.fc1 = nn.Linear(768, 256)
+
+    def forward(self, x):
+        x = self.drop(x)
+        x = self.fc1(x)
+        return (x)
+
+
+### UTILS FUNCTION DEFINITION ###
+def mode_product(tensor, matrix_1, matrix_2, matrix_3, matrix_4, n_way=3):
+
+    # mode-1 tensor product
+    tensor_1 = (
+        tensor.transpose(3, 2)
+        .contiguous()
+        .view(
+            tensor.size(0),
+            tensor.size(1),
+            tensor.size(2) * tensor.size(3) * tensor.size(4),
+        )
+    )
+    tensor_product = torch.matmul(matrix_1, tensor_1)
+    tensor_1 = tensor_product.view(
+        -1, tensor_product.size(1), tensor.size(4), tensor.size(3), tensor.size(2)
+    ).transpose(4, 2)
+
+    # mode-2 tensor product
+    tensor_2 = (
+        tensor_1.transpose(2, 1)
+        .transpose(4, 2)
+        .contiguous()
+        .view(
+            -1, tensor_1.size(2), tensor_1.size(1) * tensor_1.size(3) * tensor_1.size(4)
+        )
+    )
+    tensor_product = torch.matmul(matrix_2, tensor_2)
+    tensor_2 = (
+        tensor_product.view(
+            -1,
+            tensor_product.size(1),
+            tensor_1.size(4),
+            tensor_1.size(3),
+            tensor_1.size(1),
+        )
+        .transpose(4, 1)
+        .transpose(4, 2)
+    )
+    tensor_product = tensor_2
+
+    if n_way > 2:
+        # mode-3 tensor product
+        tensor_3 = (
+            tensor_2.transpose(3, 1)
+            .transpose(4, 2)
+            .transpose(4, 3)
+            .contiguous()
+            .view(
+                -1,
+                tensor_2.size(3),
+                tensor_2.size(2) * tensor_2.size(1) * tensor_2.size(4),
+            )
+        )
+        tensor_product = torch.matmul(matrix_3, tensor_3)
+        tensor_3 = (
+            tensor_product.view(
+                -1,
+                tensor_product.size(1),
+                tensor_2.size(4),
+                tensor_2.size(2),
+                tensor_2.size(1),
+            )
+            .transpose(1, 4)
+            .transpose(4, 2)
+            .transpose(3, 2)
+        )
+        tensor_product = tensor_3
+
+    if n_way > 3:
+        # mode-4 tensor product
+        tensor_4 = (
+            tensor_3.transpose(4, 1)
+            .transpose(3, 2)
+            .contiguous()
+            .view(
+                -1,
+                tensor_3.size(4),
+                tensor_3.size(3) * tensor_3.size(2) * tensor_3.size(1),
+            )
+        )
+        tensor_product = torch.matmul(matrix_4, tensor_4)
+        tensor_4 = (
+            tensor_product.view(
+                -1,
+                tensor_product.size(1),
+                tensor_3.size(3),
+                tensor_3.size(2),
+                tensor_3.size(1),
+            )
+            .transpose(4, 1)
+            .transpose(3, 2)
+        )
+        tensor_product = tensor_4
+
+    return tensor_product
+
+
+### CLASS DEFINITION ###
+class TCNet(nn.Module):
+    def __init__(
+        self,
+        v_dim,
+        q_dim,
+        kg_dim,
+        h_dim,
+        h_out,
+        rank,
+        glimpse,
+        act="ReLU",
+        k=1,
+        dropout=[0.2, 0.5, 0.2],
+    ):
+        super(TCNet, self).__init__()
+
+        self.v_dim = v_dim
+        self.q_dim = q_dim
+        self.kg_dim = kg_dim
+        self.h_out = h_out
+        self.rank = rank
+        self.h_dim = h_dim * k
+        self.hv_dim = int(h_dim / rank)
+        self.hq_dim = int(h_dim / rank)
+        self.hkg_dim = int(h_dim / rank)
+        
+        self.basic_nn = torch.nn.Linear(768, 256)
+
+        self.q_tucker = FCNet([q_dim, self.h_dim], act=act, dropout=dropout[0])
+        self.v_tucker = FCNet([v_dim, self.h_dim], act=act, dropout=dropout[1])
+        self.v_tuckers_simple = SuperSimpleNet(0)
+        self.kg_tucker = FCNet([kg_dim, self.h_dim], act=act, dropout=dropout[2])
+
+        if self.h_dim < 1024:
+            self.kg_tucker = FCNet([kg_dim, self.h_dim], act=act, dropout=dropout[2])
+            self.q_net = nn.ModuleList(
+                [
+                    FCNet([self.h_dim, self.hq_dim], act=act, dropout=dropout[0])
+                    for _ in range(rank)
+                ]
+            )
+            self.v_net = nn.ModuleList(
+                [
+                    FCNet([self.h_dim, self.hv_dim], act=act, dropout=dropout[1])
+                    for _ in range(rank)
+                ]
+            )
+            self.kg_net = nn.ModuleList(
+                [
+                    FCNet([self.h_dim, self.hkg_dim], act=act, dropout=dropout[2])
+                    for _ in range(rank)
+                ]
+            )
+
+            if h_out > 1:
+                self.ho_dim = int(h_out / rank)
+                h_out = self.ho_dim
+
+            self.T_g = nn.Parameter(
+                torch.Tensor(
+                    1, rank, self.hv_dim, self.hq_dim, self.hkg_dim, glimpse, h_out
+                ).normal_()
+            )
+        self.dropout = nn.Dropout(dropout[1])
+
+    def forward(self, v, q, kg):
+        f_emb = 0
+
+        v_tucker = self.v_tucker(v)
+        q_tucker = self.q_tucker(q)
+        kg_tucker = self.kg_tucker(kg)
+
+        for r in range(self.rank):
+            v_ = self.v_net[r](v_tucker)
+            q_ = self.q_net[r](q_tucker)
+            kg_ = self.kg_net[r](kg_tucker)
+            f_emb = (
+                mode_product(self.T_g[:, r, :, :, :, :, :], v_, q_, kg_, None) + f_emb
+            )
+
+        return f_emb.squeeze(4)
+
+    def forward_with_weights(self, v, q, kg, w):
+        v_ = self.v_tucker(v).transpose(2, 1)  # b x d x v
+        q_ = self.q_tucker(q).transpose(2, 1).unsqueeze(3)  # b x d x q x 1
+        kg_ = self.kg_tucker(kg).transpose(2, 1).unsqueeze(3)  # b x d x kg
+
+        logits = torch.einsum("bdv,bvqa,bdqi,bdaj->bdij", [v_, w, q_, kg_])
+        logits = logits.squeeze(3).squeeze(2)
+
+        return logits
+
+
+### CLASS DEFINITION ###
+class TriAttention(nn.Module):
+    def __init__(
+        self,
+        v_dim,
+        q_dim,
+        kg_dim,
+        h_dim,
+        h_out,
+        rank,
+        glimpse,
+        k,
+        dropout=[0.2, 0.5, 0.2],
+    ):
+        super(TriAttention, self).__init__()
+        self.glimpse = glimpse
+        self.TriAtt = TCNet(
+            v_dim, q_dim, kg_dim, h_dim, h_out, rank, glimpse, dropout=dropout, k=k
+        )
+
+    def forward(self, v, q, kg):
+        v_num = v.size(1)
+        q_num = q.size(1)
+        kg_num = kg.size(1)
+        logits = self.TriAtt(v, q, kg)
+
+        mask = (
+            (0 == v.abs().sum(2))
+            .unsqueeze(2)
+            .unsqueeze(3)
+            .unsqueeze(4)
+            .expand(logits.size())
+        )
+        logits.data.masked_fill_(mask.data, -float("inf"))
+
+        p = torch.softmax(
+            logits.contiguous().view(-1, v_num * q_num * kg_num, self.glimpse), 1
+        )
+
+        return p.view(-1, v_num, q_num, kg_num, self.glimpse), logits
+
 
 
 kgtransformer_hidden_size = 1024
@@ -142,14 +392,10 @@ class UniterForKGVisualQuestionAnswering(UniterPreTrainedModel):
         
         self.pooler = KgUniterFusion(config, kgtransformer_hidden_size)
         
+        self.basic_nn = nn.Linear(768, 256)
+        
         self.kavqaprediction = SimpleClassifier(512, 512 * 2, num_answer, 0.5)
         
-        self.vqa_output = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size*2),
-            GELU(),
-            LayerNorm(config.hidden_size*2, eps=1e-12),
-            nn.Linear(config.hidden_size*2, num_answer)
-        )
         self.apply(self.init_weights)
         
         print('Outsize =', num_answer)
@@ -181,13 +427,23 @@ class UniterForKGVisualQuestionAnswering(UniterPreTrainedModel):
           img_hidden_states[i,0:sequence_output.size(1)-txt_lens[i],:] = sequence_output[i,txt_lens[i]:,:]
         
                       
-        txtkg_txt_hidden_states, txtkg_kg_hidden_states = self.kgtransformer(input_ids,
+        txtkg_kg_hidden_states, txtkg_kg_hidden_pooled = self.kgtransformer(input_ids,
                                                    kg_feat,
                                                    extended_attention_mask=attn_masks,
                                                    output_all_encoded_layers=False)
-                                                   
+         
+        #print(txt_hidden_states.shape, img_hidden_states.shape, txtkg_kg_hidden_states.shape)
+        #print('txt, img, kg')
+        
+        #kg_emb_test = self.basic_nn(txtkg_kg_hidden_states)
+        #exit()
+        
+        #txt_img_kg_concat = torch.cat((txt_hidden_states, img_hidden_states, txtkg_kg_hidden_states.float()), dim=1)
+        #print(txt_img_kg_concat.shape)
+        #exit()
+                                          
         result_vector, result_attention = self.aggregator(
-                img_hidden_states, txt_hidden_states, txtkg_kg_hidden_states,
+                img_hidden_states.half(), txt_hidden_states.half(), txtkg_kg_hidden_states,
             )
         
         answer_scores = self.kavqaprediction(result_vector)

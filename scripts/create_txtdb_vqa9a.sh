@@ -3,14 +3,13 @@
 
 OUT_DIR=$1
 ANN_DIR=$2
-SPLIT_SEED=$3
-FEAT_DIR=$4
+FEAT_DIR=$3
 
 set -e
 
-echo $SPLIT_SEED
 echo $OUT_DIR
-ls $OUT_DIR
+echo $ANN_DIR
+echo $FEAT_DIR
 
 if [ ! -d $OUT_DIR ]; then
     mkdir -p $OUT_DIR
@@ -27,9 +26,10 @@ for SPLIT in 'train' 'val'; do
         --mount src=$ANN_DIR,dst=/ann,type=bind,readonly \
         --mount src=$FEAT_DIR,dst=/img_feat,type=bind,readonly \
         -w /src chenrocks/uniter \
-        python prepro_kbvqa.py --annotation /ann/nlqs_dump.json \
-                         --output /txt_db/kbvqa_${SPLIT}.db \
-                         --split_seed ${SPLIT_SEED} --split ${SPLIT}
+        python prepro_vqa9a.py --annotation0 /ann/v2_mscoco_${SPLIT}2014_annotations.json \
+                         --annotation1 /ann/v2_OpenEnded_mscoco_${SPLIT}2014_questions.json \
+                         --output /txt_db/vqa_${SPLIT}.db \
+                         --split ${SPLIT}
 done
 
 echo "done"

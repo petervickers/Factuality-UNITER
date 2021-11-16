@@ -162,7 +162,7 @@ def main(opts):
     # Prepare optimizer
     optimizer = build_optimizer(model, opts)
     model, optimizer = amp.initialize(model, optimizer,
-                                      opt_level='O1')
+                                      opt_level='O2')
 
     global_step = 0
     if rank == 0:
